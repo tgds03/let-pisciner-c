@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	char *s1 = "55555";
+	char *s2 = "55556";
+	char *s3 = "55554";
+	char *s4 = "5555";
+	char *s5 = "555555";
+	for (int n = 4; n <= 6; ++n) {
+		printf("%d ", strncmp(s1, s1, n));
+		printf("%d ", strncmp(s1, s2, n));
+		printf("%d ", strncmp(s1, s3, n));
+		printf("%d ", strncmp(s1, s4, n));
+		printf("%d ", strncmp(s1, s5, n));
+	}
+	return 0;
+}
