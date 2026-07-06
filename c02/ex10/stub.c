@@ -28,7 +28,5 @@ int main() {
 	printf("%d %s\n", strlcpy(buffer, str4, 21), buffer);
 	fill(buffer, 21);
 	printf("%d %s\n", strlcpy(buffer, str5, 21), buffer);
-	fill(buffer, 21);
-	printf("%d %s\n", strlcpy(buffer, str5, 100), buffer);
 	return 0;
 }
