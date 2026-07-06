@@ -1,0 +1,2 @@
+COMPILE_CMD="cc -o app -Wall -Wextra -Werror -no-pie *.c"
+DIFF_CMD="diff <(awk '{ \$1=\"\"; print \$0 }' \"$2/$EXAM_DIR/expected_output\") <(awk '{ \$1=\"\"; print \$0 }' \"$1/$EXAM_DIR/output\")"

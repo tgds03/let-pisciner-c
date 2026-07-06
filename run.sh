@@ -24,22 +24,8 @@ echo ""
 echo "Norminette: "
 norminette "$1" || exit
 
-for EXAM_DIR in $(cd "$2" && ls -d */); do
-	echo ""
-	echo -n "Put stubs in $EXAM_DIR: "
-	cp "$2/$EXAM_DIR/"* "$1/$EXAM_DIR/" || continue
-	echo "done"
-
-	echo -n "Compile and Run $EXAM_DIR: "
-	$(cd "$1/$EXAM_DIR/" && cc -o app -Wall -Wextra -Werror *.c && ./app > output) || continue
-	echo "done"
-
-	if [ -z "$(diff "$2/$EXAM_DIR/expected_output" "$1/$EXAM_DIR/output")" ]; then
-		echo "$EXAM_DIR: Success"
-	else 
-		echo "$EXAM_DIR: Failed"
-		diff "$2/$EXAM_DIR/expected_output" "$1/$EXAM_DIR/output"
-	fi
+for EXAM_NAME in $(cd "$2" && ls -d */); do
+	EXAM_DIR="$EXAM_NAME" ./check_exam.sh "$1" "$2"
 done
 
 echo ""
