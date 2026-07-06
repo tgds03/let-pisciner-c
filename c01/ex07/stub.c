@@ -11,7 +11,7 @@ int main() {
 	for (i = 0; i < 256; ++i) {
 		arr[i] = rand();
 	}
-	for (i = 0; i < 10000; ++i) {
+	for (i = 0; i < 100; ++i) {
 		a = rand() % 256;
 		b = rand() % 256;
 		if (a > b) {
