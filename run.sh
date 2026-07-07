@@ -36,7 +36,7 @@ echo ""
 echo "Norminette: "
 norminette "$REPO_PATH" || exit
 
-for EXAM_NAME in $(cd "$SUTB_PATH" && ls -d */); do
+for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
 	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/compile_exam.sh" || continue
 	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/test_exam.sh"
 done
