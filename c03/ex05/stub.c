@@ -3,16 +3,15 @@
 unsigned int ft_strlcat(char *dest, char *src, unsigned int size);
 
 int main() {
-	char buffer[11] = "12345";
-	char *str1 = "12";
+	char buffer[21] = "....................";
+	char *str1 = "123";
 	char *str2 = "";
-	printf("%d %s\n", ft_strlcat(buffer, str1, 11), buffer);
-	printf("%d %s\n", ft_strlcat(buffer, str2, 11), buffer);
-	printf("%d %s\n", ft_strlcat(buffer, str1, 11), buffer);
-	printf("%d %s\n", ft_strlcat(buffer, str2, 11), buffer);
-	printf("%d %s\n", ft_strlcat(buffer, str1, 11), buffer);
-	printf("%d %s\n", ft_strlcat(buffer, str2, 11), buffer);
-	printf("%d %s\n", ft_strlcat(buffer, str1, 11), buffer);
-	printf("%d %s\n", ft_strlcat(buffer, str2, 11), buffer);
+	char *offset = buffer + 5;
+	for (int i = 0; i < 5; ++i) {
+		printf("%d %s\n", ft_strlcat(offset, str1, 11), buffer);
+		printf("%d %s\n", ft_strlcat(offset, str2, 11), buffer);
+	}
+	printf("%d %s\n", ft_strlcat(offset, str1, 0), buffer);
+	printf("%d %s\n", ft_strlcat(offset, str2, 0), buffer);
 	return 0;
 }

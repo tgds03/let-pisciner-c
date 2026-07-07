@@ -8,6 +8,9 @@ int main() {
 	char *s3 = "55554";
 	char *s4 = "5555";
 	char *s5 = "555555";
+
+	printf("%d ", ft_strncmp(s1, s1, 0));
+	printf("%d ", ft_strncmp(s1, s5, 0));
 	for (int n = 4; n <= 6; ++n) {
 		printf("%d ", ft_strncmp(s1, s1, n));
 		printf("%d ", ft_strncmp(s1, s2, n));
