@@ -1,12 +1,31 @@
 #!/bin/bash
+
 USAGE_STR="usage: $0 [repo_path] [exam_name]\n\
 Don't use it before commit all you need, or file may be deleted!"
+
+if [ "$#" -ne 2 ]; then
+	echo -e $USAGE_STR
+	exit
+fi
+
+export REPO_PATH=$(cd "$1" && pwd -P)
+
+if [ ! -d "$REPO_PATH" ]; then
+	echo "can not find dir $1"
+	echo -e $USAGE_STR
+	exit
+fi
 
 SHELL_PATH=$(cd "$(dirname "$0")" && pwd -P)
 export LIB_PATH="$SHELL_PATH/lib"
 export INCLUDE_PATH="$SHELL_PATH/include"
-export REPO_PATH="$1"
 export STUB_PATH="$SHELL_PATH/${2,,}"
+
+if [ ! -d "$STUB_PATH" ]; then
+	echo "can not find exam $2"
+	echo -e $USAGE_STR
+	exit
+fi
 
 clean() {
 	echo ""
@@ -15,28 +34,14 @@ clean() {
 }
 trap clean EXIT SIGINT SIGTERM
 
-if [ "$#" -ne 2 ]; then
-	echo -e $USAGE_STR
-	exit
-fi
-
-if [ ! -d "$REPO_PATH" ]; then
-	echo "can not find $REPO_PATH"
-	echo -e $USAGE_STR
-	exit
-fi
-
-if [ ! -d "$STUB_PATH" ]; then
-	echo "can not find exam $2"
-	echo -e $USAGE_STR
-	exit
-fi
-
 echo ""
 echo "Norminette: "
 norminette "$REPO_PATH" || exit
 
+OUTPUT_DIR="./$(basename "$REPO_PATH")_outputs"
+mkdir $OUTPUT_DIR
 for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
 	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/compile_exam.sh" || continue
 	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/test_exam.sh"
+	cp "$REPO_PATH/$EXAM_NAME/output" "$OUTPUT_DIR/$(basename $EXAM_NAME).output"
 done
