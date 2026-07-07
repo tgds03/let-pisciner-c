@@ -37,6 +37,6 @@ echo "Norminette: "
 norminette "$1" || exit
 
 for EXAM_NAME in $(cd "$2" && ls -d */); do
-	EXAM_DIR="$EXAM_NAME" ./cmd/compile_exam.sh
+	EXAM_DIR="$EXAM_NAME" ./cmd/compile_exam.sh || continue
 	EXAM_DIR="$EXAM_NAME" ./cmd/test_exam.sh
 done
