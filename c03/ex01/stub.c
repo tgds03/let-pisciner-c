@@ -3,15 +3,15 @@
 int ft_strncmp(char *s1, char *s2, unsigned int n);
 
 int main() {
-	char *s1 = "55555";
-	char *s2 = "55556";
-	char *s3 = "55554";
-	char *s4 = "5555";
-	char *s5 = "555555";
+	char *s0 = "";
+	char *s1 = "55";
+	char *s2 = "56";
+	char *s3 = "54";
+	char *s4 = "5";
+	char *s5 = "555";
 
-	printf("%d ", ft_strncmp(s1, s1, 0));
-	printf("%d ", ft_strncmp(s1, s5, 0));
-	for (int n = 4; n <= 6; ++n) {
+	for (int n = 0; n <= 3; ++n) {
+		printf("%d ", ft_strncmp(s1, s0, n));
 		printf("%d ", ft_strncmp(s1, s1, n));
 		printf("%d ", ft_strncmp(s1, s2, n));
 		printf("%d ", ft_strncmp(s1, s3, n));
