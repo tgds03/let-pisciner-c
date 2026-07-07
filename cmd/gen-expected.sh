@@ -1,10 +1,11 @@
 #!/bin/bash
-USAGE_STR="usage: $0 [repo_path] [stub_path]\n\
-Don't use it before commit all you need, or file may be deleted!"
 
+USAGE_STR="usage: $0 [repo_path] [stub_path]"
+
+echo $(pwd)
 SHELL_PATH=$(cd "$(dirname "$0")" && pwd -P)
-export LIB_PATH="$SHELL_PATH/lib"
-export INCLUDE_PATH="$SHELL_PATH/include"
+export LIB_PATH="$SHELL_PATH/../lib"
+export INCLUDE_PATH="$SHELL_PATH/../include"
 export REPO_PATH="$1"
 export STUB_PATH="$2"
 
@@ -21,22 +22,23 @@ if [ "$#" -ne 2 ]; then
 fi
 
 if [ ! -d "$REPO_PATH" ]; then
-	echo "can not find $1"
+	echo "can not find $REPO_PATH"
 	echo -e $USAGE_STR
 	exit
 fi
 
 if [ ! -d "$STUB_PATH" ]; then
-	echo "can not find $2"
+	echo "can not find $STUB_PATH"
 	echo -e $USAGE_STR
 	exit
 fi
 
 echo ""
 echo "Norminette: "
-norminette "$1" || exit
+norminette "$REPO_PATH" || exit
 
-for EXAM_NAME in $(cd "$2" && ls -d */); do
+for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
 	EXAM_DIR="$EXAM_NAME" ./cmd/compile_exam.sh
-	EXAM_DIR="$EXAM_NAME" ./cmd/test_exam.sh
+	echo -n "run exam and create expected_output: "
+	"$REPO_PATH/$EXAM_NAME/app" > "$STUB_PATH/$EXAM_NAME/expected_output" && echo "done"
 done
