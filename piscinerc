@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USAGE_STR="usage: $0 [repo_path] [exam_name]\n\
+USAGE_STR="usage: $0 [repo_path] [project_name]\n\
 Don't use it before commit all you need, or file may be deleted!"
 
 if [ "$#" -ne 2 ]; then

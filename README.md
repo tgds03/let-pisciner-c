@@ -7,6 +7,7 @@
 - 진행 과정에서 레포지토리에 git clean이 실행됩니다. 이는 커밋되지 않은 파일을 모두 지우는 명령어이므로 **반드시 필요한 모든 파일이 커밋되었음을 확인한 후 실행하시길 바랍니다.**
 - **간이 테스트는 Pass를 보장해주지 않습니다.** 이 프로그램이 수행하는 테스트에 의존하시지 않기를 바랍니다.
 - 평가자 역시 간이 테스트 결과만으로 평가하시지 말고 피평가자가 작성하신 코드를 직접 읽으며 평가하시길 바랍니다.
+- 기여자가 pisciner인 관계로 stub 및 간이 테스트 구현은 진행 중에 있습니다.
 
 ## 사용법 및 예시
 
@@ -58,10 +59,10 @@ piscinerc my_exam_c00 c00
 shell에서 아래 스크립트를 실행해 주세요.
 
 ```bash
-git clone git@github.com:tgds03/let-pisciner-c.git let-pisciner-c
+git clone https://github.com/tgds03/let-pisciner-c.git let-pisciner-c
 cd let-pisciner-c
 mkdir ~/bin
-ln -s piscinerc ~/bin/piscinerc
+ln -s "$(pwd)/piscinerc" ~/bin/piscinerc
 ```
 
 # Description
