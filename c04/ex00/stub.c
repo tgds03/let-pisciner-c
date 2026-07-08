@@ -7,8 +7,8 @@ int main() {
 	char *str1 = "0123456789";
 	char *str2 = "abcdefghij\0" "klmnopqrst";
 	
-	printf("%ld ", ft_strlen(str0));
-	printf("%ld ", ft_strlen(str1));
-	printf("%ld ", ft_strlen(str2));
+	printf("%d ", ft_strlen(str0));
+	printf("%d ", ft_strlen(str1));
+	printf("%d ", ft_strlen(str2));
 	return 0;
 }

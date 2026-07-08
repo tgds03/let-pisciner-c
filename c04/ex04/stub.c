@@ -35,7 +35,7 @@ int main() {
 		ft_putnbr_base(test_values[i], base13);
 		write(1, "\n", 1);
 		ft_putnbr_base(test_values[i], base16);
-		write(1, "\n", 1);
+		write(1, "\n\n", 2);
 	}
 
 	init_rand(__FILE__);
