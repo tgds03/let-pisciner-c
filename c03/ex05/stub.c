@@ -4,13 +4,13 @@
 unsigned int ft_strlcat(char *dest, char *src, unsigned int size);
 
 int main() {
-	char b1[10], b2[10];
+	char b1[11], b2[11];
 	char *str1 = "1234";
 	char *str2 = "";
 	char line[11] = {0, };
 	int temp;
 
-	for (int i = 0; i < 10; ++i) {
+	for (int i = 0; i < 11; ++i) {
 		b1[i] = (i % 2) ? 0 : '.';
 		b2[i] = '.';
 	}
