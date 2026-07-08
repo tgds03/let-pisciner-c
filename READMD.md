@@ -51,8 +51,8 @@ piscinerc my_exam_c00 c00
 shell에서 아래 스크립트를 실행해 주세요.
 
 ```bash
-git clone git@github.com:tgds03/la-pscine-stubs.git let-psciner-c
-cd let-psciner-c
+git clone git@github.com:tgds03/let-pisciner-c.git let-pisciner-c
+cd let-pisciner-c
 mkdir ~/bin
-ln -s pscinerc ~/bin/pscinerc
+ln -s piscinerc ~/bin/piscinerc
 ```
