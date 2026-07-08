@@ -20,23 +20,13 @@ piscinerc [repo_path] [project_name]
 ```
 my_exam_c00
 ├── ex00
-│   └── ft_putchar.c
+│   └── ….c
 ├── ex01
-│   └── ft_print_alphabet.c
+│   └── ….c
 ├── ex02
-│   └── ft_print_reverse_alphabet.c
-├── ex03
-│   └── ft_print_numbers.c
-├── ex04
-│   └── ft_is_negative.c
-├── ex05
-│   └── ft_print_comb.c
-├── ex06
-│   └── ft_print_comb2.c
-├── ex07
-│   └── ft_putnbr.c
+│   ︙
 └── ex08
-    └── ft_print_combn.c
+    └── ….c
 ```
 
 아래처럼 실행하면 됩니다.
