@@ -16,7 +16,7 @@ if [ ! -d "$REPO_PATH" ]; then
 	exit
 fi
 
-SHELL_PATH=$(dirname $(readlink "$0"))
+export SHELL_PATH=$(dirname $(readlink "$0"))
 export LIB_PATH="$SHELL_PATH/lib"
 export INCLUDE_PATH="$SHELL_PATH/include"
 export STUB_PATH="$SHELL_PATH/${2,,}"
@@ -43,5 +43,9 @@ mkdir $OUTPUT_DIR
 for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
 	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/compile_exam.sh" || continue
 	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/test_exam.sh"
+	cp "$REPO_PATH/$EXAM_NAME/output" "$OUTPUT_DIR/$(basename $EXAM_NAME).output"
+	if [ -s "$REPO_PATH/$EXAM_NAME/errlog" ]; then
+		cp "$REPO_PATH/$EXAM_NAME/errlog" "$OUTPUT_DIR/$(basename $EXAM_NAME).errlog"
+	fi
 	cp "$REPO_PATH/$EXAM_NAME/output" "$OUTPUT_DIR/$(basename $EXAM_NAME).output"
 done

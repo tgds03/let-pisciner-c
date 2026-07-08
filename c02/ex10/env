@@ -1,1 +1,1 @@
-COMPILE_CMD="cc -o app -Wall -Wextra -Werror *.c -L$LIB_PATH -lcommon -lbsd -I$INCLUDE_PATH"
+COMPILE_CMD="cc -fsanitize=address -g -o app -Wall -Wextra -Werror *.c -L$LIB_PATH -lcommon -lbsd -I$INCLUDE_PATH"
