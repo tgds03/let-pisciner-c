@@ -8,13 +8,13 @@
 #include "common.h"
 
 const char *HEX_DIGIT = "0123456789ABCDEF";
-
 const char *FALLBACK_CHAR[32] = {
 	0, 0, 0, 0, 0, 0, 0, "\\a", 
 	"\\b", "\\t", "\\n", "\\v", "\\f", "\\r", 0, 0,
 	0, 0, 0, 0, 0, 0, 0, 0, 
 	0, 0, 0, 0, 0, 0, 0, 0 
 };
+FunctionEnv function_env;
 
 void init_rand(const char *str) {
 	unsigned int seed = 0;
@@ -83,31 +83,31 @@ Param* convert(const char* argstr) {
 **/
 
 #define LINE_BUFFER_SIZE 256
-
-const char *START_STR = "\
-Let Pisciner C\n\
-Compiled: %s\n\
-Func: %s\n\
-Press Ctrl + C to interrupt and exit.\n\
-";
 char func_header[LINE_BUFFER_SIZE];
 
 void handle_signal(int sig) {
-	printf("\nInterrupt (sig: %d)", sig);
+	printf("\nReceived signal %d", sig);
 	exit(0);
 }
 
-void init_test(const char *filepath) {
-	init_rand(filepath);
-	signal(2, handle_signal);
+void init_test() {
+	init_rand(function_env.stubmd5);
+	signal(2, handle_signal); // interrupt
+	signal(3, handle_signal); // quit
+	signal(11, handle_signal); // segmentation fault
+	signal(15, handle_signal); // terminated
 	snprintf(func_header,
 			LINE_BUFFER_SIZE,
 			"%s %s(%s);",
-			target_info.type,
-			target_info.name,
-			target_info.param
+			function_env.type,
+			function_env.name,
+			function_env.param
 	);
-	printf(START_STR, filepath, func_header);
+	printf("%32c", '='); printf(" Let Pisciner C "); printf("%32c\n", '=');
+	printf("Compiled: %s\n", function_env.path);
+	printf("Function: %s\n", func_header);
+	printf("%80c\n", '=');
+	printf("Press Ctrl + C to interrupt and exit.");
 }
 
 void loop_test(void (*callback)(int, char*[])) {
@@ -117,9 +117,9 @@ void loop_test(void (*callback)(int, char*[])) {
 	int argc = 1;
 
 	argv[0] = func_header;
-	printf("\n\nType in input data...\n");
+	printf("\nType in input data...\n");
 	while (fgets(input_buffer, LINE_BUFFER_SIZE, stdin)) {
-		printf("Received input:\n");
+		printf("Received raw input (without null):\n");
 		putstr_raw(input_buffer, LINE_BUFFER_SIZE);
 		
 		cur = strtok(input_buffer, WHITESPACE);
@@ -130,6 +130,6 @@ void loop_test(void (*callback)(int, char*[])) {
 
 		printf("\nProgram's output:\n");
 		callback(argc, argv);
-		printf("\n\nType in input data...\n");
+		printf("\n%80c\nType in input data...\n", '-');
 	}
 }
