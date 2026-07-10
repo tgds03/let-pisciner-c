@@ -2,18 +2,12 @@
 #include <libgen.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdarg.h>
 #include <unistd.h>
 #include <ctype.h>
 #include <signal.h>
 #include "common.h"
 
-const char *HEX_DIGIT = "0123456789ABCDEF";
-const char *FALLBACK_CHAR[32] = {
-	0, 0, 0, 0, 0, 0, 0, "\\a", 
-	"\\b", "\\t", "\\n", "\\v", "\\f", "\\r", 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 
-	0, 0, 0, 0, 0, 0, 0, 0 
-};
 FunctionEnv function_env;
 
 void init_rand(const char *str) {
@@ -26,24 +20,6 @@ void init_rand(const char *str) {
 	}
 	srand(seed);
 	free(buffer);
-}
-
-void putstr_raw(const char *str, unsigned int size) {
-	unsigned int count = 0;
-	while (*str && count++ < size) {
-		if (isprint(*str)) {
-			write(1, str, 1);
-		} else {
-			if (*str < 32 && FALLBACK_CHAR[(int)*str] != 0) {
-				write(1, FALLBACK_CHAR[(int)*str], 2);
-			} else {
-				write(1, "\\", 1);
-				write(1, HEX_DIGIT + *str / 16, 1);
-				write(1, HEX_DIGIT + *str % 16, 1);
-			}
-		}
-		++str;
-	}
 }
 
 void randstr(char *str, unsigned int size, const char *charset) {
@@ -85,9 +61,36 @@ Param* convert(const char* argstr) {
 #define LINE_BUFFER_SIZE 256
 char func_header[LINE_BUFFER_SIZE];
 
+void wprint(const char *str, ...) {
+	static int _wprint_capacity = 0;
+	static char *_wprint_buffer = 0;
+
+	int reqlen = 0;
+	va_list argptr;
+
+	va_start(argptr, str);
+	reqlen = vsnprintf(0, 0, str, argptr);
+	va_end(argptr);
+
+	if (_wprint_capacity < reqlen + 1) {
+		free(_wprint_buffer);
+		_wprint_capacity *= 2;
+		if (_wprint_capacity == 0)
+			_wprint_capacity = LINE_BUFFER_SIZE;
+		_wprint_buffer = (char*)malloc(sizeof(char) * _wprint_capacity);
+	}
+
+	va_start(argptr, str);
+	vsnprintf(_wprint_buffer, reqlen + 1, str, argptr);
+	va_end(argptr);
+
+	fflush(stdout);
+	write(1, _wprint_buffer, reqlen);
+}
+
 void handle_signal(int sig) {
-	printf("\nReceived signal %d", sig);
-	printf("\nexit\n");
+	wprint("\nReceived signal %d", sig);
+	wprint("\nexit\n");
 	exit(0);
 }
 
@@ -97,7 +100,7 @@ void putline(char c) {
 		line[i] = c;
 	}
 	line[80] = 0;
-	printf("%s\n", line);
+	wprint("%s\n", line);
 }
 
 void init_test() {
@@ -113,10 +116,10 @@ void init_test() {
 			function_env.name,
 			function_env.param
 	);
-	printf("Let Pisciner C");
-	printf("Compiled: %s\n", function_env.path);
-	printf("Function: %s\n", func_header);
-	printf("Press Ctrl + C to interrupt and exit.\n");
+	wprint("Let Pisciner C\n");
+	wprint("Compiled: %s\n", function_env.path);
+	wprint("Function: %s\n", func_header);
+	wprint("Press Ctrl + C to interrupt and exit.\n");
 	putline('=');
 }
 
@@ -127,10 +130,10 @@ void loop_test(void (*callback)(int, char*[])) {
 	int argc = 1;
 
 	argv[0] = func_header;
-	printf("\nType in input data...\n");
+	wprint("Type in input data...\n");
 	while (fgets(input_buffer, LINE_BUFFER_SIZE, stdin)) {
-		printf("Received raw input (without null):\n");
-		putstr_raw(input_buffer, LINE_BUFFER_SIZE);
+		wprint("Received input:\n");
+		wprint(input_buffer);
 		
 		argc = 1;
 		cur = strtok(input_buffer, WHITESPACE);
@@ -139,9 +142,9 @@ void loop_test(void (*callback)(int, char*[])) {
 			cur = strtok(0, WHITESPACE);
 		}
 
-		printf("\nProgram's output:\n");
+		wprint("\nProgram's output:\n");
 		callback(argc, argv);
-		printf("\nType in input data...\n");
+		wprint("\n\nType in input data...\n");
 	}
-	printf("File closed.\n");
+	wprint("File closed.\n");
 }

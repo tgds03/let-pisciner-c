@@ -1,1 +1,119 @@
-PPPNNPPPPPPPPPP
+Let Pisciner C
+Compiled: /home/mingyuk2/repo/c00-1/ex04//ft_is_negative.c
+Function: void ft_is_negative(int n);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+2147483647
+
+Program's output:
+P
+
+Type in input data...
+Received input:
+65535
+
+Program's output:
+P
+
+Type in input data...
+Received input:
+255
+
+Program's output:
+P
+
+Type in input data...
+Received input:
+100
+
+Program's output:
+P
+
+Type in input data...
+Received input:
+10
+
+Program's output:
+P
+
+Type in input data...
+Received input:
+1
+
+Program's output:
+P
+
+Type in input data...
+Received input:
+0
+
+Program's output:
+P
+
+Type in input data...
+Received input:
+-1
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+-10
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+-100
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+-256
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+-65536
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+-2147483648
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+1248
+
+Program's output:
+P
+
+Type in input data...
+Received input:
+-5982
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+49910
+
+Program's output:
+P
+
+Type in input data...
+File closed.

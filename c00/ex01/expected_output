@@ -1,1 +1,14 @@
+Let Pisciner C
+Compiled: /home/mingyuk2/repo/c00-1/ex01//ft_print_alphabet.c
+Function: void ft_print_alphabet();
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+
+
+Program's output:
 abcdefghijklmnopqrstuvwxyz
+
+Type in input data...
+File closed.

@@ -1,1 +1,14 @@
+Let Pisciner C
+Compiled: /home/mingyuk2/repo/c00-1/ex03//ft_print_numbers.c
+Function: void ft_print_numbers();
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+
+
+Program's output:
 0123456789
+
+Type in input data...
+File closed.

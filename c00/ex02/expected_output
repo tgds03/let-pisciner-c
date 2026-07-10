@@ -1,1 +1,14 @@
+Let Pisciner C
+Compiled: /home/mingyuk2/repo/c00-1/ex02//ft_print_reverse_alphabet.c
+Function: void ft_print_reverse_alphabet();
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+
+
+Program's output:
 zyxwvutsrqponmlkjihgfedcba
+
+Type in input data...
+File closed.
