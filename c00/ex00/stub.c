@@ -1,13 +1,11 @@
 #include "common.h"
 #include <stdio.h>
 
-FUNCTION(void, ft_putchar, char c)
+FUNCTION(void, ft_putchar, char c);
 
 void test(int argc __attribute__((unused)), char *argv[]) {
-	char *cur = argv[1];
-	while (*cur) {
-		ft_putchar(*cur++);
-	}
+	printf("%p %s\n", target_info.name);
+	ft_putchar(*argv[1]);
 }
 
 int main() {

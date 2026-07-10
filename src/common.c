@@ -10,8 +10,8 @@
 const char *HEX_DIGIT = "0123456789ABCDEF";
 
 const char *FALLBACK_CHAR[32] = {
-	0, 0, 0, 0, 0, 0, 0, "\a", 
-	"\b", "\t", "\n", "\v", "\f", "\r", 0, 0,
+	0, 0, 0, 0, 0, 0, 0, "\\a", 
+	"\\b", "\\t", "\\n", "\\v", "\\f", "\\r", 0, 0,
 	0, 0, 0, 0, 0, 0, 0, 0, 
 	0, 0, 0, 0, 0, 0, 0, 0 
 };
@@ -92,14 +92,14 @@ Press Ctrl + C to interrupt and exit.\n\
 ";
 char func_header[LINE_BUFFER_SIZE];
 
-void handle_interrupt(int sig) {
+void handle_signal(int sig) {
 	printf("\nInterrupt (sig: %d)", sig);
 	exit(0);
 }
 
 void init_test(const char *filepath) {
 	init_rand(filepath);
-	signal(2, handle_interrupt);
+	signal(2, handle_signal);
 	snprintf(func_header,
 			LINE_BUFFER_SIZE,
 			"%s %s(%s);",
@@ -117,7 +117,7 @@ void loop_test(void (*callback)(int, char*[])) {
 	int argc = 1;
 
 	argv[0] = func_header;
-	printf("Type in input data...\n");
+	printf("\n\nType in input data...\n");
 	while (fgets(input_buffer, LINE_BUFFER_SIZE, stdin)) {
 		printf("Received input:\n");
 		putstr_raw(input_buffer, LINE_BUFFER_SIZE);
