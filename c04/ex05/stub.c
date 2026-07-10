@@ -19,16 +19,17 @@ int main() {
 	char basebuffer[16];
 	char numberbuffer[32];
 
-	char *str[12] = {
+	char *str[16] = {
 		"", "1", "0", "-1", 
 		"2147483648", "2147483647", "-2147483648", "-2147483649", 
+		"   123", "\f\n\t-321", "--+-+512", "+--+--1024",
 		" \f\n\r\t\v3 1", "\t\v +---+--23", "\r +- -+32", "    +-++\t352"
 	};
 
 	ft_atoi_base("1234", base0);
 	ft_atoi_base("1234", base1);
 
-	for (int i = 0; i < 12; ++i) {
+	for (int i = 0; i < 16; ++i) {
 		printf("%d\n", ft_atoi_base(str[i], base10));
 	}
 

@@ -1,7 +1,17 @@
-void ft_putchar(char c);
+#include "common.h"
+#include <stdio.h>
+
+FUNCTION(void, ft_putchar, char c)
+
+void test(int argc __attribute__((unused)), char *argv[]) {
+	char *cur = argv[1];
+	while (*cur) {
+		ft_putchar(*cur++);
+	}
+}
 
 int main() {
-	for (char i = 32; i < 127; ++i)
-		ft_putchar(i);
+	init_test(__FILE__);
+	loop_test(test);
 	return 0;
 }
