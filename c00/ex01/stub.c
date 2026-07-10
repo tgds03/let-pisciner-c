@@ -1,12 +1,6 @@
-#include "common.h"
+void ft_print_alphabet();
 
-FUNCTION(void, ft_print_alphabet);
-
-void test(int argc, char* argv[]) {
-
-}
 int main() {
-	init_test(__FILE__);
-	loop_test(
+	ft_print_alphabet();
 	return 0;
 }
