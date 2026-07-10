@@ -3,12 +3,7 @@
 
 FUNCTION(void, ft_putchar, char c);
 
-void test(int argc __attribute__((unused)), char *argv[]) {
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
 	ft_putchar(*argv[1]);
-}
-
-int main() {
-	init_test();
-	loop_test(test);
-	return 0;
 }

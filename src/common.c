@@ -87,7 +87,17 @@ char func_header[LINE_BUFFER_SIZE];
 
 void handle_signal(int sig) {
 	printf("\nReceived signal %d", sig);
+	printf("\nexit\n");
 	exit(0);
+}
+
+void putline(char c) {
+	char line[81];
+	for (int i = 0; i < 80; ++i) {
+		line[i] = c;
+	}
+	line[80] = 0;
+	printf("%s\n", line);
 }
 
 void init_test() {
@@ -103,11 +113,11 @@ void init_test() {
 			function_env.name,
 			function_env.param
 	);
-	printf("%32c", '='); printf(" Let Pisciner C "); printf("%32c\n", '=');
+	printf("Let Pisciner C");
 	printf("Compiled: %s\n", function_env.path);
 	printf("Function: %s\n", func_header);
-	printf("%80c\n", '=');
-	printf("Press Ctrl + C to interrupt and exit.");
+	printf("Press Ctrl + C to interrupt and exit.\n");
+	putline('=');
 }
 
 void loop_test(void (*callback)(int, char*[])) {
@@ -122,6 +132,7 @@ void loop_test(void (*callback)(int, char*[])) {
 		printf("Received raw input (without null):\n");
 		putstr_raw(input_buffer, LINE_BUFFER_SIZE);
 		
+		argc = 1;
 		cur = strtok(input_buffer, WHITESPACE);
 		while (cur) {
 			argv[argc++] = cur;
@@ -130,6 +141,7 @@ void loop_test(void (*callback)(int, char*[])) {
 
 		printf("\nProgram's output:\n");
 		callback(argc, argv);
-		printf("\n%80c\nType in input data...\n", '-');
+		printf("\nType in input data...\n");
 	}
+	printf("File closed.\n");
 }

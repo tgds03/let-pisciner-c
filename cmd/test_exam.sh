@@ -6,7 +6,11 @@ fi
 
 echo -n "simple test $EXAM_DIR: "
 EXIT_CODE=0
-$(cd "$REPO_PATH/$EXAM_DIR/" && ./app > output 2> errlog) || EXIT_CODE=$?
+if [ -f "$REPO_PATH/$EXAM_DIR/input" ]; then
+	$(cd "$REPO_PATH/$EXAM_DIR/" && cat input | ./app > output 2> errlog) || EXIT_CODE=$?
+else
+	$(cd "$REPO_PATH/$EXAM_DIR/" && cat /dev/null | ./app > output 2> errlog) || EXIT_CODE=$?
+fi
 
 if [ -z "$DIFF_CMD" ] ; then
 	DIFF_RESULT=$( diff "$STUB_PATH/$EXAM_DIR/expected_output" "$REPO_PATH/$EXAM_DIR/output" 2>&1 )

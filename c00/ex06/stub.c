@@ -1,6 +1,8 @@
-void ft_print_comb2();
+#include "common.h"
 
-int main() {
+FUNCTION(void, ft_print_comb2);
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	UNUSED(argv);
 	ft_print_comb2();
-	return 0;
 }

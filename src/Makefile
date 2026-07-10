@@ -1,3 +1,6 @@
+include ../.env
+export $(shell sed 's/=.*//' ../.env)
+
 common:	common.o
 	ar rcs libcommon.a common.o
 

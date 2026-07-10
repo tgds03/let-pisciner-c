@@ -1,8 +1,15 @@
 #include "common.h"
+#include <stdlib.h>
 
-unsigned int write(int fildes, const void *buf, unsigned int nbyte);
-void ft_putnbr(int nb);
-
+FUNCTION(void, ft_putnbr, int nb);
+void test(int argc, char *argv[]) {
+	if (argc != 2) {
+		printf("you must to give 1 argument");
+		return;
+	}
+	ft_putnbr(atoi(argv[1]));
+}
+/*
 int main() {
 	ft_putnbr(~(1<<31));
 	write(1, "\n", 1);
@@ -28,3 +35,4 @@ int main() {
 	}
 	return 0;
 }
+*/

@@ -1,7 +1,17 @@
 #include "common.h"
+#include <stdlib.h>
 
-void ft_is_negative(int n);
+FUNCTION(void, ft_is_negative, int n);
 
+void test(int argc, char *argv[]) {
+	if (argc != 2) {
+		printf("you must to give 1 argument");
+		return;
+	}
+	ft_is_negative(atoi(argv[1]));
+}
+
+/**
 int main() {
 	ft_is_negative(~(1<<31));
 	ft_is_negative(1);
@@ -15,3 +25,4 @@ int main() {
 	}
 	return 0;
 }
+**/

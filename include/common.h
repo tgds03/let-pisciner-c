@@ -26,6 +26,7 @@ void putstr_raw(const char *str, unsigned int size);
 void randstr(char *str, unsigned int size, const char *charset);
 void init_test();
 void loop_test(void (*callback)(int argc, char *argv[]));
+void test(int argc, char *argv[]);
 
 #ifndef TARGET_PATH
 #define TARGET_PATH ""
@@ -46,4 +47,5 @@ void loop_test(void (*callback)(int argc, char *argv[]));
 		function_env.stubmd5 = STUB_C_MD5; \
 	} func_type func_name (__VA_ARGS__)
 
+#define UNUSED(x) (void)(x)
 #endif

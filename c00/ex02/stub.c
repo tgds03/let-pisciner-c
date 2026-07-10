@@ -1,6 +1,9 @@
-void ft_print_reverse_alphabet();
+#include "common.h"
 
-int main() {
+FUNCTION(void, ft_print_reverse_alphabet);
+
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	UNUSED(argv);
 	ft_print_reverse_alphabet();
-	return 0;
 }
