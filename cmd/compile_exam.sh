@@ -13,6 +13,8 @@ getentrypoint() {
 	local filelist=*.c
 	local entryfile=""
 	for file in "$REPO_PATH/$EXAM_DIR/"*.c; do
+		content=cc -E -I$INCLUDE_PATH -I"$INCLUDE_PATH/fake_libc" $file | $SHELL_PATH/getentry.py
+		echo $content
 #if [ -n $(cat $file | grep )
 	done
 }
