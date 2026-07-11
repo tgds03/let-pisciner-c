@@ -9,6 +9,14 @@ echo -n "Put stubs in $EXAM_DIR: "
 cp "$STUB_PATH/$EXAM_DIR/"* "$REPO_PATH/$EXAM_DIR/" || exit 1
 echo "done"
 
+getentrypoint() {
+	local filelist=*.c
+	local entryfile=""
+	for file in "$REPO_PATH/$EXAM_DIR/"*.c; do
+#if [ -n $(cat $file | grep )
+	done
+}
+
 echo -n "Compile and Run $EXAM_DIR: "
 if [ -z "$COMPILE_CMD" ]; then
 	TARGET_PATH=$(echo "$REPO_PATH/$EXAM_DIR/"*.c | awk '{print $1}')
