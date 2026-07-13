@@ -38,13 +38,10 @@ echo "Norminette: "
 norminette "$REPO_PATH" || exit
 
 for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
-	EXAM_DIR="$EXAM_NAME" ./cmd/compile_exam.sh
-	echo -n "run exam and create expected_output: "
-	if [ -f "$REPO_PATH/$EXAM_NAME/input" ]; then
-		cat "$REPO_PATH/$EXAM_NAME/input" | "$REPO_PATH/$EXAM_NAME/app" \
-			> "$STUB_PATH/$EXAM_NAME/expected_output" && echo "done"
-	else
-		echo '' | "$REPO_PATH/$EXAM_NAME/app" \
-			> "$STUB_PATH/$EXAM_NAME/expected_output" && echo "done"
-	fi
+	echo -n "[$EXAM_NAME] compile: "
+	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/compile_exam.sh" && echo "done" || continue
+	echo -n "[$EXAM_NAME] run and create expected_output: "
+	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/execute_exam.sh" && echo "done" || continue
+	echo -n "[$EXAM_NAME] move expected_output to stub path: "
+	mv "$REPO_PATH/$EXAM_NAME/output" "$STUB_PATH/$EXAM_NAME/expected_output" && echo "done"
 done

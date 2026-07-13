@@ -16,6 +16,7 @@ if [ ! -d "$REPO_PATH" ]; then
 	exit
 fi
 
+export TIMEOUT=5
 export SHELL_PATH=$(dirname $(realpath "$0"))
 export LIB_PATH="$SHELL_PATH/lib"
 export INCLUDE_PATH="$SHELL_PATH/include"
@@ -52,8 +53,15 @@ norminette "$REPO_PATH" || exit
 OUTPUT_DIR="./$(basename "$REPO_PATH")-outputs"
 mkdir $OUTPUT_DIR
 for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
-	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/compile_exam.sh" || continue
-	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/test_exam.sh"
+	echo ""
+	echo -n "[$EXAM_NAME] compile: "
+	(EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/compile_exam.sh" && echo "done") || continue
+	echo -n "[$EXAM_NAME] run: "
+	(EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/execute_exam.sh" && echo "done") || continue
+	echo -n "[$EXAM_NAME] test: "
+	(EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/test_exam.sh" && echo "done") || continue
+
+	echo "Success"
 
 	cp "$REPO_PATH/$EXAM_NAME/output" "$OUTPUT_DIR/$(basename $EXAM_NAME).output"
 	cp "$REPO_PATH/$EXAM_NAME/app" "$OUTPUT_DIR/$(basename $EXAM_NAME).app"
