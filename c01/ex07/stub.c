@@ -1,8 +1,24 @@
+// )#> RANDOMIZE_INPUT int int int int int int int int
 #include <stdio.h>
 #include "common.h"
 
-void ft_rev_int_tab(int *tab, int size);
+FUNCTION(void, ft_rev_int_tab, int *tab, int size);
 
+void test(int argc, char *argv[]) {
+	int arr[256];
+	int size = argc;
+	if (size > 256)
+		size = 256;
+	for (int i = 1; i < size + 1; ++i) {
+		arr[i - 1] = atoi(argv[i]);
+	}
+	ft_rev_int_tab(arr, size);
+	for (int i = 0; i < size; ++i) {
+		printf("%d ", arr[i]);
+	}
+}
+
+/*
 int main() {
 	int a, b, t;
 	int i, j;
@@ -25,3 +41,4 @@ int main() {
 	}
 	return 0;
 }
+*/

@@ -15,6 +15,7 @@ if [ ! -d "$REPO_PATH" ]; then
 	exit
 fi
 
+export TIMEOUT=5
 export SHELL_PATH="$(cd "$(dirname "$0")" && pwd -P)/../"
 export LIB_PATH="$SHELL_PATH/lib"
 export INCLUDE_PATH="$SHELL_PATH/include"
@@ -38,6 +39,7 @@ echo "Norminette: "
 norminette "$REPO_PATH" || exit
 
 for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
+	echo ""
 	echo -n "[$EXAM_NAME] compile: "
 	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/compile_exam.sh" && echo "done" || continue
 	echo -n "[$EXAM_NAME] run and create expected_output: "

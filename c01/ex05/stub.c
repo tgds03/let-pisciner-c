@@ -1,16 +1,9 @@
-void ft_putstr(char *str);
+// )#> RANDOMIZE_INPUT str
+#include "common.h"
 
-int main() {
-	int k = 0;
-	char a[200];
-	for (int i = 32; i < 127; ++i) {
-		a[k++] = i;
-	}
-	a[k++] = 0;
-	for (int i = 32; i < 127; ++i) {
-		a[k++] = i;
-	}
-	a[k++] = 0;
-	ft_putstr(a);
-	return 0;
+FUNCTION(void, ft_putstr, char *str);
+
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	ft_putstr(argv[1]);
 }

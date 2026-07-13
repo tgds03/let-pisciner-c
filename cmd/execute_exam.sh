@@ -5,9 +5,9 @@ if [ -f "$STUB_PATH/$EXAM_DIR/env" ]; then
 fi
 
 if [ -f "$REPO_PATH/$EXAM_DIR/input" ]; then
-	inputfile="$REPO_PATH/$EXAM_DIR/input"
+	inputcmd="cat $REPO_PATH/$EXAM_DIR/input"
 else
-	inputfile="/dev/null"
+	inputcmd="echo \"\""
 fi
 
 if [ -f "$REPO_PATH/$EXAM_DIR/args" ]; then
@@ -20,7 +20,7 @@ else
 	executecmd="./app > output 2> errlog"
 fi
 
-timeout -k 3s "$TIMEOUT"s bash -c "cd \"$REPO_PATH/$EXAM_DIR/\" && cat \"$inputfile\" | $executecmd"
+timeout -k 3s "$TIMEOUT"s bash -c "cd \"$REPO_PATH/$EXAM_DIR/\" && $inputcmd | $executecmd"
 EXIT_CODE=$?
 
 if [ $EXIT_CODE -ne 0 ]; then

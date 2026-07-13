@@ -1,7 +1,15 @@
+// )#> RANDOMIZE_INPUT str
+#include "common.h"
 #include <stdio.h>
 
-int ft_strlen(char *str);
+FUNCTION(int, ft_strlen, char *str);
 
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	printf("%d", argv[1]);
+}
+
+/*
 int main() {
 	char *s1 = "";
 	char *s2 = "a";
@@ -15,3 +23,4 @@ int main() {
 	);
 	return 0;
 }
+*/
