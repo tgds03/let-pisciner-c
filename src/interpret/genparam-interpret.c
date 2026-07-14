@@ -6,7 +6,7 @@
 
 const char *SPACE = " \f\n\r\t\v";
 char strbuffer[81];
-int random_range = 1 << 15;
+int random_range = 1 << 16;
 FILE *inputfile = 0;
 FILE *argfile = 0;
 
@@ -78,7 +78,23 @@ void randomize_strbuffer() {
 	strbuffer[cur] = 0;
 }
 
-void interpret(const char *const line) {
+char getrand_char() {
+	return rand() % 128;
+}
+
+char getrand_pchar() {
+	return 32 + rand() % 95;
+}
+
+int getrand_int() {
+	return (rand() % random_range) - random_range / 2;
+}
+
+int getrand_uint() {
+	return (rand() % random_range);
+}
+
+void interpret(const char *const line, int iter) {
 	unsigned int offset = 0;
 	const char* token;
 	int n;
@@ -95,7 +111,13 @@ void interpret(const char *const line) {
 	} else if (strcmp(token, "RANDOMIZE_INPUT") == 0) {
 		while ((token = strctok(0, SPACE, 0))) {
 			if (strcmp(token, "int") == 0) {
-				fprintf(inputfile, "%d ", rand() % random_range);
+				fprintf(inputfile, "%d ", getrand_int());
+			} else if (strcmp(token, "uint") == 0) {
+				fprintf(inputfile, "%d ", getrand_uint());
+			} else if (strcmp(token, "char") == 0) {
+				fprintf(inputfile, "%c ", getrand_char());
+			} else if (strcmp(token, "pchar") == 0) {
+				fprintf(inputfile, "%c ", getrand_pchar());
 			} else if (strcmp(token, "str") == 0) {
 				randomize_strbuffer();
 				fprintf(inputfile, "%s ", strbuffer);
@@ -108,7 +130,7 @@ void interpret(const char *const line) {
 		token = strctok(0, SPACE, &offset);
 		n = strtoint(token);
 		for (int i = 0; i < n; ++i) {
-			interpret(line + offset);
+			interpret(line + offset, i);
 		}
 	} else {
 		trap("can not interpret command: %s", token);
@@ -158,7 +180,7 @@ int main(int argc, char *argv[]) {
 
 	while (fgets(buffer, 256, stdin)) {
 		printf("%4d: %s", ++count, buffer);
-		interpret(buffer);
+		interpret(buffer, 0);
 	}
 
 	if (inputfile)

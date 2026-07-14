@@ -1,3 +1,4 @@
+// genparam>> REPEAT 10 RANDOMIZE_INPUT pchar
 #include "common.h"
 #include <stdio.h>
 
