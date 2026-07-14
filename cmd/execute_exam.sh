@@ -11,15 +11,15 @@ else
 fi
 
 if [ -f "$REPO_PATH/$EXAM_DIR/args" ]; then
-	cat /dev/null > "$REPO_PATH/$EXAM_DIR/output"
-	cat /dev/null > "$REPO_PATH/$EXAM_DIR/errlog"
 	executecmd="xargs -I {} -a $REPO_PATH/$EXAM_DIR/args \
-					bash -c \"echo -e \\\"\nexecute \"$EXAM_DIR\"app {}:\\\" >> output 2>> errlog; \
+					bash -c \"echo -e \\\"\nexecute ./app {}:\\\" >> output 2>> errlog; \
 					./app {} >> output 2>> errlog\""
 else
-	executecmd="./app > output 2> errlog"
+	executecmd="echo -e \"\nexecute ./app:\" >> output 2>> errlog; ./app >> output 2>> errlog"
 fi
 
+cat /dev/null > "$REPO_PATH/$EXAM_DIR/output"
+cat /dev/null > "$REPO_PATH/$EXAM_DIR/errlog"
 timeout -k 3s "$TIMEOUT"s bash -c "cd \"$REPO_PATH/$EXAM_DIR/\" && $inputcmd | $executecmd"
 EXIT_CODE=$?
 
