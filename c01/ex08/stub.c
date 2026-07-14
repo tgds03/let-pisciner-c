@@ -1,4 +1,4 @@
-// genparam## RANDOMIZE_INPUT int int int int int int int int
+// genparam>> REPEAT 10 RANDOMIZE_INPUT int int int int int int int int
 #include <stdio.h>
 #include "common.h"
 
