@@ -52,7 +52,6 @@ const char* strctok(const char *str, const char *delim, unsigned int *pidx) {
 	if (target == 0) {
 		target = last;
 	}
-
 	while (target[idx] != 0 && !strchr(delim, target[idx])) {
 		buf[idx] = target[idx];
 		++idx;
@@ -62,7 +61,8 @@ const char* strctok(const char *str, const char *delim, unsigned int *pidx) {
 		res = 0;
 	}
 
-	while (target[idx] != 0 && strchr(delim, target[++idx]));
+	while (target[idx] != 0 && strchr(delim, target[idx]))
+		++idx;
 	last = target + idx;
 	if (pidx != 0) {
 		*pidx += idx;
@@ -74,7 +74,7 @@ void randomize_strbuffer() {
 	int size = rand() % 81;
 	int cur = 0;
 	while (cur < size) {
-		strbuffer[cur++] = 32 + rand() % 95;
+		strbuffer[cur++] = 33 + rand() % 94;
 	}
 	strbuffer[cur] = 0;
 }
@@ -97,7 +97,7 @@ int getrand_uint() {
 
 void interpret(const char *const line, int iter) {
 	unsigned int offset = 0;
-	const char *token, *pchar;
+	const char *token;
 	int n;
 
 	if ((token = strctok(line, SPACE, &offset)) == 0) {
@@ -105,12 +105,7 @@ void interpret(const char *const line, int iter) {
 
 	} else if (strcmp(token, "SET_INPUT") == 0) {
 		while ((token = strctok(0, SPACE, 0))) {
-			n = strtoint(token, &pchar);
-			if (*pchar == 0) {
-				fprintf(inputfile, "%d ", n);
-			} else {
-				fprintf(inputfile, "%s ", token);
-			}
+			fprintf(inputfile, "%s ", token);
 		}
 		fprintf(inputfile, "\n");
 

@@ -23,8 +23,16 @@ void test(int argc, char *argv[]) {
 		a = b;
 		b = t;
 	}
-	for (int i = 0; i < b - a; ++i) {
-		printf("%d ", arr[i]);
+	if (arr) {
+		for (int i = 0; i < b - a; ++i) {
+			printf("%d ", arr[i]);
+		}
+		printf("\ncount: %d\n", b - a);
+		printf("free: ");
+		if (arr)
+			free(arr);
+		printf("done");
+	} else {
+		printf("null");
 	}
-	printf("\n%d", b - a);
 }

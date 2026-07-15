@@ -18,4 +18,8 @@ void test(int argc, char *argv[]) {
 	} else {
 		printf("not same.\n");
 	}
+	printf("free: ");
+	if (dup)
+		free(dup);
+	printf("done");
 }

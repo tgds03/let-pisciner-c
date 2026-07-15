@@ -15,18 +15,17 @@ void test(int argc, char *argv[]) {
 	UNUSED(argc);
 	int *arr;
 	int a = atoi(argv[1]);
-	int b = atoi(argv[1]);
+	int b = atoi(argv[2]);
 	int t, s;
 
-	s = ft_ultimate_range(arr, a, b);
+	s = ft_ultimate_range(&arr, a, b);
 	for (int i = 0; i < s; ++i) {
 		printf("%d ", arr[i]);
 	}
-	if (a > b) {
-		t = a;
-		a = b;
-		b = t;
-	}
-	printf("\nexpected: %d, real: %d", b - a, s); 
+	t = (b > a) ? b - a : 0;
+	printf("\nexpected count: %d, retunred count: %d\n", t, s); 
+	printf("free: ");
+	if (arr)
+		free(arr);
+	printf("done");
 }
-
