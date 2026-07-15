@@ -24,17 +24,18 @@ void trap(const char *fmt, ...) {
 	exit(EXIT_FAILURE);
 }
 
-int strtoint(const char *str) {
-	char *endptr;
+int strtoint(const char *str, const char** endptr) {
+	char *end;
 	int ret;
 
 	errno = 0;
-	ret = strtol(str, &endptr, 10);
+	ret = strtol(str, &end, 10);
 
 	if (errno != 0) {
 		trap("strtoint: errno(%d)", errno);
-	} else if (*endptr != 0) {
-		trap("strtoint: can not convert %s in %s", endptr, str);
+	}
+	if (endptr) {
+		*endptr = end;
 	}
 
 	return ret;
@@ -96,7 +97,7 @@ int getrand_uint() {
 
 void interpret(const char *const line, int iter) {
 	unsigned int offset = 0;
-	const char* token;
+	const char *token, *pchar;
 	int n;
 
 	if ((token = strctok(line, SPACE, &offset)) == 0) {
@@ -104,7 +105,12 @@ void interpret(const char *const line, int iter) {
 
 	} else if (strcmp(token, "SET_INPUT") == 0) {
 		while ((token = strctok(0, SPACE, 0))) {
-			fprintf(inputfile, "%d ", strtoint(token));
+			n = strtoint(token, &pchar);
+			if (*pchar == 0) {
+				fprintf(inputfile, "%d ", n);
+			} else {
+				fprintf(inputfile, "%s ", token);
+			}
 		}
 		fprintf(inputfile, "\n");
 
@@ -128,7 +134,7 @@ void interpret(const char *const line, int iter) {
 		fprintf(inputfile, "\n");
 	} else if (strcmp(token, "REPEAT") == 0) {
 		token = strctok(0, SPACE, &offset);
-		n = strtoint(token);
+		n = strtoint(token, 0);
 		for (int i = 0; i < n; ++i) {
 			interpret(line + offset, i);
 		}
@@ -175,7 +181,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	if ((randrangestr = getenv("RANDRANGE"))) {
-		random_range = strtoint(randrangestr);
+		random_range = strtoint(randrangestr, 0);
 	}
 
 	while (fgets(buffer, 256, stdin)) {
