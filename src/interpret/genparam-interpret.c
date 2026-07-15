@@ -71,7 +71,7 @@ const char* strctok(const char *str, const char *delim, unsigned int *pidx) {
 }
 
 void randomize_strbuffer() {
-	int size = rand() % 81;
+	int size = rand() % 16 + 1;
 	int cur = 0;
 	while (cur < size) {
 		strbuffer[cur++] = 33 + rand() % 94;

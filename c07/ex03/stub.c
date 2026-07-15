@@ -9,7 +9,7 @@ FUNCTION(char*, ft_strjoin, int size, char **strs, char *sep);
 
 void test(int argc, char *argv[]) {
 	char *res;
-	res = ft_strjoin(argc - 1, argv + 1, argv[argc - 1]);
+	res = ft_strjoin(argc - 2, argv + 1, argv[argc - 1]);
 	printf("arguments: ");
 	for (int i = 1; i < argc; ++i)
 		printf("%s ", argv[i]);

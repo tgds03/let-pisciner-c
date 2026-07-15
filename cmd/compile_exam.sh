@@ -1,9 +1,5 @@
 #!/bin/bash
 
-if [ -f "$STUB_PATH/$EXAM_DIR/env" ]; then
-	source "$STUB_PATH/$EXAM_DIR/env" 
-fi
-
 if [ -n "$(ls "$STUB_PATH/$EXAM_DIR")" ]; then
 	cp "$STUB_PATH/$EXAM_DIR/"* "$REPO_PATH/$EXAM_DIR/" || exit 1
 fi
@@ -26,19 +22,38 @@ getentrypoint() {
 	return 0
 }
 
+getcmd() {
+	local CC_OUTFILE='app';
+	local CC_OPTION=("sanitize=address");
+	local CC_WARNING=('all' 'extra' 'error');
+	local CC_INCLUDE=($INCLUDE_PATH);
+	local CC_LIBPATH=($LIB_PATH);
+	local CC_LIBRARY=('common');
+	local CC_DEFINE=("TARGET_PATH=\"$TARGET_PATH\"" "STUB_C_MD5=\"$STUB_MD5\"");
+	local CC_TARGET=('*.c' "$entrypoint");
+
+	if [ -f "$1" ]; then
+		source "$1" 
+	fi
+
+	echo -n "cc -g ";
+	echo -n "-o $CC_OUTFILE ";
+	for opt in "${CC_OPTION[@]}"; do echo -n "-f$opt "; done;
+	for opt in "${CC_WARNING[@]}"; do echo -n "-W$opt "; done;
+	for opt in "${CC_TARGET[@]}"; do echo -n "$opt "; done;
+
+	for opt in "${CC_DEFINE[@]}"; do echo -n "-D$opt "; done;
+	for opt in "${CC_INCLUDE[@]}"; do echo -n "-I$opt "; done;
+	for opt in "${CC_LIBPATH[@]}"; do echo -n "-L$opt "; done;
+	for opt in "${CC_LIBRARY[@]}"; do echo -n "-l$opt "; done;
+}
+
 TARGET_PATH=$(echo "$REPO_PATH/$EXAM_DIR/"*.c | awk '{print $1}')
 STUB_MD5=$(md5sum <(echo $TARGET_PATH) | awk '{print $1}')
 
-if [ -z "$COMPILE_CMD" ]; then
-	entrypoint=$(getentrypoint)
-	if [ $? -eq 1 ]; then
-		exit 1
-	fi
-	$(cd "$REPO_PATH/$EXAM_DIR/" && \
-		cc -fsanitize=address -g -o app -Wall -Wextra -Werror *.c $entrypoint \
-			-L$LIB_PATH -l common -I$INCLUDE_PATH \
-			-DTARGET_PATH=\"$TARGET_PATH\" -DSTUB_C_MD5=\"$STUB_MD5\" \
-	) || exit 1
-else
-	$(cd "$REPO_PATH/$EXAM_DIR/" && $COMPILE_CMD) || exit 1
+entrypoint=$(getentrypoint)
+if [ $? -eq 1 ]; then
+	exit 1
 fi
+
+cd "$REPO_PATH/$EXAM_DIR/" && $(getcmd "$STUB_PATH/$EXAM_DIR/env") || exit 1
