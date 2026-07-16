@@ -1,7 +1,7 @@
-// genparam>> SET_PARAM 0 0
-// genparam>> SET_PARAM 1 2
-// genparam>> SET_PARAM abcde 58291
-// genparam>> SET_PARAM younamsayng? younamsayng?
+// genparam>> SET_INPUT 0 0
+// genparam>> SET_INPUT 1 2
+// genparam>> SET_INPUT abcde 58291
+// genparam>> SET_INPUT younamsayng? younamsayng?
 #include <stdlib.h>
 #include <stdio.h>
 #include "ft.h"

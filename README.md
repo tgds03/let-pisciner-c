@@ -51,6 +51,7 @@ shell에서 아래 스크립트를 실행해 주세요.
 ```bash
 git clone https://github.com/tgds03/let-pisciner-c.git let-pisciner-c
 cd let-pisciner-c
+pip install -r requirements.txt
 mkdir ~/bin
 ln -s "$(pwd)/piscinerc" ~/bin/piscinerc
 ```
@@ -75,6 +76,15 @@ ln -s "$(pwd)/piscinerc" ~/bin/piscinerc
 4. expected\_output과 결과 비교
 5. 현재 위치에 [repo\_name]\_outputs 디렉토리를 생성하고 실행 결과를 이곳에 저장
 6. [repo\_name]에서 `git clean`으로 파일 정리
+
+# Dependency
+
+이 프로젝트는 아래와 같은 환경에서 개발되었습니다.
+
+- Ubuntu 22.04.1 
+- cc 11.4.0
+- python 3.13.1
+- pycparser 3.0
 
 # Structure
 

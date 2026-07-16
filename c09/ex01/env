@@ -1,4 +1,4 @@
-COMPILE_CMD="make && ${COMPILE_CMD}"
+COMPILE_CMD="make --trace > log && make re --trace >> log && ${COMPILE_CMD}"
 CC_INCLUDE+=('./includes')
 CC_LIBPATH+=('.')
 CC_LIBRARY+=('ft')
