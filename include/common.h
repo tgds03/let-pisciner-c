@@ -43,8 +43,6 @@ void test(int argc, char *argv[]);
 		function_env.type = #func_type; \
 		function_env.param = #__VA_ARGS__; \
 		function_env.ptr = &#func_name; \
-		function_env.path = TARGET_PATH; \
-		function_env.stubmd5 = STUB_C_MD5; \
 	} func_type func_name (__VA_ARGS__)
 
 #define UNUSED(x) (void)(x)

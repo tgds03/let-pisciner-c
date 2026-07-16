@@ -24,5 +24,4 @@ void test(int argc, char **argv)
 		ft_putstr(EVEN_MSG);
 	else
 		ft_putstr(ODD_MSG);
-	return (SUCCESS);
 }

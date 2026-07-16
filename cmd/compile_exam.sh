@@ -48,12 +48,11 @@ getcmd() {
 	for opt in "${CC_LIBRARY[@]}"; do echo -n "-l$opt "; done;
 }
 
-TARGET_PATH=$(echo "$REPO_PATH/$EXAM_DIR/"*.c | awk '{print $1}')
+TARGET_PATH=$(echo "$REPO_PATH/$EXAM_DIR/"*.{c,h} | awk '{print $1}')
 STUB_MD5=$(md5sum <(echo $TARGET_PATH) | awk '{print $1}')
-
 entrypoint=$(getentrypoint)
 if [ $? -eq 1 ]; then
 	exit 1
 fi
 
-cd "$REPO_PATH/$EXAM_DIR/" && $(getcmd "$STUB_PATH/$EXAM_DIR/env") || exit 1
+cd "$REPO_PATH/$EXAM_DIR/" && pwd && $(getcmd "$STUB_PATH/$EXAM_DIR/env") || exit 1

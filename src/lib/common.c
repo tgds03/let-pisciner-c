@@ -104,18 +104,27 @@ void putline(char c) {
 }
 
 void init_test() {
+	function_env.path = TARGET_PATH;
+	function_env.stubmd5 = STUB_C_MD5;
+
 	init_rand(function_env.stubmd5);
 	signal(2, handle_signal); // interrupt
 	signal(3, handle_signal); // quit
 	signal(11, handle_signal); // segmentation fault
 	signal(15, handle_signal); // terminated
-	snprintf(func_header,
-			LINE_BUFFER_SIZE,
-			"%s %s(%s);",
-			function_env.type,
-			function_env.name,
-			function_env.param
-	);
+
+	if (function_env.name != 0) {
+		snprintf(func_header,
+				LINE_BUFFER_SIZE,
+				"%s %s(%s);",
+				function_env.type,
+				function_env.name,
+				function_env.param
+		);
+	} else {
+		snprintf(func_header, LINE_BUFFER_SIZE, "undefined");
+	}
+
 	wprint("Let Pisciner C\n");
 	wprint("Compiled: %s\n", function_env.path);
 	wprint("Function: %s\n", func_header);

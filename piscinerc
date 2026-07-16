@@ -42,7 +42,7 @@ fi
 clean() {
 	echo ""
 	echo -n "Clean: "
-	$(cd "$REPO_PATH" && git clean -qf) && echo "done" 
+	$(cd "$REPO_PATH" && git clean -qfd) && echo "done" 
 }
 trap clean EXIT SIGINT SIGTERM
 

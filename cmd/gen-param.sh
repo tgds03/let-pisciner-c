@@ -39,7 +39,7 @@ for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
 		echo "done ($TARGETNAME)"
 	else
 		echo "can't find target function."
-		continue
+		TARGETNAME="undefined"
 	fi
 
 	export RANDSEED="$TARGETNAME"

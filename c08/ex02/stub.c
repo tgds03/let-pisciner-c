@@ -8,6 +8,7 @@
 // genparam>> REPEAT 4 RANDOMIZE_INPUT int
 #include <stdlib.h>
 #include <stdio.h>
+#include "ft_abs.h"
 #include "common.h"
 
 void test(int argc, char *argv[]) {
