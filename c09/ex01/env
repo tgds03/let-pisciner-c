@@ -1,0 +1,4 @@
+COMPILE_CMD="make && ${COMPILE_CMD}"
+CC_INCLUDE+=('./includes')
+CC_LIBPATH+=('.')
+CC_LIBRARY+=('ft')
