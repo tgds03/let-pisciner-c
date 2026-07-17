@@ -3,6 +3,94 @@
 #include <assert.h>
 #include "basic-ds.h"
 
+extern const char *SPACE;
+
+int	get_priority(char c) {
+	if (c == '*') return 2;
+	else if (c == '/') return 2;
+	else if (c == '%') return 2;
+	else if (c == '+') return 1;
+	else if (c == '-') return 1;
+	else return 0;
+}
+
+int arithm_parse(char *str) {
+	stack_arithm *s = create();
+	stack_artihm *b = create();
+	tokenize(s, str);
+}
+
+void tokenize(stack_arithm *s, char *str) {
+	arithm_elem elem;
+	char *endptr;
+	int num;
+	str = strtok(str, SPACE);
+	while (*str) {
+		if ('0' <= *str && *str <= '9') {
+			num = strtol(str, &endptr, SPACE);
+			elem.oper = 0;
+			elem.num = num;
+			push(s, elem);
+		} else if (*str == '+' || *str == '-') {
+			if (get_priority(peek(s).oper) > 0) {
+				num = strtol(str, &endptr, SPACE);
+				elem.oper = 0;
+				elem.num = num;
+				push(s, elem);
+			} else {
+				elem.oper = *str;
+				elem.num = num;
+				push(s, elem);
+				endptr = str + (*str != 0);
+			}
+		} else {
+			elem.oper = *str;
+			elem.num = num;
+			push(s, elem);
+			endptr = str + (*str != 0);
+		}
+		str = endptr;
+		if ((9 <= *str && *str <= 13) || *str == ' ') {
+			str = strtok(str, SPACE);
+		}
+	}
+}
+
+void postfix(stack_arithm *dest, stack_arithm *src) {
+	stack_arithm *buffer = create();
+	int i;
+
+	for (i = 0; i <= src->topidx; ++i) {
+		if (src->data[i].oper == 0) {
+			push(dest, src->data[i]);
+		} else {
+			if (isempty(buffer)) {
+				push(buffer, src->data[i]);
+			} else if (src->data[i].oper == '(') {
+				push(buffer, src->data[i]);
+			} else if (src->data[i].oper == ')') {
+				while (!peek(buffer).oper != '(') {
+					push(dest, pop(buffer));
+				}
+				pop(buffer);
+			} else if (get_priority(src->data[i].oper) > get_priority(peek(buffer).oper)) {
+				push(buffer, src->data[i]);
+			} else {
+				while (!isempty(buffer) || get_priority(src->data[i].oper) <= get_priority(peek(buffer).oper)) {
+					push(dest, pop(buffer));
+				}
+				push(buffer, src->data[i]);
+			}
+		}
+	}
+
+	while (!isempty(buffer)) {
+		push(dest, pop(buffer));
+	}
+}
+
+
+/*
 int arithm_parse(char *str) {
 	stack_char *buffer = create();
 	stack_char *postfix = create();
@@ -67,17 +155,10 @@ int arithm_parse(char *str) {
 
 }
 
-int	_get_priority(char c) {
-	if (c == '*') return 2;
-	else if (c == '/') return 2;
-	else if (c == '%') return 2;
-	else if (c == '+') return 1;
-	else if (c == '-') return 1;
-	else return 0;
-}
-
 int _is_space(char c) {
 	if (9 <= c && c <= 13) return 1;
 	else if (c == ' ') return 1;
 	else return 0;
 }
+
+*/
