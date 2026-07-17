@@ -42,33 +42,29 @@ int strtoint(const char *str, const char** endptr) {
 	return ret;
 }
 
-const char* strctok(const char *str, const char *delim, unsigned int *pidx) {
+const char* strctok(const char *str, const char *delim, unsigned int *nextoffset) {
 	static char buf[256];
 	static const char *last = 0;
+	static unsigned int offset = 0;
 
-	const char *target = str;
-	const char *res = buf;
-	unsigned int idx = 0;
+	int idx = 0;
 
-	if (target == 0) {
-		target = last;
+	if (str != 0) {
+		offset = 0;
+		last = str;
 	}
-	while (target[idx] != 0 && !strchr(delim, target[idx])) {
-		buf[idx] = target[idx];
-		++idx;
+
+	while (last[offset] != 0 && !strchr(delim, last[offset])) {
+		buf[idx++] = last[offset++];
 	}
 	buf[idx] = 0;
-	if (idx == 0) {
-		res = 0;
-	}
 
-	while (target[idx] != 0 && strchr(delim, target[idx]))
-		++idx;
-	last = target + idx;
-	if (pidx != 0) {
-		*pidx += idx;
+	while (last[offset] != 0 && strchr(delim, last[offset]))
+		++offset;
+	if (nextoffset != 0) {
+		*nextoffset = offset;
 	}
-	return res;
+	return buf;
 }
 
 void randomize_strbuffer() {
@@ -97,8 +93,8 @@ int getrand_uint() {
 }
 
 void interpret(const char *const line, int iter) {
-	unsigned int offset = 0;
 	const char *token;
+	unsigned int offset;
 	int n;
 
 	if ((token = strctok(line, SPACE, &offset)) == 0) {
@@ -106,12 +102,15 @@ void interpret(const char *const line, int iter) {
 
 	} else if (strcmp(token, "SET_INPUT") == 0) {
 		while ((token = strctok(0, SPACE, 0))) {
-			if (strcmp(token, "$(") == 0) {
-				token = strctok(token + 2, ")", 0);
+			printf("%s\n", token);
+			if (strncmp(token, "$(", 2) == 0) {
+				token = strctok(line + offset, ")", 0);
+				printf("%s\n", token);
 				parse_env.iter = iter;
 				arithm_parse(token);			
 			} else {
 				fprintf(inputfile, "%s ", token);
+				printf("%s\n", token);
 			}
 		}
 		fprintf(inputfile, "\n");
@@ -135,7 +134,7 @@ void interpret(const char *const line, int iter) {
 		}
 		fprintf(inputfile, "\n");
 	} else if (strcmp(token, "REPEAT") == 0) {
-		token = strctok(0, SPACE, &offset);
+		token = strctok(0, SPACE, 0);
 		n = strtoint(token, 0);
 		for (int i = 0; i < n; ++i) {
 			interpret(line + offset, i);

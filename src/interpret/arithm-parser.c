@@ -20,14 +20,18 @@ void tokenize(stack_arithm *s, const char *str);
 void postfix(stack_arithm *dest, stack_arithm *src);
 int arithmath(stack_arithm *s);
 
+#include <stdio.h>
 int arithm_parse(const char *str) {
 	stack_arithm *s = create();
 	stack_arithm *b = create();
 	int res;
 
 	tokenize(s, str);
+	printf("tokenize\n");
 	postfix(b, s);
+	printf("postfix\n");
 	res = arithmath(b);
+	printf("arithmath\n");
 	destroy(s);
 	destroy(b);
 	return res;
@@ -35,25 +39,27 @@ int arithm_parse(const char *str) {
 
 void tokenize(stack_arithm *s, const char *str) {
 	arithm_elem elem;
-	char *strcpy, *endptr, *cur;
+	char *strcpy, *nextptr, *cur;
 	int num;
 
 	strcpy = strdup(str);
 	cur = strtok(strcpy, SPACE);
 	while (*cur) {
+		printf("%c", *cur);
 		if (*cur == '\\') {
 			if (strcmp(cur, "\\i")) {
 				elem.oper = 0;
 				elem.num = parse_env.iter;
 			}
+			nextptr = cur + 1;
 		} else if ('0' <= *cur && *cur <= '9') {
-			num = strtol(cur, &endptr, 10);
+			num = strtol(cur, &nextptr, 10);
 			elem.oper = 0;
 			elem.num = num;
 			push(s, elem);
 		} else if (*cur == '+' || *cur == '-') {
 			if (get_priority(peek(s).oper) > 0) {
-				num = strtol(cur, &endptr, 10);
+				num = strtol(cur, &nextptr, 10);
 				elem.oper = 0;
 				elem.num = num;
 				push(s, elem);
@@ -61,15 +67,15 @@ void tokenize(stack_arithm *s, const char *str) {
 				elem.oper = *cur;
 				elem.num = num;
 				push(s, elem);
-				endptr = cur + (*cur != 0);
+				nextptr = cur + (*cur != 0);
 			}
 		} else {
 			elem.oper = *cur;
 			elem.num = num;
 			push(s, elem);
-			endptr = cur + (*cur != 0);
+			nextptr = cur + (*cur != 0);
 		}
-		cur = endptr;
+		cur = nextptr;
 		if ((9 <= *cur && *cur <= 13) || *cur == ' ') {
 			cur = strtok(0, SPACE);
 		}

@@ -11,7 +11,7 @@ export TIMEOUT=5
 export SHELL_PATH="$(cd "$(dirname "$0")" && pwd -P)/.."
 export LIB_PATH="$SHELL_PATH/lib"
 export INCLUDE_PATH="$SHELL_PATH/include"
-export STUB_PATH="$SHELL_PATH/${1,,}"
+export STUB_PATH="$SHELL_PATH/$1"
 
 if [ ! -d "$STUB_PATH" ]; then
 	echo "can not find exam $1"

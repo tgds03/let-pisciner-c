@@ -1,19 +1,21 @@
-FLAGS = -Wall -Wextra
-OUTFILE = ../../cmd/genparam-interpreter
+DEBUG_FLAGS = -g -O0 -fsanitize=address
+RELEASE_FLAGS = -O2
+CFLAGS = -Wall -Wextra
+LDFLAGS =
+OUTDIR = ../../cmd
+TARGET = genparam-interpreter
+SRCS = main.c arithm-parser.c basic-ds.c
+OBJS = ${SRCS:.c=.o}
 
-all: interpret clean
+all: CFLAGS += $(RELEASE_FLAGS)
+all: $(TARGET) clean
 
-interpret: main.o arithm-parser.o basic-ds.o
-	cc -o $(OUTFILE) $(FLAGS) main.o arithm-parser.o basic-ds.o
+debug: CFLAGS += $(DEBUG_FLAGS)
+debug: LDFLAGS += $(DEBUG_FLAGS)
+debug: $(TARGET) clean
 
-main.o: main.c
-	cc -o main.o -c $(FLAGS) main.c
-
-arithm-parser.o: arithm-parser.c
-	cc -o arithm-parser.o -c $(FLAGS) arithm-parser.c
-
-basic-ds.o: basic-ds.c
-	cc -o basic-ds.o -c $(FLAGS) basic-ds.c
+$(TARGET): $(OBJS)
+	cc -o $(OUTDIR)/$@ $(CFLAGS) $^
 
 clean:
 	rm -r *.o
