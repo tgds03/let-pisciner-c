@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <errno.h>
+#include "arithm-parser.h"
 
 const char *SPACE = " \f\n\r\t\v";
 char strbuffer[81];
@@ -105,7 +106,13 @@ void interpret(const char *const line, int iter) {
 
 	} else if (strcmp(token, "SET_INPUT") == 0) {
 		while ((token = strctok(0, SPACE, 0))) {
-			fprintf(inputfile, "%s ", token);
+			if (strcmp(token, "$(") == 0) {
+				token = strctok(token + 2, ")", 0);
+				parse_env.iter = iter;
+				arithm_parse(token);			
+			} else {
+				fprintf(inputfile, "%s ", token);
+			}
 		}
 		fprintf(inputfile, "\n");
 

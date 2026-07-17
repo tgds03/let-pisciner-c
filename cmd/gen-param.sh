@@ -43,7 +43,7 @@ for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
 	fi
 
 	export RANDSEED="$TARGETNAME"
-	echo -e "$SCRIPT" | "$SHELL_PATH/cmd/_genparam-interpret" "$STUB_PATH/${EXAM_NAME}input" "$STUB_PATH/${EXAM_NAME}args"
+	echo -e "$SCRIPT" | "$SHELL_PATH/cmd/genparam-interpreter" "$STUB_PATH/${EXAM_NAME}input" "$STUB_PATH/${EXAM_NAME}args"
 	find . \( -name 'input' -o -name 'args' \) -empty -exec rm {} \;
 
 done

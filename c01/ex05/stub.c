@@ -1,4 +1,4 @@
-// genparam>> REPEAT 10 RANDOMIZE_INPUT str
+// genparam>> REPEAT 10 $(32 + \i)
 #include "common.h"
 
 FUNCTION(void, ft_putstr, char *str);
