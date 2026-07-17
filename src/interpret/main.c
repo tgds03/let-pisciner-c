@@ -58,12 +58,13 @@ const char* strctok(const char *str, const char *delim, unsigned int *nextoffset
 		buf[idx++] = last[offset++];
 	}
 	buf[idx] = 0;
-
-	while (last[offset] != 0 && strchr(delim, last[offset]))
-		++offset;
 	if (nextoffset != 0) {
 		*nextoffset = offset;
 	}
+
+	while (last[offset] != 0 && strchr(delim, last[offset]))
+		++offset;
+
 	return buf;
 }
 
@@ -97,20 +98,17 @@ void interpret(const char *const line, int iter) {
 	unsigned int offset;
 	int n;
 
-	if ((token = strctok(line, SPACE, &offset)) == 0) {
+	if ((token = strctok(line, SPACE, 0)) == 0) {
 		return;
 
 	} else if (strcmp(token, "SET_INPUT") == 0) {
-		while ((token = strctok(0, SPACE, 0))) {
-			printf("%s\n", token);
+		while ((token = strctok(0, SPACE, &offset))) {
 			if (strncmp(token, "$(", 2) == 0) {
 				token = strctok(line + offset, ")", 0);
-				printf("%s\n", token);
 				parse_env.iter = iter;
 				arithm_parse(token);			
 			} else {
 				fprintf(inputfile, "%s ", token);
-				printf("%s\n", token);
 			}
 		}
 		fprintf(inputfile, "\n");
@@ -134,7 +132,7 @@ void interpret(const char *const line, int iter) {
 		}
 		fprintf(inputfile, "\n");
 	} else if (strcmp(token, "REPEAT") == 0) {
-		token = strctok(0, SPACE, 0);
+		token = strctok(0, SPACE, &offset);
 		n = strtoint(token, 0);
 		for (int i = 0; i < n; ++i) {
 			interpret(line + offset, i);

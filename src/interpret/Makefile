@@ -8,14 +8,14 @@ SRCS = main.c arithm-parser.c basic-ds.c
 OBJS = ${SRCS:.c=.o}
 
 all: CFLAGS += $(RELEASE_FLAGS)
-all: $(TARGET) clean
+all: $(TARGET) 
 
 debug: CFLAGS += $(DEBUG_FLAGS)
 debug: LDFLAGS += $(DEBUG_FLAGS)
-debug: $(TARGET) clean
+debug: $(TARGET) 
 
 $(TARGET): $(OBJS)
 	cc -o $(OUTDIR)/$@ $(CFLAGS) $^
 
 clean:
-	rm -r *.o
+	rm -f $(OBJS)

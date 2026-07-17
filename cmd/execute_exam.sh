@@ -24,7 +24,7 @@ cat /dev/null > "$REPO_PATH/$EXAM_DIR/errlog"
 timeout -k 3s "$TIMEOUT"s bash -c "cd \"$REPO_PATH/$EXAM_DIR/\" && $executecmd"
 EXIT_CODE=$?
 
-if [ -f "$REPO_PATH/$EXAM_DIR/output.misc" ]; then
+if [ -s "$REPO_PATH/$EXAM_DIR/output.misc" ]; then
 	echo -e "\n === misc output === " >> "$REPO_PATH/$EXAM_DIR/output"
 	cat "$REPO_PATH/$EXAM_DIR/output.misc" >> "$REPO_PATH/$EXAM_DIR/output"
 fi

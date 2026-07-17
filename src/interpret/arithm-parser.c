@@ -6,6 +6,7 @@
 #include "basic-ds.h"
 
 extern const char *SPACE;
+struct ParseEnv parse_env;
 
 int	get_priority(char c) {
 	if (c == '*') return 2;
@@ -65,13 +66,13 @@ void tokenize(stack_arithm *s, const char *str) {
 				push(s, elem);
 			} else {
 				elem.oper = *cur;
-				elem.num = num;
+				elem.num = 0;
 				push(s, elem);
 				nextptr = cur + (*cur != 0);
 			}
 		} else {
 			elem.oper = *cur;
-			elem.num = num;
+			elem.num = 0;
 			push(s, elem);
 			nextptr = cur + (*cur != 0);
 		}

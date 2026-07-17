@@ -3,7 +3,8 @@
 
 struct ParseEnv {
     int iter;
-} parse_env;
+};
+extern struct ParseEnv parse_env;
 
 int arithm_parse(const char *str);
 
