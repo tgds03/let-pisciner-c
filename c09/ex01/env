@@ -1,4 +1,4 @@
-COMPILE_CMD="make --trace > log && make re --trace >> log && ${COMPILE_CMD}"
+COMPILE_CMD="make > log && make >> log && cat log | grep \"Nothing to be done for 'all'\" > output.misc && ${COMPILE_CMD}"
 CC_INCLUDE+=('./includes')
 CC_LIBPATH+=('.')
 CC_LIBRARY+=('ft')
