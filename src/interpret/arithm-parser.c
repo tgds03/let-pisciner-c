@@ -40,19 +40,19 @@ int arithm_parse(const char *str) {
 
 void tokenize(stack_arithm *s, const char *str) {
 	arithm_elem elem;
-	char *strcpy, *nextptr, *cur;
+	char *cpystr, *nextptr, *cur;
 	int num;
 
-	strcpy = strdup(str);
-	cur = strtok(strcpy, SPACE);
-	while (*cur) {
-		printf("%c", *cur);
+	cpystr = strdup(str);
+	cur = strtok(cpystr, SPACE);
+	while (cur) {
 		if (*cur == '\\') {
-			if (strcmp(cur, "\\i")) {
+			if (cur[1] == 'i') {
 				elem.oper = 0;
 				elem.num = parse_env.iter;
+				push(s, elem);
 			}
-			nextptr = cur + 1;
+			nextptr = cur + 2;
 		} else if ('0' <= *cur && *cur <= '9') {
 			num = strtol(cur, &nextptr, 10);
 			elem.oper = 0;
@@ -76,12 +76,16 @@ void tokenize(stack_arithm *s, const char *str) {
 			push(s, elem);
 			nextptr = cur + (*cur != 0);
 		}
-		cur = nextptr;
-		if ((9 <= *cur && *cur <= 13) || *cur == ' ') {
+		if (*nextptr == 0) {
 			cur = strtok(0, SPACE);
+		} else {
+			cur = nextptr;
 		}
+		// if ((9 <= *cur && *cur <= 13) || *cur == ' ') {
+		// 	cur = strtok(0, SPACE);
+		// }
 	}
-	free(strcpy);
+	free(cpystr);
 }
 
 void postfix(stack_arithm *dest, stack_arithm *src) {

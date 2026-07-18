@@ -1,4 +1,5 @@
-DEBUG_FLAGS = -g -O0 -fsanitize=address
+# DEBUG_FLAGS = -g -O0 -fsanitize=address
+DEBUG_FLAGS = -g -O0
 RELEASE_FLAGS = -O2
 CFLAGS = -Wall -Wextra
 LDFLAGS =

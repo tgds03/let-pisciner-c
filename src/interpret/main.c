@@ -58,14 +58,18 @@ const char* strctok(const char *str, const char *delim, unsigned int *nextoffset
 		buf[idx++] = last[offset++];
 	}
 	buf[idx] = 0;
+
+	while (last[offset] != 0 && strchr(delim, last[offset]))
+		++offset;
 	if (nextoffset != 0) {
 		*nextoffset = offset;
 	}
 
-	while (last[offset] != 0 && strchr(delim, last[offset]))
-		++offset;
-
-	return buf;
+	if (idx == 0) {
+		return 0;
+	} else { 
+		return buf;
+	}
 }
 
 void randomize_strbuffer() {
@@ -98,15 +102,15 @@ void interpret(const char *const line, int iter) {
 	unsigned int offset;
 	int n;
 
-	if ((token = strctok(line, SPACE, 0)) == 0) {
+	if ((token = strctok(line, SPACE, &offset)) == 0) {
 		return;
 
 	} else if (strcmp(token, "SET_INPUT") == 0) {
-		while ((token = strctok(0, SPACE, &offset))) {
+		while ((token = strctok(0, SPACE, 0))) {
 			if (strncmp(token, "$(", 2) == 0) {
-				token = strctok(line + offset, ")", 0);
+				token = strctok(line + offset + 2, ")", 0);
 				parse_env.iter = iter;
-				arithm_parse(token);			
+				fprintf(inputfile, "%d ", arithm_parse(token));
 			} else {
 				fprintf(inputfile, "%s ", token);
 			}

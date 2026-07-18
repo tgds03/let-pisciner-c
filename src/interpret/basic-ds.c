@@ -14,8 +14,8 @@ stack_arithm *create() {
 
 void push(stack_arithm *stack, arithm_elem data) {
 	assert(stack && "Stack is null");
-	if (stack->topidx <= stack->capacity - 1) {
-		while (stack->topidx <= stack->capacity - 1)
+	if (stack->topidx >= stack->capacity - 1) {
+		while (stack->topidx >= stack->capacity - 1)
 			stack->capacity *= 2;
 		stack->data = (arithm_elem *)realloc(stack->data, sizeof(arithm_elem) * stack->capacity);
 	}
