@@ -1,4 +1,8 @@
-// genparam>> REPEAT 10 RANDOMIZE_INPUT pchar
+/** genparam input
+ * for $i (32 .. 126) {
+ * 	print chr($i), "\n";
+ * }
+*/
 #include "common.h"
 #include <stdio.h>
 

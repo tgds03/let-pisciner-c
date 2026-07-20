@@ -1,3 +1,8 @@
+/** genparam input
+ * for ($i = 1; $i < 10; $i++) {
+ * 	print $i, "\n";
+ * }
+ */
 #include "common.h"
 #include <stdlib.h>
 
