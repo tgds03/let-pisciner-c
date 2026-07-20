@@ -1,3 +1,104 @@
-1234567890
 
-abcd
+execute ./app:
+Let Pisciner C
+Compiled: 
+Function: char * ft_strcpy(char *dest, char *src);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+Hello_world!
+
+Program's output:
+Hello_world!
+
+
+Type in input data...
+Received input:
+abcde
+Program's output:
+abcde
+
+
+Type in input data...
+Received input:
+L8{z
+
+Program's output:
+L8{z
+
+
+Type in input data...
+Received input:
+j-tz18)@
+
+Program's output:
+j-tz18)@
+
+
+Type in input data...
+Received input:
+F4P6@eSmU
+
+Program's output:
+F4P6@eSmU
+
+
+Type in input data...
+Received input:
+=#uB=
+
+Program's output:
+=#uB=
+
+
+Type in input data...
+Received input:
+xwj(lk-yaO8M
+
+Program's output:
+xwj(lk-yaO8M
+
+
+Type in input data...
+Received input:
+}a90*7@]gR*!;
+
+Program's output:
+}a90*7@]gR*!;
+
+
+Type in input data...
+Received input:
+gsZNrj'k,r+,]$p
+
+Program's output:
+gsZNrj'k,r+,]$p
+
+
+Type in input data...
+Received input:
+k53W(Z:~j $.\_Hv
+
+Program's output:
+k53W(Z:~j
+
+
+Type in input data...
+Received input:
+Pb>
+
+Program's output:
+Pb>
+
+
+Type in input data...
+Received input:
+ ^!j=x\o*yCiyjHx
+
+Program's output:
+^!j=x\o*yCiyjHx
+
+
+Type in input data...
+File closed.

@@ -1,1 +1,106 @@
-Hi, How Are You? 42words Forty-Two;Fifty_And+One
+
+execute ./app:
+Let Pisciner C
+Compiled: 
+Function: char * ft_strcapitalize(char *str);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+hi, hOw ArE yOu? 42words forty-two;fifty_and+one
+Program's output:
+Hi,
+
+Type in input data...
+Received input:
+aaa Aaa aAa aaA AAa AaA aAA AAA
+
+Program's output:
+Aaa
+
+Type in input data...
+Received input:
+0Aa 0aA a0A A0a Aa0 aA0
+
+Program's output:
+0aa
+
+Type in input data...
+Received input:
+5HpLoSKJI2B069trugPQnYI2
+
+Program's output:
+5hploskji2b069trugpqnyi2
+
+Type in input data...
+Received input:
+IOj1xH28ppUkVBk UgVewCPowuRPvt5K
+
+Program's output:
+Ioj1xh28ppukvbk
+
+Type in input data...
+Received input:
+bPjxx0l9tw43j4EmXZ7F9vuy
+
+Program's output:
+Bpjxx0l9tw43j4emxz7f9vuy
+
+Type in input data...
+Received input:
+kB
+
+Program's output:
+Kb
+
+Type in input data...
+Received input:
+Q88zxPXyRIAugCfODOWqsVY O 
+
+Program's output:
+Q88zxpxyriaugcfodowqsvy
+
+Type in input data...
+Received input:
+4EwVwJGg
+
+Program's output:
+4ewvwjgg
+
+Type in input data...
+Received input:
+8V4XnUZ
+
+Program's output:
+8v4xnuz
+
+Type in input data...
+Received input:
+DQbPijLbSh02rcXhp5
+
+Program's output:
+Dqbpijlbsh02rcxhp5
+
+Type in input data...
+Received input:
+hnsFL3iC3V42fyI6gPG4cXc8fsty
+
+Program's output:
+Hnsfl3ic3v42fyi6gpg4cxc8fsty
+
+Type in input data...
+Received input:
+NphMvmsFnFRQ67G
+
+Program's output:
+Nphmvmsfnfrq67g
+
+Type in input data...
+Received input:
+t
+
+Program's output:
+T
+
+Type in input data...
+File closed.

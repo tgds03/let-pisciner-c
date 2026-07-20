@@ -1,13 +1,17 @@
+/** genparam input
+ * print "abcdefg\n";
+ * print "ABCDEFG\n";
+ * print "0123456789\n";
+ * for $i (33 .. 126) {
+ * 	print chr($i), "\n";
+ * }
+ */
 #include <stdio.h>
+#include "common.h"
 
-char *ft_strlowcase(char *str);
+FUNCTION(char *, ft_strlowcase, char *str);
 
-int main() {
-	char a[96];
-	for (int i = 0; i < 95; ++i) {
-		a[i] = 32 + (char)i;
-	}
-	a[95] = 0;
-	printf("%s", ft_strlowcase(a));
-	return 0;
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	printf("%s", ft_strlowcase(argv[1]));
 }

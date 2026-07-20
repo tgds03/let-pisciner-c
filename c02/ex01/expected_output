@@ -1,3 +1,136 @@
-1234567890
 
-abcd
+execute ./app:
+Let Pisciner C
+Compiled: 
+Function: char * ft_strncpy(char *dest, char *src, unsigned int n);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+0 Hello_world!
+
+Program's output:
+
+
+
+Type in input data...
+Received input:
+3 Hello_world!
+
+Program's output:
+Hel
+
+
+Type in input data...
+Received input:
+7 Hello_world!
+
+Program's output:
+Hello_w
+
+
+Type in input data...
+Received input:
+12 Hello_world!
+
+Program's output:
+Hello_world!
+
+
+Type in input data...
+Received input:
+7 abcde
+Program's output:
+abcde
+
+
+Type in input data...
+Received input:
+3 ^9aA3
+
+Program's output:
+^9a
+
+
+Type in input data...
+Received input:
+0 (L;6=c/d w>pS
+
+Program's output:
+
+
+
+Type in input data...
+Received input:
+4 H$3pA]v
+
+Program's output:
+H$3p
+
+
+Type in input data...
+Received input:
+4 w2Ohm28'-
+
+Program's output:
+w2Oh
+
+
+Type in input data...
+Received input:
+5 S0"<^u% 5(meN.*
+
+Program's output:
+S0"<^
+
+
+Type in input data...
+Received input:
+2 @=76
+
+Program's output:
+@=
+
+
+Type in input data...
+Received input:
+11 U\#@!p~QAg92@fx
+
+Program's output:
+U\#@!p~QAg9
+
+
+Type in input data...
+Received input:
+3 7Ii^8oxZITcV.>
+
+Program's output:
+7Ii
+
+
+Type in input data...
+Received input:
+0 xPP]ugez]
+
+Program's output:
+
+
+
+Type in input data...
+Received input:
+11 F7zda[7(Ak!.Aw+f
+
+Program's output:
+F7zda[7(Ak!
+
+
+Type in input data...
+Received input:
+4 #H10P1q@_iAM
+
+Program's output:
+#H%X
+
+
+Type in input data...
+File closed.

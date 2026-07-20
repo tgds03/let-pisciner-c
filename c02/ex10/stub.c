@@ -1,7 +1,15 @@
-// #include "bsd/string.h"
+/** genparam input
+ * print "0\n";
+ * print "0 abcde\n";
+ * print "5 abcde\n";
+ * print "10 abcde\n";
+ * print "20 012345678901234567890123456789\n";
+ */
+#include <stdlib.h>
 #include <stdio.h>
+#include "common.h"
 
-unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
+FUNCTION(unsigned int, ft_strlcpy, char *dest, char *src, unsigned int size);
 
 void fill(char *arr, int size) {
 	for (int i = 0; i < size - 1; ++i) {
@@ -10,26 +18,15 @@ void fill(char *arr, int size) {
 	arr[size - 1] = 0;
 }
 
-int main() {
-	char *str1 = "";
-	char *str2 = "abcde";
-	char *str3 = "abcdefghijklmnopqrst";
-	char *str4 = "abcdefghijklmnopqrstu";
-	char *str5 = "abcdefghijklmnopqrstuvwxyz";
-	char buffer[80], *offset;
-	offset = buffer + 20;
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	char *buffer;
+	int n, len = 0;
 
-	fill(buffer, 80);
-	printf("%d %s\n", (int)ft_strlcpy(offset, str1, 20), buffer);
-	fill(buffer, 80);
-	printf("%d %s\n", (int)ft_strlcpy(offset, str2, 20), buffer);
-	fill(buffer, 80);
-	printf("%d %s\n", (int)ft_strlcpy(offset, str3, 20), buffer);
-	fill(buffer, 80);
-	printf("%d %s\n", (int)ft_strlcpy(offset, str4, 20), buffer);
-	fill(buffer, 80);
-	printf("%d %s\n", (int)ft_strlcpy(offset, str5, 20), buffer);
-	fill(buffer, 80);
-	printf("%d %s\n", (int)ft_strlcpy(offset, str5, 0), buffer);
-	return 0;
+	n = atoi(argv[1]);
+	while (argv[2][len++]);
+	buffer = (char*)calloc(len + 1, sizeof(char));
+	fill(buffer, len + 1);
+	printf("%d %s", (int)ft_strlcpy(buffer, argv[2], n), buffer);
+	free(buffer);
 }
