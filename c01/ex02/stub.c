@@ -1,4 +1,8 @@
-// genparam>> REPEAT 10 RANDOMIZE_INPUT int int
+/** genparam input
+ * for $i (0 .. 10) {
+ * 	print int(rand(256)) - 128, " ", int(rand(256)) - 128, "\n";
+ * }
+ */
 #include "common.h"
 #include <stdio.h>
 #include <stdlib.h>

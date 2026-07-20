@@ -1,4 +1,10 @@
-// genparam>> REPEAT 10 SET_INPUT $(32 + \i)
+/** genparam input
+ * print "Hello world\n";
+ * for $i (32 .. 126) {
+ * 	print chr($i);
+ * }
+ * print "\n";
+ */
 #include "common.h"
 
 FUNCTION(void, ft_putstr, char *str);

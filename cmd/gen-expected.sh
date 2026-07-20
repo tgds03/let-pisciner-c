@@ -30,7 +30,7 @@ fi
 clean() {
 	echo ""
 	echo -n "Clean: "
-	$(cd "$REPO_PATH" && git clean -qf) && echo "done" 
+	$(cd "$REPO_PATH" && git clean -qdf) && echo "done" 
 }
 trap clean EXIT SIGINT SIGTERM
 
@@ -44,6 +44,6 @@ for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
 	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/compile_exam.sh" && echo "done" || continue
 	echo -n "[$EXAM_NAME] run and create expected_output: "
 	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/execute_exam.sh" && echo "done" || continue
-	echo -n "[$EXAM_NAME] move expected_output to stub path: "
+	echo -n "[$EXAM_NAME] move expected_output to stubcmd/extract-genparam-input.pl path: "
 	mv "$REPO_PATH/$EXAM_NAME/output" "$STUB_PATH/$EXAM_NAME/expected_output" && echo "done"
 done

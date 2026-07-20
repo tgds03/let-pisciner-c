@@ -1,4 +1,13 @@
-// genparam>> REPEAT 10 RANDOMIZE_INPUT int int int int int int int int
+/** genparam input
+ * print "0 1 2 3 4 5 6 7 8 9\n";
+ * for $_ (0 .. 20) {
+ * 	$len = int(rand(16));
+ * 	for $i (0 .. $len) {
+ * 		print int(rand(256)) - 128, " ";
+ * 	}
+ * 	print "\n";
+ * }
+ */
 #include <stdio.h>
 #include "common.h"
 
@@ -6,39 +15,14 @@ FUNCTION(void, ft_rev_int_tab, int *tab, int size);
 
 void test(int argc, char *argv[]) {
 	int arr[256];
-	int size = argc;
+	int size = argc - 1;
 	if (size > 256)
 		size = 256;
-	for (int i = 1; i < size + 1; ++i) {
-		arr[i - 1] = atoi(argv[i]);
+	for (int i = 0; i < size; ++i) {
+		arr[i] = atoi(argv[i + 1]);
 	}
 	ft_rev_int_tab(arr, size);
 	for (int i = 0; i < size; ++i) {
 		printf("%d ", arr[i]);
 	}
 }
-
-/*
-int main() {
-	int a, b, t;
-	int i, j;
-	int arr[256];
-	init_rand(__FILE__);
-	for (i = 0; i < 16; ++i) {
-		arr[i] = rand() % 1024;
-	}
-	for (i = 0; i < 100; ++i) {
-		a = rand() % 16;
-		b = rand() % 16;
-		if (a > b) {
-			t = a; a = b; b = t;
-		}
-		ft_rev_int_tab(arr + a, b - a);
-		for (j = 0; j < 16; ++j) {
-			printf("%d ", arr[j]);
-		}
-		printf("\n");
-	}
-	return 0;
-}
-*/

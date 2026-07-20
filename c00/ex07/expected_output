@@ -1,45 +1,12 @@
+
+execute ./app:
 Let Pisciner C
-Compiled: /home/mingyuk2/repo/c00-1/ex07//ft_putnbr.c
+Compiled: 
 Function: void ft_putnbr(int nb);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
-2147483647
-
-Program's output:
-2147483647
-
-Type in input data...
-Received input:
-65535
-
-Program's output:
-65535
-
-Type in input data...
-Received input:
-255
-
-Program's output:
-255
-
-Type in input data...
-Received input:
-100
-
-Program's output:
-100
-
-Type in input data...
-Received input:
-10
-
-Program's output:
-10
-
-Type in input data...
-Received input:
 1
 
 Program's output:
@@ -61,6 +28,13 @@ Program's output:
 
 Type in input data...
 Received input:
+10
+
+Program's output:
+10
+
+Type in input data...
+Received input:
 -10
 
 Program's output:
@@ -68,52 +42,87 @@ Program's output:
 
 Type in input data...
 Received input:
--100
+214783647
 
 Program's output:
--100
+214783647
 
 Type in input data...
 Received input:
--256
+-214783648
 
 Program's output:
--256
+-214783648
 
 Type in input data...
 Received input:
--65536
+105
 
 Program's output:
--65536
+105
 
 Type in input data...
 Received input:
--2147483648
+126
 
 Program's output:
--2147483648
+126
 
 Type in input data...
 Received input:
-1248
+92
 
 Program's output:
-1248
+92
 
 Type in input data...
 Received input:
--5982
+-49
 
 Program's output:
--5982
+-49
 
 Type in input data...
 Received input:
-49910
+-93
 
 Program's output:
-49910
+-93
+
+Type in input data...
+Received input:
+20
+
+Program's output:
+20
+
+Type in input data...
+Received input:
+-115
+
+Program's output:
+-115
+
+Type in input data...
+Received input:
+-46
+
+Program's output:
+-46
+
+Type in input data...
+Received input:
+-18
+
+Program's output:
+-18
+
+Type in input data...
+Received input:
+-29
+
+Program's output:
+-29
 
 Type in input data...
 File closed.

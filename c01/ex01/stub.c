@@ -1,5 +1,8 @@
-// genparam>> SET_INPUT 0
-// genparam>> REPEAT 10 RANDOMIZE_INPUT int
+/** genparam input
+ * for $i (0 .. 10) {
+ * 	print $i, "\n";
+ * }
+ */
 #include "common.h"
 #include <stdio.h>
 #include <stdlib.h>

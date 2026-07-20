@@ -1,1 +1,43 @@
-0 1 100 33
+
+execute ./app:
+Let Pisciner C
+Compiled: 
+Function: int ft_strlen(char *str);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+
+
+Program's output:
+30
+
+Type in input data...
+Received input:
+a
+
+Program's output:
+1
+
+Type in input data...
+Received input:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Program's output:
+100
+
+Type in input data...
+Received input:
+abcdeabcd
+
+Program's output:
+9
+
+Type in input data...
+Received input:
+abcdeabcde	bcdeabcdeabc
+Program's output:
+10
+
+Type in input data...
+File closed.

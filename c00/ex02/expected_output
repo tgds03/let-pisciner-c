@@ -1,5 +1,7 @@
+
+execute ./app:
 Let Pisciner C
-Compiled: /home/mingyuk2/repo/c00-1/ex02//ft_print_reverse_alphabet.c
+Compiled: 
 Function: void ft_print_reverse_alphabet();
 Press Ctrl + C to interrupt and exit.
 ================================================================================

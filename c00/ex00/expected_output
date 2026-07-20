@@ -1,5 +1,7 @@
+
+execute ./app:
 Let Pisciner C
-Compiled: /home/mingyuk2/repo/c00-1/ex00//ft_putchar.c
+Compiled: 
 Function: void ft_putchar(char c);
 Press Ctrl + C to interrupt and exit.
 ================================================================================

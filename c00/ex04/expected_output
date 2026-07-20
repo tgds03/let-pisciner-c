@@ -1,53 +1,111 @@
+
+execute ./app:
 Let Pisciner C
-Compiled: /home/mingyuk2/repo/c00-1/ex04//ft_is_negative.c
+Compiled: 
 Function: void ft_is_negative(int n);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
-2147483647
+35
 
 Program's output:
 P
 
 Type in input data...
 Received input:
-65535
+14
 
 Program's output:
 P
 
 Type in input data...
 Received input:
-255
+67
 
 Program's output:
 P
 
 Type in input data...
 Received input:
-100
+-107
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+-28
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+26
 
 Program's output:
 P
 
 Type in input data...
 Received input:
-10
+123
 
 Program's output:
 P
 
 Type in input data...
 Received input:
-1
+-4
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+80
 
 Program's output:
 P
 
 Type in input data...
 Received input:
-0
+-115
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+60
+
+Program's output:
+P
+
+Type in input data...
+Received input:
+-58
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+-55
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+-73
+
+Program's output:
+N
+
+Type in input data...
+Received input:
+112
 
 Program's output:
 P
@@ -58,62 +116,6 @@ Received input:
 
 Program's output:
 N
-
-Type in input data...
-Received input:
--10
-
-Program's output:
-N
-
-Type in input data...
-Received input:
--100
-
-Program's output:
-N
-
-Type in input data...
-Received input:
--256
-
-Program's output:
-N
-
-Type in input data...
-Received input:
--65536
-
-Program's output:
-N
-
-Type in input data...
-Received input:
--2147483648
-
-Program's output:
-N
-
-Type in input data...
-Received input:
-1248
-
-Program's output:
-P
-
-Type in input data...
-Received input:
--5982
-
-Program's output:
-N
-
-Type in input data...
-Received input:
-49910
-
-Program's output:
-P
 
 Type in input data...
 File closed.

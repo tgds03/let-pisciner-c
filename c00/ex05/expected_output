@@ -1,5 +1,7 @@
+
+execute ./app:
 Let Pisciner C
-Compiled: /home/mingyuk2/repo/c00-1/ex05//ft_print_comb.c
+Compiled: 
 Function: void ft_print_comb();
 Press Ctrl + C to interrupt and exit.
 ================================================================================
