@@ -1,7 +1,10 @@
-// genparam>> SET_INPUT 0 0
-// genparam>> SET_INPUT 1 2
-// genparam>> SET_INPUT abcde 58291
-// genparam>> SET_INPUT younamsayng? younamsayng?
+/** genparam input
+ * print 0, 0;
+ * print 1, 2;
+ * print 'abcde', '58291';
+ * print 'yknowmsayin', 'iknowwtshesay';
+ * print 'getsomehelp', 'getsomehelp';
+ */
 #include <stdlib.h>
 #include <stdio.h>
 #include "ft.h"

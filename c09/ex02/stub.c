@@ -1,8 +1,15 @@
-// genparam>> SET_INPUT aaaaaaaaaa a
-// genparam>> SET_INPUT aaa33 a
-// genparam>> SET_INPUT aabbbaacccaaadda a
-// genparam>> SET_INPUT Loremipsum^dolor*sitame!tconsecte#turadipiscinge%lit !@#$%^&*()
-// genparam>> SET_INPUT LoremPipsumXdolorQsitBamet,RconsecteturIadipiscingKelit PXQBRIK
+/** genparam input
+ * print '""', "a";
+ * print "aaaaaaaaaa", '""';
+ * print "aaaaaaaaaa", "a";
+ * print "aaa33", "a";
+ * print "aaaa33aaa22", "a";
+ * print "44aaaaa", "a";
+ * print "55a6666aa", "a";
+ * print "aabbbaacccaaadda", "a";
+ * print "Loremipsum^dolor*sitame!tconsecte#turadipiscinge%lit", "!@#$%^&*()";
+ * print "LoremPipsumXdolorQsitBamet,RconsecteturIadipiscingKelit", "PXQBRIK";
+ */
 #include <stdio.h>
 #include "common.h"
 
@@ -15,9 +22,9 @@ void test(int argc, char *argv[]) {
 	cur = res;
 	while (*cur) {
 		if (argv[1] <= *cur && *cur < argv[2]) {
-			printf("1 ");
+			printf("F ");
 		} else {
-			printf("0 ");
+			printf("P ");
 		}
 		printf("%s\n", *cur);
 		free(*cur);
