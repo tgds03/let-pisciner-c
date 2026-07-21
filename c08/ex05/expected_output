@@ -1,0 +1,326 @@
+
+execute ./app:
+Let Pisciner C
+Function: void ft_show_tab(struct s_stock_str *par);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+
+Program's output:
+
+
+Type in input data...
+Received input:
+""
+Program's output:
+
+0
+
+
+
+Type in input data...
+Received input:
+"a"
+Program's output:
+a
+1
+a
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4"
+Program's output:
+1
+1
+1
+2
+1
+2
+3
+1
+3
+4
+1
+4
+
+
+Type in input data...
+Received input:
+"a", "b", "c", "d"
+Program's output:
+a
+1
+a
+b
+1
+b
+c
+1
+c
+d
+1
+d
+
+
+Type in input data...
+Received input:
+"giS", "7VrIh76l,", "2 t\"YADm,&tb[zhU", "t:;5", "(GgaWOcGF3", "zJNV4Q9P~V}~@", "?4Vj=", "m9E8:", "RbUK2T\\f{b)I7&W}", "x?\"j_j{v", "2,KJ;SL]&^", "Wca9c", "1d%QN=v,+=x=xu$", "1@I", "8w7{", "xYnrr;kS&G", "tbRu-jM]", "n8SSN7F7WrDA)|{M", "LqczM", "(:QL19uSh/U>", "n=o&o#aIY", "u1[(tN?", "~#Rd\")", "-y.W6]4N", ",Tjhk1}bbWV))>?", "_.N\",0Lsb", "Rh`B%t~e"
+Program's output:
+giS
+3
+giS
+7VrIh76l,
+9
+7VrIh76l,
+2 t"YADm,&tb[zhU
+16
+2 t"YADm,&tb[zhU
+t:;5
+4
+t:;5
+(GgaWOcGF3
+10
+(GgaWOcGF3
+zJNV4Q9P~V}~@
+13
+zJNV4Q9P~V}~@
+?4Vj=
+5
+?4Vj=
+m9E8:
+5
+m9E8:
+RbUK2T\f{b)I7&W}
+16
+RbUK2T\f{b)I7&W}
+x?"j_j{v
+8
+x?"j_j{v
+2,KJ;SL]&^
+10
+2,KJ;SL]&^
+Wca9c
+5
+Wca9c
+1d%LQN=v,+=x=xu$
+16
+1d%LQN=v,+=x=xu$
+1@I
+3
+1@I
+8w7{
+4
+8w7{
+xYnrr;kS&G
+10
+xYnrr;kS&G
+tbRu-jM]
+8
+tbRu-jM]
+n8SSN7F7WrDA)|{M
+16
+n8SSN7F7WrDA)|{M
+LqczM
+5
+LqczM
+(:QL19uSh/U>
+12
+(:QL19uSh/U>
+n=o&o#aIY
+9
+n=o&o#aIY
+u1[(tN?
+7
+u1[(tN?
+~#Rd")
+6
+~#Rd")
+-y.W6]4N
+8
+-y.W6]4N
+,Tjhk1}bbWV))>?
+15
+,Tjhk1}bbWV))>?
+_.N",0Lsb
+9
+_.N",0Lsb
+Rh`B%jt~e
+9
+Rh`B%jt~e
+
+
+Type in input data...
+Received input:
+":s9#Sc)", "cd~x*E&O2>$]yUl", "@d=qNv\'W/~", "+AYg2 ;*\"-4[{*W", "", "L~ilw3_Ou^~o", "PBgVJ2", ".,?", "VH\"j4,Taeq~\\B$W;", "B=Q%yC1mgx1", "._ +=?", "j-kM[,mHZ.~", "/\\<Vk,P\\.UU", "9Yn{aDmkD{D", "P{V_Mv~J( /4C", "SrQ[Gi;T,%Rd", "2waKN8M", "})_bfO+F?=xc\"&", "-fF;("
+Program's output:
+:s9#Sc)%c
+9
+:s9#Sc)%c
+cd~x*E&O2>$]yUl
+15
+cd~x*E&O2>$]yUl
+@d=qNv'W/~
+10
+@d=qNv'W/~
++AYg2 ;*"-4[{*W
+15
++AYg2 ;*"-4[{*W
+:r#@.oZ_MW}sb;%
+15
+:r#@.oZ_MW}sb;%
+L~ilw3_Ou^~o
+12
+L~ilw3_Ou^~o
+PBgVJ2
+6
+PBgVJ2
+.,?
+3
+.,?
+VH"j4,Taeq~\B$W;
+16
+VH"j4,Taeq~\B$W;
+B=Q%yC%dmgx1
+12
+B=Q%yC%dmgx1
+._ +=?
+6
+._ +=?
+j-kM[,mHZ.~
+11
+j-kM[,mHZ.~
+/\<Vk,P\.UU
+11
+/\<Vk,P\.UU
+9Yn{aDmkD{D
+11
+9Yn{aDmkD{D
+P{V_Mv~J( /4C
+13
+P{V_Mv~J( /4C
+SrQ[Gi;T,%Rd
+12
+SrQ[Gi;T,%Rd
+2waKN8M
+7
+2waKN8M
+})_bfO+F?=xc"&
+14
+})_bfO+F?=xc"&
+-fF;(
+5
+-fF;(
+
+
+Type in input data...
+Received input:
+"\'zVK6/WkS", "J\'Di}(Y1/u&B67#", "qo{].", "!", "", "\"oPq,<6R", "\"k4\'>G", "/t<#Vd", ": 7\\QcEOfn72P", "g", ".z7", "1BtDAia4)D", "K=WEW\"\'(q)_>\'", "gYBw#B]k20J3qh", "W) \"Xm81*", "6Q@\\i", ",e$}_()", " ik=", "s.C!J#2.u&", "5\'<0M_B<dwqA,", "XA8.8PrF<I#|j", "mS<qct", "& 9"
+Program's output:
+'zVK6/WkS
+9
+'zVK6/WkS
+J'Di}(Y1/u&B67#
+15
+J'Di}(Y1/u&B67#
+qo{].
+5
+qo{].
+!
+1
+!
+wZMiL%
+6
+wZMiL%
+"oPq,<6R
+8
+"oPq,<6R
+"k4'>G
+6
+"k4'>G
+/t<#Vd
+6
+/t<#Vd
+: 7\QcEOfn72P
+13
+: 7\QcEOfn72P
+g
+1
+g
+.z7
+3
+.z7
+1BtDAia4)D
+10
+1BtDAia4)D
+K=WEW"'(q)_>'
+13
+K=WEW"'(q)_>'
+gYBw#B]k20J3qh
+14
+gYBw#B]k20J3qh
+W) "Xm81*
+9
+W) "Xm81*
+6Q@\i
+5
+6Q@\i
+,e$}_()
+7
+,e$}_()
+ ik=
+4
+ ik=
+s.C!J#2.u&
+10
+s.C!J#2.u&
+5'<0M_B<dwqA,
+13
+5'<0M_B<dwqA,
+XA8.8PrF<I#|j
+13
+XA8.8PrF<I#|j
+mS<qct
+6
+mS<qct
+& 9
+3
+& 9
+
+
+Type in input data...
+Received input:
+"V`OEX?K,b&D_", ";8, ", "(JjyGv6>4", "27A(E)6I", "7!,`WMBW/kEKflo", "36\\z~z}W.@Q$Z", "bXYAg &FgKr", "MwkGaciCLWk>aMj"
+Program's output:
+V`OEX?K,b&D_
+12
+V`OEX?K,b&D_
+;8, 
+4
+;8, 
+(JjyGv6>4
+9
+(JjyGv6>4
+27A(E)6I
+8
+27A(E)6I
+7!,`WMBW/kEKflo
+15
+7!,`WMBW/kEKflo
+36\z~z}W.@Q$Z
+13
+36\z~z}W.@Q$Z
+bXYAg &FgKr
+11
+bXYAg &FgKr
+MwkGaciCLWk>aMj
+15
+MwkGaciCLWk>aMj
+
+
+Type in input data...
+Received input:
+"T62", "=b`y", "qGhX->2j1", "=", "C$c,-YGd4uO", "t\"EM@E", "
+Received signal 11
+exit

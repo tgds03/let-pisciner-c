@@ -1,0 +1,86 @@
+
+execute ./app:
+Let Pisciner C
+Function: undefined
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"2147483647"
+Program's output:
+2147483647
+
+Type in input data...
+Received input:
+"100"
+Program's output:
+100
+
+Type in input data...
+Received input:
+"10"
+Program's output:
+10
+
+Type in input data...
+Received input:
+"1"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"0"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"-1"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"-10"
+Program's output:
+10
+
+Type in input data...
+Received input:
+"-2147483648"
+Program's output:
+-2147483648
+
+Type in input data...
+Received input:
+"31870"
+Program's output:
+31870
+
+Type in input data...
+Received input:
+"-249"
+Program's output:
+249
+
+Type in input data...
+Received input:
+"-10151"
+Program's output:
+10151
+
+Type in input data...
+Received input:
+"12126"
+Program's output:
+12126
+
+Type in input data...
+Received input:
+"-5573"
+Program's output:
+5573
+
+Type in input data...
+File closed.

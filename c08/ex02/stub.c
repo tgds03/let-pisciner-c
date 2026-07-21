@@ -1,11 +1,16 @@
-// genparam>> SET_INPUT -1
-// genparam>> SET_INPUT 0
-// genparam>> SET_INPUT 1
-// genparam>> SET_INPUT 10
-// genparam>> SET_INPUT -10
-// genparam>> SET_INPUT 42
-// genparam>> SET_INPUT -42
-// genparam>> REPEAT 4 RANDOMIZE_INPUT int
+/** genparam input
+ * print 2147483647;
+ * print 100;
+ * print 10;
+ * print 1;
+ * print 0;
+ * print -1;
+ * print -10;
+ * print -2147483648;
+ * for $_ (1 .. 5) {
+ * 	print int(rand(65536) - 32768);
+ * }
+ */
 #include <stdlib.h>
 #include <stdio.h>
 #include "ft_abs.h"

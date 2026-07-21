@@ -34,9 +34,13 @@ clean() {
 }
 trap clean EXIT SIGINT SIGTERM
 
+NORM_OPT=()
+if [ -f "$STUB_PATH/env" ]; then
+	source "$STUB_PATH/env"
+fi
 echo ""
 echo "Norminette: "
-norminette "$REPO_PATH" || exit
+norminette $NORM_OPT "$REPO_PATH" || exit
 
 for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
 	echo ""

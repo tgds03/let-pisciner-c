@@ -58,7 +58,8 @@ Param* convert(const char* argstr) {
 }
 **/
 
-#define LINE_BUFFER_SIZE 256
+#define LINE_BUFFER_SIZE 1024
+#define MAX_ARGC 256
 char func_header[LINE_BUFFER_SIZE];
 
 void wprint(const char *str, ...) {
@@ -133,14 +134,23 @@ void init_test() {
 
 void loop_test(void (*callback)(int, char*[])) {
 	const char* WHITESPACE = " \x09\x0a\x0b\x0c\x0d";
-	char input_buffer[LINE_BUFFER_SIZE];
-	char *argv[LINE_BUFFER_SIZE], *pcur, *rcur, *wcur;
+	char *input_buffer;
+	char *argv[MAX_ARGC], *pcur, *rcur, *wcur;
 	char quote = 0;
-	int argc = 1, idx;
+	int input_buffer_size = LINE_BUFFER_SIZE;
+	int argc = 1, idx, input_len;
 
+	input_buffer = (char*)calloc(input_buffer_size, sizeof(char));
 	argv[0] = func_header;
 	wprint("Type in input data...\n");
-	while (fgets(input_buffer, LINE_BUFFER_SIZE, stdin)) {
+	while (fgets(input_buffer, input_buffer_size, stdin)) {
+		input_len = strlen(input_buffer);
+		while (input_len >= input_buffer_size - 1) {
+			input_buffer_size *= 2;
+			input_buffer = (char*)realloc(input_buffer, input_buffer_size);
+			fgets(input_buffer + input_len, input_buffer_size - input_len, stdin);
+			input_len = strlen(input_buffer);
+		}
 
 		//tokenize
 		argc = 1;
@@ -222,4 +232,5 @@ void loop_test(void (*callback)(int, char*[])) {
 		wprint("\n\nType in input data...\n");
 	}
 	wprint("File closed.\n");
+	free(input_buffer);
 }

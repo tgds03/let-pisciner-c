@@ -1,7 +1,13 @@
-// genparam>> SET_INPUT 1
-// genparam>> SET_INPUT 1 2
-// genparam>> SET_INPUT 1 2 3
-// genparam>> SET_INPUT 1 2 3 4
+/** genparam input
+ * $\ = "";
+ * $, = "";
+ * for $i (1 .. 16) {
+ * 	for $j (1 .. $i) {
+ * 		print $j, " ";
+ * 	}
+ * 	print "\n";
+ * }
+ */
 #include <unistd.h>
 #include "ft_boolean.h"
 #include "common.h"

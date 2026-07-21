@@ -1,7 +1,19 @@
-// genparam>> SET_INPUT a
-// genparam>> SET_INPUT 1 2 3 4
-// genparam>> SET_INPUT a b c d
-// genparam>> REPEAT 3 RANDOMIZE_INPUT str str str
+/** genparam input
+ * print "";
+ * print '""';
+ * print "a";
+ * print 1, 2, 3, 4;
+ * print "a", "b", "c", "d";
+ * $\ = "";
+ * $, = "";
+ * for $_ (1 .. 5) {
+ * 	$len = int(rand(28) + 4);
+ * 	for $i (1 .. $len) {
+ * 		print printable_random(16), " ";
+ * 	}
+ * 	print "\n";
+ * }
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include "common.h"
