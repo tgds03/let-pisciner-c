@@ -31,7 +31,7 @@ getcmd() {
 	local CC_LIBRARY=('common');
 	local CC_DEFINE=("TARGET_PATH=\"$TARGET_PATH\"" "STUB_C_MD5=\"$STUB_MD5\"");
 	local CC_TARGET=('*.c' "$entrypoint");
-	local COMPILE_CMD="cc -o $CC_OUTFILE -g "
+	local COMPILE_CMD="cc -o $CC_OUTFILE -g -O0 "
 
 	if [ -f "$1" ]; then
 		source <(cat "$1" | sed -E '/COMPILE_CMD/d');

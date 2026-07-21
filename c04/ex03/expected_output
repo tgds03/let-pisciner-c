@@ -1,26 +1,14 @@
 
 execute ./app:
 Let Pisciner C
-Function: void ft_putnbr(int nb);
+Function: int ft_atoi(char *str);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
-"2147483647"
+""
 Program's output:
-2147483647
-
-Type in input data...
-Received input:
-"100"
-Program's output:
-100
-
-Type in input data...
-Received input:
-"10"
-Program's output:
-10
+0
 
 Type in input data...
 Received input:
@@ -42,9 +30,9 @@ Program's output:
 
 Type in input data...
 Received input:
-"-10"
+"2147483647"
 Program's output:
--10
+2147483647
 
 Type in input data...
 Received input:
@@ -54,39 +42,51 @@ Program's output:
 
 Type in input data...
 Received input:
-"-114"
+"   123"
 Program's output:
--114
+123
 
 Type in input data...
 Received input:
-"1"
+"\t\n\f-321"
 Program's output:
-1
+-321
 
 Type in input data...
 Received input:
-"-110"
+"--+-+512"
 Program's output:
--110
+-512
 
 Type in input data...
 Received input:
-"-105"
+"+--+--1024"
 Program's output:
--105
+1024
 
 Type in input data...
 Received input:
-"22"
+" \f\n\r\t\v-3 1"
 Program's output:
-22
+-3
 
 Type in input data...
 Received input:
-"57"
+"\t\v +---+--23"
 Program's output:
-57
+-23
+
+Type in input data...
+Received input:
+"\r +- -+32"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"    +-++\t352"
+Program's output:
+0
 
 Type in input data...
 File closed.

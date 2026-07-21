@@ -25,6 +25,22 @@ sub char {
         return chr($_[0]);
     }
 }
+sub ascii_inline {
+    $res = '"';
+    for $i (1 .. 127) {
+        $res .= char($i);
+    }
+    $res .= '"';
+    return $res;
+}
+sub printable_inline {
+    $res = '"';
+    for $i (32 .. 126) {
+        $res .= char($i);
+    }
+    $res .= '"';
+    return $res;
+}
 srand($seed);
 $, = ' ';
 $\ = "\n";
