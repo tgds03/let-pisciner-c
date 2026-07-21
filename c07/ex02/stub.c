@@ -1,10 +1,15 @@
-// genparam>> SET_INPUT 0 0
-// genparam>> SET_INPUT 0 1
-// genparam>> SET_INPUT 1 0
-// genparam>> SET_INPUT -10 10
-// genparam>> SET_INPUT 10 -10
-// genparam>> REPEAT 10 RANDOMIZE_INPUT int int
-
+/** genparam input
+ * print 0, 0;
+ * print 0, 1;
+ * print 1, 0;
+ * print -10, 10;
+ * print 10, -10;
+ * for $_ (1.. 10) {
+ * 	$start = int(rand(2048)) - 1024;
+ * 	$range = int(rand(32)) - 16;
+ * 	print $start, $start + $range;
+ * }
+ */
 #include <stdlib.h>
 #include <stdio.h>
 #include "common.h"

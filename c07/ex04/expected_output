@@ -1,0 +1,134 @@
+
+execute ./app:
+Let Pisciner C
+Function: char* ft_convert_base(char *nbr, char *base_from, char *base_to);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"", "0123456789", "0123456789"
+Program's output:
+NULL
+free: done
+
+Type in input data...
+Received input:
+"0", "0", "01"
+Program's output:
+NULL
+free: done
+
+Type in input data...
+Received input:
+"0", "0123457789", "0123456789abcdef"
+Program's output:
+NULL
+free: done
+
+Type in input data...
+Received input:
+"0", "0123457789", "0123456789abbdef"
+Program's output:
+NULL
+free: done
+
+Type in input data...
+Received input:
+"0", "0123456789", "0123456789abcdef-"
+Program's output:
+NULL
+free: done
+
+Type in input data...
+Received input:
+"0", "0123456789+", "0123456789abcdef"
+Program's output:
+NULL
+free: done
+
+Type in input data...
+Received input:
+"x", "0123456789", "0123456789abcdef"
+Program's output:
+NULL
+free: done
+
+Type in input data...
+Received input:
+"10", "0123456789", "0123456789abcdef"
+Program's output:
+a
+free: done
+
+Type in input data...
+Received input:
+"-10", "0123456789", "0123456789abcdef"
+Program's output:
+-a
+free: done
+
+Type in input data...
+Received input:
+"2147483647", "0123456789", "01"
+Program's output:
+1111111111111111111111111111111
+free: done
+
+Type in input data...
+Received input:
+"2147483648", "0123456789", "01234567"
+Program's output:
+-20000000000
+free: done
+
+Type in input data...
+Received input:
+"-2147483648", "0123456789", "01"
+Program's output:
+-10000000000000000000000000000000
+free: done
+
+Type in input data...
+Received input:
+"-2147483649", "0123456789", "0123456789abcdef"
+Program's output:
+7fffffff
+free: done
+
+Type in input data...
+Received input:
+"12345", "0123456789", "0123456789"
+Program's output:
+12345
+free: done
+
+Type in input data...
+Received input:
+"21845", "0123456789", "0123456789abcdef"
+Program's output:
+5555
+free: done
+
+Type in input data...
+Received input:
+"499602D2", "0123456789ABCDEF", "jabcdefghi"
+Program's output:
+abcdefghij
+free: done
+
+Type in input data...
+Received input:
+".__._.____._..__", "._", "icant2hsprogmue"
+Program's output:
+paon
+free: done
+
+Type in input data...
+Received input:
+"9x81P3", "0123456789JumblingVextFrowzyHacksPDQ", "CwmFjordVegBalksNthPyxQuiz"
+Program's output:
+wQtowtw
+free: done
+
+Type in input data...
+File closed.

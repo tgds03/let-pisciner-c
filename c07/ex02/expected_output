@@ -1,0 +1,128 @@
+
+execute ./app:
+Let Pisciner C
+Function: int ft_ultimate_range(int **range, int min, int max);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"0", "0"
+Program's output:
+
+expected count: 0, retunred count: 0
+free: done
+
+Type in input data...
+Received input:
+"0", "1"
+Program's output:
+0 
+expected count: 1, retunred count: 1
+free: done
+
+Type in input data...
+Received input:
+"1", "0"
+Program's output:
+
+expected count: 0, retunred count: 0
+free: done
+
+Type in input data...
+Received input:
+"-10", "10"
+Program's output:
+-10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 9 
+expected count: 20, retunred count: 20
+free: done
+
+Type in input data...
+Received input:
+"10", "-10"
+Program's output:
+
+expected count: 0, retunred count: 0
+free: done
+
+Type in input data...
+Received input:
+"-615", "-622"
+Program's output:
+
+expected count: 0, retunred count: 0
+free: done
+
+Type in input data...
+Received input:
+"249", "235"
+Program's output:
+
+expected count: 0, retunred count: 0
+free: done
+
+Type in input data...
+Received input:
+"-23", "-8"
+Program's output:
+-23 -22 -21 -20 -19 -18 -17 -16 -15 -14 -13 -12 -11 -10 -9 
+expected count: 15, retunred count: 15
+free: done
+
+Type in input data...
+Received input:
+"-17", "-4"
+Program's output:
+-17 -16 -15 -14 -13 -12 -11 -10 -9 -8 -7 -6 -5 
+expected count: 13, retunred count: 13
+free: done
+
+Type in input data...
+Received input:
+"-762", "-753"
+Program's output:
+-762 -761 -760 -759 -758 -757 -756 -755 -754 
+expected count: 9, retunred count: 9
+free: done
+
+Type in input data...
+Received input:
+"-313", "-314"
+Program's output:
+
+expected count: 0, retunred count: 0
+free: done
+
+Type in input data...
+Received input:
+"-159", "-171"
+Program's output:
+
+expected count: 0, retunred count: 0
+free: done
+
+Type in input data...
+Received input:
+"-21", "-11"
+Program's output:
+-21 -20 -19 -18 -17 -16 -15 -14 -13 -12 
+expected count: 10, retunred count: 10
+free: done
+
+Type in input data...
+Received input:
+"934", "944"
+Program's output:
+934 935 936 937 938 939 940 941 942 943 
+expected count: 10, retunred count: 10
+free: done
+
+Type in input data...
+Received input:
+"495", "480"
+Program's output:
+
+expected count: 0, retunred count: 0
+free: done
+
+Type in input data...
+File closed.

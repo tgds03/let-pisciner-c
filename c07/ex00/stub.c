@@ -1,7 +1,11 @@
-// genparam>> SET_INPUT 0
-// genparam>> SET_INPUT abcdefghijklmnopqrstuvwxyz
-// genparam>> REPEAT 10 RANDOMIZE_INPUT str
-
+/** genparam input
+ * print '""';
+ * print 0;
+ * print "abcdefghijklmnopqrstuvwxyz";
+ * for $_ (1 .. 10) {
+ * 	print printable_random(80);
+ * }
+ */
 #include <stdio.h>
 #include "common.h"
 

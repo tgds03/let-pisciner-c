@@ -25,6 +25,7 @@ sub char {
         return chr($_[0]);
     }
 }
+
 sub ascii_inline {
     $res = '"';
     for $i (1 .. 127) {
@@ -33,6 +34,7 @@ sub ascii_inline {
     $res .= '"';
     return $res;
 }
+
 sub printable_inline {
     $res = '"';
     for $i (32 .. 126) {
@@ -41,6 +43,17 @@ sub printable_inline {
     $res .= '"';
     return $res;
 }
+
+sub printable_random {
+    $res = '"';
+    $len = int(rand($_[0]));
+    for $_ (0 .. $len) {
+        $res .= char( int(rand(95)) + 32 );
+    }
+    $res .= '"';
+    return $res;
+}
+
 srand($seed);
 $, = ' ';
 $\ = "\n";

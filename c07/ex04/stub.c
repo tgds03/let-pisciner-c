@@ -1,20 +1,23 @@
-// genparam>> SET_INPUT 0 0 01
-// genparam>> SET_INPUT 0 0123457789 0123456789abcdef
-// genparam>> SET_INPUT 0 0123457789 0123456789abbdef
-// genparam>> SET_INPUT 0 0123456789 0123456789abcdef-
-// genparam>> SET_INPUT 0 0123456789+ 0123456789abcdef
-// genparam>> SET_INPUT x 0123456789 0123456789abcdef
-// genparam>> SET_INPUT 10 0123456789 0123456789abcdef
-// genparam>> SET_INPUT -10 0123456789 0123456789abcdef
-// genparam>> SET_INPUT 2147483647 0123456789 01
-// genparam>> SET_INPUT 2147483648 0123456789 01234567
-// genparam>> SET_INPUT -2147483648 0123456789 01
-// genparam>> SET_INPUT -2147483649 0123456789 0123456789abcdef
-// genparam>> SET_INPUT 12345 0123456789 0123456789
-// genparam>> SET_INPUT 21845 0123456789 0123456789abcdef
-// genparam>> SET_INPUT 499602D2 0123456789ABCDEF jabcdefghi
-// genparam>> SET_INPUT .__._.____._..__ ._ icant2hsprogmue
-// genparam>> SET_INPUT 9x81P3 0123456789JumblingVextFrowzyHacksPDQ CwmFjordVegBalksNthPyxQuiz
+/** genparam input
+ * print '""', "0123456789", "0123456789";
+ * print "0", "0", "01";
+ * print "0", "0123457789", "0123456789abcdef";
+ * print "0", "0123457789", "0123456789abbdef";
+ * print "0", "0123456789", "0123456789abcdef-";
+ * print "0", "0123456789+", "0123456789abcdef";
+ * print "x", "0123456789", "0123456789abcdef";
+ * print "10", "0123456789", "0123456789abcdef";
+ * print "-10", "0123456789", "0123456789abcdef";
+ * print "2147483647", "0123456789", "01";
+ * print "2147483648", "0123456789", "01234567";
+ * print "-2147483648", "0123456789", "01";
+ * print "-2147483649", "0123456789", "0123456789abcdef";
+ * print "12345", "0123456789", "0123456789";
+ * print "21845", "0123456789", "0123456789abcdef";
+ * print "499602D2", "0123456789ABCDEF", "jabcdefghi";
+ * print ".__._.____._..__", "._", "icant2hsprogmue";
+ * print "9x81P3", "0123456789JumblingVextFrowzyHacksPDQ", "CwmFjordVegBalksNthPyxQuiz";
+*/
 
 #include <stdio.h>
 #include "common.h"

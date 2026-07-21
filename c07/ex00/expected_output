@@ -1,0 +1,112 @@
+
+execute ./app:
+Let Pisciner C
+Function: char* ft_strdup(char *src);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+""
+Program's output:
+
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+Received input:
+"0"
+Program's output:
+0
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+Received input:
+"abcdefghijklmnopqrstuvwxyz"
+Program's output:
+abcdefghijklmnopqrstuvwxyz
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+Received input:
+"M},BYTS{`5|3Vg1dwxkPp.7d"
+Program's output:
+M},BYTS{`5|3Vg1dwxkPp.7d
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+Received input:
+"cfM@7RMK3usTI1ZX_z*p$> aU.cmje:2qdO> Vz#L6`I)xW1{9$B2C*"
+Program's output:
+cfM@7RMK3usTI1ZX_z*p$> aU.cmje:2qdO> Vz#L6`I)xW%d{9$B2C*
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+Received input:
+"b(-qgq[2=?,&mruAT]|[p$o"
+Program's output:
+b(-qgq[2=?,&mruAT]|[p$o
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+Received input:
+"Qx4->r)LezWiLMI"
+Program's output:
+Qx4->r)LezWiLMI
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+Received input:
+"D6\'=hQpF8dBNqHW>5M,\\3eVBHIa29dK;QM5{iDykk#]+Tt\"7;:;IkwygJg)Vqd%P1,g?|aU`"
+Program's output:
+D6'=hQpF8dBNqHW>5M,\3eVBHIa29dK;QM5{iDykk#]+Tt"7;:;IkwygJg)Vqd%P1,g?|aU`
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+Received input:
+"*zSuccess8/UP\'h\'s^k[&uxSOXMsWpX$:QiqwW63gn $*hkV|F2SC2wbq5%\\\'|@8I[6b,tbUQ4c!a?!0 "
+Program's output:
+*z%m8/UP'h's^k[&uxSOXMsWpX$:QiqwW63gn $*hkV|F2SC2wbq5%L\'|@8I[6b,tbUQ4c!a?!0 
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+Received input:
+"rv$c"
+Program's output:
+rv$c
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+Received input:
+"xUU>a:1h+Unb3roy^"
+Program's output:
+xUU>a:1h+Unb3roy^
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+Received input:
+"Dk%>4#"
+Program's output:
+Dk%>4#
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+Received input:
+"4.]M_ojV(Dn<Q4tRB:Vjr[/cE42PPEI5?GWA$|Y(yt"
+Program's output:
+4.]M_ojV(Dn<Q4tRB:Vjr[/cE42PPEI5?GWA$|Y(yt
+argv[1] and return of ft_strdup are not same.
+free: done
+
+Type in input data...
+File closed.
