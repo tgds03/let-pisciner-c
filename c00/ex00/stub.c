@@ -1,6 +1,7 @@
 /** genparam input
- * for $i (32 .. 126) {
- * 	print chr($i), "\n";
+ * print '" "';
+ * for $i (33 .. 126) {
+ * 	print char($i);
  * }
 */
 #include "common.h"

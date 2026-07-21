@@ -1,1 +1,188 @@
-0 0 0 0 0 0 53 0 0 0 0 0 53 0 -1 1 53 0 53 0 -1 1 53 -53 
+
+execute ./app:
+Let Pisciner C
+Function: int ft_strncmp(char *s1, char *s2, unsigned int n);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"55", "", "0"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "55", "0"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "56", "0"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "54", "0"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "5", "0"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "555", "0"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "", "1"
+Program's output:
+53
+
+Type in input data...
+Received input:
+"55", "55", "1"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "56", "1"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "54", "1"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "5", "1"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "555", "1"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "", "2"
+Program's output:
+53
+
+Type in input data...
+Received input:
+"55", "55", "2"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "56", "2"
+Program's output:
+-1
+
+Type in input data...
+Received input:
+"55", "54", "2"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"55", "5", "2"
+Program's output:
+53
+
+Type in input data...
+Received input:
+"55", "555", "2"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "", "3"
+Program's output:
+53
+
+Type in input data...
+Received input:
+"55", "55", "3"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "56", "3"
+Program's output:
+-1
+
+Type in input data...
+Received input:
+"55", "54", "3"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"55", "5", "3"
+Program's output:
+53
+
+Type in input data...
+Received input:
+"55", "555", "3"
+Program's output:
+-53
+
+Type in input data...
+Received input:
+"55", "", "4"
+Program's output:
+53
+
+Type in input data...
+Received input:
+"55", "55", "4"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"55", "56", "4"
+Program's output:
+-1
+
+Type in input data...
+Received input:
+"55", "54", "4"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"55", "5", "4"
+Program's output:
+53
+
+Type in input data...
+Received input:
+"55", "555", "4"
+Program's output:
+-53
+
+Type in input data...
+File closed.

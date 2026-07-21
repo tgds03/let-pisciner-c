@@ -1,13 +1,13 @@
 /** genparam input
- * print "1\n";
- * print "0\n";
- * print "-1\n";
- * print "10\n";
- * print "-10\n";
- * print "214783647\n";
- * print "-214783648\n";
+ * print "1";
+ * print "0";
+ * print "-1";
+ * print "10";
+ * print "-10";
+ * print "214783647";
+ * print "-214783648";
  * for ($i = 0; $i < 10; $i++) {
- * 	print int(rand(256)) - 128, "\n";
+ * 	print int(rand(256)) - 128;
  * }
  */
 #include "common.h"

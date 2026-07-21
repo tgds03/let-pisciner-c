@@ -126,7 +126,6 @@ void init_test() {
 	}
 
 	wprint("Let Pisciner C\n");
-	wprint("Compiled: %s\n", function_env.path);
 	wprint("Function: %s\n", func_header);
 	wprint("Press Ctrl + C to interrupt and exit.\n");
 	putline('=');
@@ -135,20 +134,87 @@ void init_test() {
 void loop_test(void (*callback)(int, char*[])) {
 	const char* WHITESPACE = " \x09\x0a\x0b\x0c\x0d";
 	char input_buffer[LINE_BUFFER_SIZE];
-	char *argv[LINE_BUFFER_SIZE], *cur;
-	int argc = 1;
+	char *argv[LINE_BUFFER_SIZE], *pcur, *rcur, *wcur;
+	char quote = 0;
+	int argc = 1, idx;
 
 	argv[0] = func_header;
 	wprint("Type in input data...\n");
 	while (fgets(input_buffer, LINE_BUFFER_SIZE, stdin)) {
-		wprint("Received input:\n");
-		wprint(input_buffer);
-		
+
+		//tokenize
 		argc = 1;
-		cur = strtok(input_buffer, WHITESPACE);
-		while (cur) {
-			argv[argc++] = cur;
-			cur = strtok(0, WHITESPACE);
+		wcur = input_buffer;
+		pcur = " ";
+		while (*wcur) {
+			if (*wcur == '\\') {
+				++wcur;
+			} else if (*wcur == '\'' || *wcur == '"') {
+				if (quote == 0) {
+					quote = *wcur;
+					argv[argc++] = wcur + 1;
+				}
+				else
+					quote = 0;
+				*wcur = 0;
+			} else if (quote == 0) {
+				if (strchr(WHITESPACE, *wcur)) {
+					*wcur = 0;
+				} else if (strchr(WHITESPACE, *pcur)) {
+					argv[argc++] = wcur;
+				}
+			}
+			pcur = wcur;
+			++wcur;
+		}
+
+		if (quote != 0) {
+			wprint("Parsing error.\n");
+			continue;
+		}
+		wprint("Received input:\n");
+		for (idx = 1; idx < argc; ++idx) {
+			wprint("\"");
+			wprint(argv[idx]);
+			wprint("\"");
+			if (idx < argc - 1)
+				wprint(", ");
+		}
+
+		// escape
+		for (idx = 1; idx < argc; ++idx) {
+			wcur = argv[idx];
+			rcur = argv[idx];
+			while (*rcur) {
+				if (*rcur == '\\') {
+					++rcur;
+					switch (*rcur) {
+						case '0': *wcur = '\0'; break;
+						case 'a': *wcur = '\a'; break;
+						case 'b': *wcur = '\b'; break;
+						case 't': *wcur = '\t'; break;
+						case 'n': *wcur = '\n'; break;
+						case 'v': *wcur = '\v'; break;
+						case 'f': *wcur = '\f'; break;
+						case 'r': *wcur = '\r'; break;
+						case '\\': *wcur = '\\'; break;
+						case '\'': *wcur = '\''; break;
+						case '"': *wcur = '"'; break;
+						case 0: *wcur = '\\'; break;
+						default: *wcur = *rcur; break;
+					}
+					if (*rcur == 0) {
+						++wcur;
+						break;
+					}
+				} else {
+					*wcur = *rcur;
+				}
+				pcur = rcur;
+				++wcur;
+				++rcur;
+			}
+			*wcur = 0;
 		}
 
 		wprint("\nProgram's output:\n");

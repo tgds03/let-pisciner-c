@@ -26,7 +26,7 @@ generate() {
 		echo "can't find scripts. skip."
 		return
 	fi
-	echo -e "$SCRIPT" | perl > "$STUB_PATH/${EXAM_NAME}$1"
+	printf '%s\n' "$SCRIPT" | perl > "$STUB_PATH/${EXAM_NAME}$1"
 	if [ $? -eq '0' ]; then
 		echo "done."
 	fi

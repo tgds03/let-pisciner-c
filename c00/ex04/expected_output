@@ -1,121 +1,104 @@
 
 execute ./app:
 Let Pisciner C
-Compiled: 
 Function: void ft_is_negative(int n);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
-35
-
+"25"
 Program's output:
 P
 
 Type in input data...
 Received input:
-14
+"-58"
+Program's output:
+N
 
+Type in input data...
+Received input:
+"74"
 Program's output:
 P
 
 Type in input data...
 Received input:
-67
+"-112"
+Program's output:
+N
 
+Type in input data...
+Received input:
+"-15"
+Program's output:
+N
+
+Type in input data...
+Received input:
+"94"
 Program's output:
 P
 
 Type in input data...
 Received input:
--107
-
-Program's output:
-N
-
-Type in input data...
-Received input:
--28
-
-Program's output:
-N
-
-Type in input data...
-Received input:
-26
-
+"112"
 Program's output:
 P
 
 Type in input data...
 Received input:
-123
-
+"11"
 Program's output:
 P
 
 Type in input data...
 Received input:
--4
-
-Program's output:
-N
-
-Type in input data...
-Received input:
-80
-
+"97"
 Program's output:
 P
 
 Type in input data...
 Received input:
--115
-
+"-50"
 Program's output:
 N
 
 Type in input data...
 Received input:
-60
+"-57"
+Program's output:
+N
 
+Type in input data...
+Received input:
+"34"
 Program's output:
 P
 
 Type in input data...
 Received input:
--58
-
+"-27"
 Program's output:
 N
 
 Type in input data...
 Received input:
--55
-
+"-68"
 Program's output:
 N
 
 Type in input data...
 Received input:
--73
-
-Program's output:
-N
-
-Type in input data...
-Received input:
-112
-
+"119"
 Program's output:
 P
 
 Type in input data...
 Received input:
--1
-
+"47"
 Program's output:
-N
+P
 
 Type in input data...
 File closed.

@@ -1,12 +1,14 @@
 /** genparam input
- * print "Hello_world!\n";
+ * print "Hello_world!";
  * print "abcde\0abcde";
+ * $\ = "";
  * for $_ (0 .. 10) {
  * 	$len = int(rand(16));
+ * 	print '"';
  * 	for $i (0 .. $len) {
- * 		print chr(int(rand(95)) + 33);
+ * 		print char(int(rand(95)) + 32);
  * 	}
- * 	print "\n";
+ * 	print "\"\n";
  * }
  */
 #include <stdlib.h>

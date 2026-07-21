@@ -1,9 +1,12 @@
 /** genparam input
- * print "Hello world\n";
+ * print "Hello world";
+ * $\ = "";
+ * $, = "";
+ * print '"';
  * for $i (32 .. 126) {
- * 	print chr($i);
+ * 	print char($i);
  * }
- * print "\n";
+ * print "\"\n";
  */
 #include "common.h"
 

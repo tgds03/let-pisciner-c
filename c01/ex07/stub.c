@@ -1,5 +1,7 @@
 /** genparam input
- * print "0 1 2 3 4 5 6 7 8 9\n";
+ * print "0 1 2 3 4 5 6 7 8 9";
+ * $, = "";
+ * $\ = "";
  * for $_ (0 .. 20) {
  * 	$len = int(rand(16));
  * 	for $i (0 .. $len) {

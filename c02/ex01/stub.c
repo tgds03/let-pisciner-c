@@ -1,17 +1,19 @@
 /** genparam input
- * print "0 Hello_world!\n";
- * print "3 Hello_world!\n";
- * print "7 Hello_world!\n";
- * print "12 Hello_world!\n";
- * print "7 abcde\0abcde\n";
+ * print '0 "Hello world!"';
+ * print '3 "Hello world!"';
+ * print '7 "Hello world!"';
+ * print '12 "Hello world!"';
+ * print '7 "abcde\0abcde"';
+ * $\ = "";
+ * $, = "";
  * for $_ (0 .. 10) {
  * 	$len = int(rand(16));
  * 	$n = int(rand($len));
- * 	print $n, " ";
+ * 	print $n, " ", '"';
  * 	for $i (0 .. $len) {
- * 		print chr(int(rand(95)) + 33);
+ * 		print char(int(rand(95)) + 32);
  * 	}
- * 	print "\n";
+ * 	print '"', "\n";
  * }
  */
 #include <stdio.h>

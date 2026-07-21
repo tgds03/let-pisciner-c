@@ -1,43 +1,32 @@
 
 execute ./app:
 Let Pisciner C
-Compiled: 
 Function: int ft_strlen(char *str);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
-
-
+""
 Program's output:
-30
+0
 
 Type in input data...
 Received input:
-a
-
+"a"
 Program's output:
 1
 
 Type in input data...
 Received input:
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 Program's output:
 100
 
 Type in input data...
 Received input:
-abcdeabcd
-
+"abcdeabcd\nabcdeabcde\tbcdeabcdeabc\0eabcdeabcdeabcde\n"
 Program's output:
-9
-
-Type in input data...
-Received input:
-abcdeabcde	bcdeabcdeabc
-Program's output:
-10
+33
 
 Type in input data...
 File closed.

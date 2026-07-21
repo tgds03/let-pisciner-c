@@ -1,128 +1,110 @@
 
 execute ./app:
 Let Pisciner C
-Compiled: 
 Function: void ft_putnbr(int nb);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
-1
-
+"1"
 Program's output:
 1
 
 Type in input data...
 Received input:
-0
-
+"0"
 Program's output:
 0
 
 Type in input data...
 Received input:
--1
-
+"-1"
 Program's output:
 -1
 
 Type in input data...
 Received input:
-10
-
+"10"
 Program's output:
 10
 
 Type in input data...
 Received input:
--10
-
+"-10"
 Program's output:
 -10
 
 Type in input data...
 Received input:
-214783647
-
+"214783647"
 Program's output:
 214783647
 
 Type in input data...
 Received input:
--214783648
-
+"-214783648"
 Program's output:
 -214783648
 
 Type in input data...
 Received input:
-105
-
+"88"
 Program's output:
-105
+88
 
 Type in input data...
 Received input:
-126
-
+"-71"
 Program's output:
-126
+-71
 
 Type in input data...
 Received input:
-92
-
+"72"
 Program's output:
-92
+72
 
 Type in input data...
 Received input:
--49
-
+"-87"
 Program's output:
--49
+-87
 
 Type in input data...
 Received input:
--93
-
+"-84"
 Program's output:
--93
+-84
 
 Type in input data...
 Received input:
-20
-
+"44"
 Program's output:
-20
+44
 
 Type in input data...
 Received input:
--115
-
+"35"
 Program's output:
--115
+35
 
 Type in input data...
 Received input:
--46
-
+"-67"
 Program's output:
--46
+-67
 
 Type in input data...
 Received input:
--18
-
+"-61"
 Program's output:
--18
+-61
 
 Type in input data...
 Received input:
--29
-
+"28"
 Program's output:
--29
+28
 
 Type in input data...
 File closed.

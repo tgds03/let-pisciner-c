@@ -1,86 +1,74 @@
 
 execute ./app:
 Let Pisciner C
-Compiled: 
 Function: void ft_ultimate_div_mod(int *a, int *b);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
-28 -100
-
+"-54", "78"
 Program's output:
-0 28
+0 -54
 
 Type in input data...
 Received input:
-11 -117
-
+"-39", "90"
 Program's output:
-0 11
+0 -39
 
 Type in input data...
 Received input:
-76 74
-
+"2", "127"
 Program's output:
-1 2
+0 2
 
 Type in input data...
 Received input:
--72 -99
-
+"-43", "-46"
 Program's output:
-0 -72
+0 -43
 
 Type in input data...
 Received input:
-74 32
-
+"-93", "48"
 Program's output:
-2 10
+-1 -45
 
 Type in input data...
 Received input:
--53 89
-
+"-74", "-46"
 Program's output:
-0 -53
+1 -28
 
 Type in input data...
 Received input:
-26 85
-
+"83", "56"
 Program's output:
-0 26
+1 27
 
 Type in input data...
 Received input:
--82 123
-
+"49", "24"
 Program's output:
-0 -82
+2 1
 
 Type in input data...
 Received input:
--99 61
-
+"33", "-21"
 Program's output:
--1 -38
+-1 12
 
 Type in input data...
 Received input:
-76 2
-
+"-84", "92"
 Program's output:
-38 0
+0 -84
 
 Type in input data...
 Received input:
-68 67
-
+"-10", "-45"
 Program's output:
-1 1
+0 -10
 
 Type in input data...
 File closed.

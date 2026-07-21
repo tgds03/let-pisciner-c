@@ -1,86 +1,74 @@
 
 execute ./app:
 Let Pisciner C
-Compiled: 
 Function: void ft_swap(int *a, int *b);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
--112 -44
-
+"101", "20"
 Program's output:
--44, -112
+20, 101
 
 Type in input data...
 Received input:
-92 -95
-
+"-95", "80"
 Program's output:
--95, 92
+80, -95
 
 Type in input data...
 Received input:
--6 109
-
+"120", "32"
 Program's output:
-109, -6
+32, 120
 
 Type in input data...
 Received input:
--125 91
-
+"63", "-96"
 Program's output:
-91, -125
+-96, 63
 
 Type in input data...
 Received input:
-69 -42
-
+"-60", "-18"
 Program's output:
--42, 69
+-18, -60
 
 Type in input data...
 Received input:
--84 -63
-
+"121", "-55"
 Program's output:
--63, -84
+-55, 121
 
 Type in input data...
 Received input:
-46 -95
-
+"4", "-10"
 Program's output:
--95, 46
+-10, 4
 
 Type in input data...
 Received input:
--85 49
-
+"-67", "77"
 Program's output:
-49, -85
+77, -67
 
 Type in input data...
 Received input:
--120 -17
-
+"44", "-55"
 Program's output:
--17, -120
+-55, 44
 
 Type in input data...
 Received input:
--54 -28
-
+"-83", "-72"
 Program's output:
--28, -54
+-72, -83
 
 Type in input data...
 Received input:
-23 -30
-
+"41", "-101"
 Program's output:
--30, 23
+-101, 41
 
 Type in input data...
 File closed.

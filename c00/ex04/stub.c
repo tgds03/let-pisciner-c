@@ -1,6 +1,6 @@
 /** genparam input
  * for ($i = 0; $i < 16; $i++) {
- * 	print int(rand(256)) - 128, "\n";
+ * 	print int(rand(256)) - 128;
  * }
  */
 #include "common.h"

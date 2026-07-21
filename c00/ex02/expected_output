@@ -1,13 +1,11 @@
 
 execute ./app:
 Let Pisciner C
-Compiled: 
 Function: void ft_print_reverse_alphabet();
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
-
 
 Program's output:
 zyxwvutsrqponmlkjihgfedcba

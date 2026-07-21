@@ -1,6 +1,10 @@
 /** genparam input
  * for $i (0 .. 10) {
- * 	print int(rand(256)) - 128, " ", int(rand(256)) - 128, "\n";
+ * 	$nominator = int(rand(256)) - 128;
+ * 	if ($nominator == 0) {
+ * 		$nominator += 1;
+ * 	}
+ * 	print int(rand(256)) - 128, $nominator;
  * }
  */
 #include <stdio.h>

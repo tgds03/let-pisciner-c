@@ -1,42 +1,36 @@
 
 execute ./app:
 Let Pisciner C
-Compiled: 
 Function: unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
-0
-
+"0", ""
 Program's output:
 0 .
 
 Type in input data...
 Received input:
-0 abcde
-
+"0", "abcde"
 Program's output:
 5 ......
 
 Type in input data...
 Received input:
-5 abcde
-
+"5", "abcde"
 Program's output:
 5 abcd
 
 Type in input data...
 Received input:
-10 abcde
-
+"10", "abcde"
 Program's output:
 5 abcde
 
 Type in input data...
 Received input:
-20 012345678901234567890123456789
-
+"20", "012345678901234567890123456789"
 Program's output:
 30 0123456789012345678
 

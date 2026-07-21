@@ -1,135 +1,119 @@
 
 execute ./app:
 Let Pisciner C
-Compiled: 
 Function: char * ft_strncpy(char *dest, char *src, unsigned int n);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
-0 Hello_world!
-
+"0", "Hello world!"
 Program's output:
 
 
 
 Type in input data...
 Received input:
-3 Hello_world!
-
+"3", "Hello world!"
 Program's output:
 Hel
 
 
 Type in input data...
 Received input:
-7 Hello_world!
-
+"7", "Hello world!"
 Program's output:
-Hello_w
+Hello w
 
 
 Type in input data...
 Received input:
-12 Hello_world!
-
+"12", "Hello world!"
 Program's output:
-Hello_world!
+Hello world!
 
 
 Type in input data...
 Received input:
-7 abcde
+"7", "abcde\0abcde"
 Program's output:
 abcde
 
 
 Type in input data...
 Received input:
-3 ^9aA3
-
+"3", "NogVz"
 Program's output:
-^9a
+Nog
 
 
 Type in input data...
 Received input:
-0 (L;6=c/d w>pS
-
+"7", "[7bygvx^2iVt/rg8"
 Program's output:
-
+[7bygvx
 
 
 Type in input data...
 Received input:
-4 H$3pA]v
-
-Program's output:
-H$3p
-
-
-Type in input data...
-Received input:
-4 w2Ohm28'-
-
-Program's output:
-w2Oh
-
-
-Type in input data...
-Received input:
-5 S0"<^u% 5(meN.*
-
-Program's output:
-S0"<^
-
-
-Type in input data...
-Received input:
-2 @=76
-
-Program's output:
-@=
-
-
-Type in input data...
-Received input:
-11 U\#@!p~QAg92@fx
-
-Program's output:
-U\#@!p~QAg9
-
-
-Type in input data...
-Received input:
-3 7Ii^8oxZITcV.>
-
-Program's output:
-7Ii
-
-
-Type in input data...
-Received input:
-0 xPP]ugez]
-
+"0", "9"
 Program's output:
 
 
 
 Type in input data...
 Received input:
-11 F7zda[7(Ak!.Aw+f
-
+"10", "z%WTq4WR<FI2Enf"
 Program's output:
-F7zda[7(Ak!
+z%WTq4WR<F
 
 
 Type in input data...
 Received input:
-4 #H10P1q@_iAM
-
+"8", "@?FMQ9`;iL"
 Program's output:
-#H%X
+@?FMQ9`;
+
+
+Type in input data...
+Received input:
+"2", "GgXeQD!47@]Y/*"
+Program's output:
+Gg
+
+
+Type in input data...
+Received input:
+"0", "P"
+Program's output:
+
+
+
+Type in input data...
+Received input:
+"0", "q`n"
+Program's output:
+
+
+
+Type in input data...
+Received input:
+"0", ">["
+Program's output:
+
+
+
+Type in input data...
+Received input:
+"0", "z{f-7Ge-Dj7|`E5"
+Program's output:
+
+
+
+Type in input data...
+Received input:
+"0", "lM"
+Program's output:
+
 
 
 Type in input data...

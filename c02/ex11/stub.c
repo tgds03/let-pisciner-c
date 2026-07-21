@@ -1,8 +1,12 @@
 /** genparam input
+ * $, = "";
+ * $\ = "";
+ * print '"';
  * for $i (1 .. 128) {
- * 	print chr($i);
+ * 	print char($i);
  * }
- * print "\0";
+ * print char(0);
+ * print '"';
  */
 #include "common.h"
 

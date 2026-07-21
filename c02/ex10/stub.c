@@ -1,9 +1,9 @@
 /** genparam input
- * print "0\n";
- * print "0 abcde\n";
- * print "5 abcde\n";
- * print "10 abcde\n";
- * print "20 012345678901234567890123456789\n";
+ * print '0 ""';
+ * print "0 abcde";
+ * print "5 abcde";
+ * print "10 abcde";
+ * print "20 012345678901234567890123456789";
  */
 #include <stdlib.h>
 #include <stdio.h>

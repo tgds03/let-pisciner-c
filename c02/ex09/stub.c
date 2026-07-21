@@ -1,16 +1,19 @@
 /** genparam input
- * print "hi, hOw ArE yOu? 42words forty-two;fifty_and+one\0siX-SeVen\n";
- * print "aaa Aaa aAa aaA AAa AaA aAA AAA\n";
- * print "0Aa 0aA a0A A0a Aa0 aA0\n";
+ * print '"hi, hOw ArE yOu? 42words forty-two;fifty_and+one\0siX-SeVen"';
+ * print '"aaa Aaa aAa aaA AAa AaA aAA AAA"';
+ * print '"0Aa 0aA a0A A0a Aa0 aA0"';
  * 
  * $alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ";
  * $alphanum = length($alphabet);
+ * $, = "";
+ * $\ = "";
  * for $_ (0 .. 10) {
  * 	$len = int(rand(32));
+ * 	print '"';
  * 	for $i (0 .. $len) {
  * 		print substr($alphabet, int(rand($alphanum)), 1);
  * 	}
- * 	print "\n";
+ * 	print "\"\n";
  * }
  */
 #include <stdio.h>

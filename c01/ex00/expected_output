@@ -1,84 +1,72 @@
 
 execute ./app:
 Let Pisciner C
-Compiled: 
 Function: void ft_ft(int *nbr);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
-0
-
+"0"
 Program's output:
 42
 
 Type in input data...
 Received input:
-1
-
+"1"
 Program's output:
 42
 
 Type in input data...
 Received input:
-2
-
+"2"
 Program's output:
 42
 
 Type in input data...
 Received input:
-3
-
+"3"
 Program's output:
 42
 
 Type in input data...
 Received input:
-4
-
+"4"
 Program's output:
 42
 
 Type in input data...
 Received input:
-5
-
+"5"
 Program's output:
 42
 
 Type in input data...
 Received input:
-6
-
+"6"
 Program's output:
 42
 
 Type in input data...
 Received input:
-7
-
+"7"
 Program's output:
 42
 
 Type in input data...
 Received input:
-8
-
+"8"
 Program's output:
 42
 
 Type in input data...
 Received input:
-9
-
+"9"
 Program's output:
 42
 
 Type in input data...
 Received input:
-10
-
+"10"
 Program's output:
 42
 

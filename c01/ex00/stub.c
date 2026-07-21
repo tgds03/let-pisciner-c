@@ -1,6 +1,6 @@
 /** genparam input
  * for $i (0 .. 10) {
- * 	print $i, "\n";
+ * 	print $i;
  * }
  */
 #include "common.h"

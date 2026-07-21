@@ -1,1 +1,50 @@
-0 -1 1 53 -53 53 0 
+
+execute ./app:
+Let Pisciner C
+Function: int ft_strcmp(char *s1, char *s2);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"11111", "11111"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"11111", "11112"
+Program's output:
+-1
+
+Type in input data...
+Received input:
+"11111", "11110"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"11111", "1111"
+Program's output:
+49
+
+Type in input data...
+Received input:
+"11111", "111111"
+Program's output:
+-49
+
+Type in input data...
+Received input:
+"11111", ""
+Program's output:
+49
+
+Type in input data...
+Received input:
+"", ""
+Program's output:
+0
+
+Type in input data...
+File closed.

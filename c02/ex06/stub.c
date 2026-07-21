@@ -1,10 +1,13 @@
 /** genparam input
- * print "abcdefg\n";
- * print "ABCDEFG\n";
- * print "0123456789\n";
- * for $i (33 .. 126) {
- * 	print chr($i), "\n";
+ * print "abcdefg";
+ * print "ABCDEFG";
+ * print "0123456789";
+ * $\ = "";
+ * print '"';
+ * for $i (32 .. 126) {
+ * 	print char($i);
  * }
+ * print "\"\n";
  */
 #include <stdio.h>
 #include "common.h"

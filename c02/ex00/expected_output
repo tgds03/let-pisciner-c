@@ -1,103 +1,98 @@
 
 execute ./app:
 Let Pisciner C
-Compiled: 
 Function: char * ft_strcpy(char *dest, char *src);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...
 Received input:
-Hello_world!
-
+"Hello_world!"
 Program's output:
 Hello_world!
 
 
 Type in input data...
 Received input:
-abcde
+"abcde"
 Program's output:
 abcde
 
 
 Type in input data...
 Received input:
-L8{z
-
+"o}J\"%3->V0(()S"
 Program's output:
-L8{z
+o}J"%3->V0(()S
 
 
 Type in input data...
 Received input:
-j-tz18)@
-
+"v;% 3Ag"
 Program's output:
-j-tz18)@
+v;%% 3Ag
 
 
 Type in input data...
 Received input:
-F4P6@eSmU
-
+"Tq7c8%M+ieC"
 Program's output:
-F4P6@eSmU
+Tq7c8%M+ieC
 
 
 Type in input data...
 Received input:
-=#uB=
-
+"}"
 Program's output:
-=#uB=
+}
 
 
 Type in input data...
 Received input:
-xwj(lk-yaO8M
-
+"~gs"
 Program's output:
-xwj(lk-yaO8M
+~gs
 
 
 Type in input data...
 Received input:
-}a90*7@]gR*!;
-
+"_/)PV:lW>#vgOS"
 Program's output:
-}a90*7@]gR*!;
+_/)PV:lW>#vgOS
 
 
 Type in input data...
 Received input:
-gsZNrj'k,r+,]$p
-
+"hL:mDU"
 Program's output:
-gsZNrj'k,r+,]$p
+hL:mDU
 
 
 Type in input data...
 Received input:
-k53W(Z:~j $.\_Hv
-
+"I9K\\"
 Program's output:
-k53W(Z:~j
+I9K\
 
 
 Type in input data...
 Received input:
-Pb>
-
+"m_d=s<rQ<F0jx|H"
 Program's output:
-Pb>
+m_d=s<rQ<F0jx|H
 
 
 Type in input data...
 Received input:
- ^!j=x\o*yCiyjHx
-
+"*<.&3M%=`AHYX"
 Program's output:
-^!j=x\o*yCiyjHx
+*<.&3M%=`AHYX
+
+
+Type in input data...
+Received input:
+"$#/O9e3bT1;"
+Program's output:
+$#/O9e3bT1;
 
 
 Type in input data...

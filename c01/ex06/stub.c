@@ -1,8 +1,8 @@
 /** genparam input
- * print "\n";
- * print "a\n";
- * print "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n";
- * print "abcdeabcd\nabcdeabcde\tbcdeabcdeabc\0eabcdeabcdeabcde\n";
+ * print '""';
+ * print "a";
+ * print "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+ * print '"abcdeabcd\nabcdeabcde\tbcdeabcdeabc\0eabcdeabcdeabcde\n"';
  */
 #include "common.h"
 #include <stdio.h>
