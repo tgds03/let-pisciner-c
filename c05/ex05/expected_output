@@ -1,0 +1,722 @@
+
+execute ./app:
+Let Pisciner C
+Function: int ft_sqrt(int nb);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"-1"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"0"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"1"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"2"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"3"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"4"
+Program's output:
+2
+
+
+Type in input data...
+Received input:
+"5"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"6"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"7"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"8"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"9"
+Program's output:
+3
+
+
+Type in input data...
+Received input:
+"10"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"11"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"12"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"13"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"14"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"15"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"16"
+Program's output:
+4
+
+
+Type in input data...
+Received input:
+"17"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"18"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"19"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"20"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"21"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"22"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"23"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"24"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"25"
+Program's output:
+5
+
+
+Type in input data...
+Received input:
+"26"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"27"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"28"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"29"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"30"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"31"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"32"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"33"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"34"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"35"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"36"
+Program's output:
+6
+
+
+Type in input data...
+Received input:
+"37"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"38"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"39"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"40"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"41"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"42"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"43"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"44"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"45"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"46"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"47"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"48"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"49"
+Program's output:
+7
+
+
+Type in input data...
+Received input:
+"50"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"51"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"52"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"53"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"54"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"55"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"56"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"57"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"58"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"59"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"60"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"61"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"62"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"63"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"64"
+Program's output:
+8
+
+
+Type in input data...
+Received input:
+"65"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"66"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"67"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"68"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"69"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"70"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"71"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"72"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"73"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"74"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"75"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"76"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"77"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"78"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"79"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"80"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"81"
+Program's output:
+9
+
+
+Type in input data...
+Received input:
+"82"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"83"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"84"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"85"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"86"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"87"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"88"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"89"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"90"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"91"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"92"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"93"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"94"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"95"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"96"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"97"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"98"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"99"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"100"
+Program's output:
+10
+
+
+Type in input data...
+File closed.

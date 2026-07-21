@@ -1,3 +1,8 @@
+/** genparam input
+ * for $i (-1 .. 46) {
+ * 	print $i;
+ * }
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include "common.h"
