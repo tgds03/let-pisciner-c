@@ -1,4 +1,4 @@
-void ft_print_alphabet();
+#include "common.h"
 
 FUNCTION(void, ft_print_alphabet);
 
