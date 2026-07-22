@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex05/ft_sqrt.c
+STUB MD5: bb2ad5a34543e39bc4669daebf92d942
 Function: int ft_sqrt(int nb);
 Press Ctrl + C to interrupt and exit.
 ================================================================================

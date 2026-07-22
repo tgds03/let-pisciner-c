@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex09/ft_strcapitalize.c
+STUB MD5: cc851cae310b909077fc1c61169ea4f4
 Function: char * ft_strcapitalize(char *str);
 Press Ctrl + C to interrupt and exit.
 ================================================================================

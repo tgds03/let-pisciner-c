@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex08/ft_strlowcase.c
+STUB MD5: 7d787d5f6b2b6a697ed9635091be97a7
 Function: char * ft_strlowcase(char *str);
 Press Ctrl + C to interrupt and exit.
 ================================================================================

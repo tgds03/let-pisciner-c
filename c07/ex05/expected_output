@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex05/ft_split.c
+STUB MD5: a101717cc6fbb6c69b0b3949ab4efb8a
 Function: char** ft_split(char *str, char *charset);
 Press Ctrl + C to interrupt and exit.
 ================================================================================

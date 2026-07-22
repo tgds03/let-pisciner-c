@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex03/ft_strjoin.c
+STUB MD5: 53fd7577506c08cb3063aac053f8254f
 Function: char* ft_strjoin(int size, char **strs, char *sep);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
@@ -77,12 +79,11 @@ result: KEK2d&C^)Fp*<1D"G!>zWwz8HFry^]LD"gD"doExfG9?)/sD"cy. R%[bAD"~XT=D"!RD"[O
 free: done.
 
 Type in input data...
-Parsing error.
 Received input:
-"TVa{G#617:Ler+`", "A#\'Ef9CRa:.Nld)", "p*>cyw$Gz\'ELN7;O", "8GSH^", "%&CzLif", "1j mmuuG\'", ") vV9<)v@H@{R9/-", ";/"
+"?c,xyTUPG_?EG", "b-p8", "Lzv!`", "q\'cD\\&tv", "Q~?+}6?[", "U", " r(s~y72FS~VjI5", ",>u5^", "=+ ", "sk", "7&; ", "cy", "<+^M00kq\"", "KopG)YHXvHp", "W K]2]", "t~rYE+_m", "gt@I75B&8wpFPD\\6", "!\'r,F!5.X]DZ", "`I$E^Jr1CCa\'IOxQ", "r!mG3", "-Re=XJ\\a.r5^|JeT", "5", "Vbk\\x];dLh@6%[4", "TVa{G#617:Ler+`", "A#\'Ef9CRa:.Nld)", "p*>cyw$Gz\'ELN7;O", "8GSH^", "%&CzLif", "1j mmuuG\'", ") vV9<)v@H@{R9/-", ";/"
 Program's output:
-arguments: TVa{G#617:Ler+` A#'Ef9CRa:.Nld) p*>cyw$Gz'ELN7;O 8GSH^ %&CzLif %bj mmuuG' ) vV9<)v@H@{R9/- ;/ 
-result: TVa{G#617:Ler+`;/A#'Ef9CRa:.Nld);/p*>cyw$Gz'ELN7;O;/8GSH^;/%&CzLif;/%bj mmuuG';/) vV9<)v@H@{R9/-
+arguments: ?c,xyTUPG_?EG b-p8 Lzv!` q'cD\&tv Q~?+}6?[ U  r(s~y72FS~VjI5 ,>u5^ =+  sk 7&;  cy <+^M00kq" KopG)YHXvHp W K]2] t~rYE+_m gt@I75B&8wpFPD\6 !'r,F!5.X]DZ `I$E^Jr1CCa'IOxQ r!mG3 -Re=XJ\a.r5^|JeT 5 Vbk\x];dLh@6%[4 TVa{G#617:Ler+` A#'Ef9CRa:.Nld) p*>cyw$Gz'ELN7;O 8GSH^ %&CzLif %bj mmuuG' ) vV9<)v@H@{R9/- ;/ 
+result: ?c,xyTUPG_?EG;/b-p8;/Lzv!`;/q'cD\&tv;/Q~?+}6?[;/U;/ r(s~y72FS~VjI5;/,>u5^;/=+ ;/sk;/7&; ;/cy;/<+^M00kq";/KopG)YHXvHp;/W K]2];/t~rYE+_m;/gt@I75B&8wpFPD\6;/!'r,F!5.X]DZ;/`I$E^Jr1CCa'IOxQ;/r!mG3;/-Re=XJ\a.r5^|JeT;/5;/Vbk\x];dLh@6%[4;/TVa{G#617:Ler+`;/A#'Ef9CRa:.Nld);/p*>cyw$Gz'ELN7;O;/8GSH^;/%&CzLif;/%bj mmuuG';/) vV9<)v@H@{R9/-
 free: done.
 
 Type in input data...

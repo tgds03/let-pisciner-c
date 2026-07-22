@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex04/ft_convert_base2.c
+STUB MD5: 6ce7f14ceaaddd9f2536d8a2259f3d05
 Function: char* ft_convert_base(char *nbr, char *base_from, char *base_to);
 Press Ctrl + C to interrupt and exit.
 ================================================================================

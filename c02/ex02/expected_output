@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex02/ft_str_is_alpha.c
+STUB MD5: 5a5edf1a9c1672c1295563ea96374cb9
 Function: int ft_str_is_alpha(char *str);
 Press Ctrl + C to interrupt and exit.
 ================================================================================

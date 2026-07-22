@@ -99,7 +99,7 @@ void init_test() {
 	signal(11, handle_signal); // segmentation fault
 	signal(15, handle_signal); // terminated
 
-	if (function_env.name != 0) {
+	if (function_env.name[0] != 0) {
 		snprintf(func_header,
 				LINE_BUFFER_SIZE,
 				"%s %s(%s);",

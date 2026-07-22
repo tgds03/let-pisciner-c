@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex04/ft_putnbr_base.c
+STUB MD5: 7e61da87cf16896e24946f9af674a355
 Function: void ft_putnbr_base(int nbr, char *base);
 Press Ctrl + C to interrupt and exit.
 ================================================================================

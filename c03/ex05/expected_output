@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex05/ft_strlcat.c
+STUB MD5: 3fb6caf5c2f13be023125fd3863cd47d
 Function: unsigned int ft_strlcat(char *dest, char *src, unsigned int size);
 Press Ctrl + C to interrupt and exit.
 ================================================================================

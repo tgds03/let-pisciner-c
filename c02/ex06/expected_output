@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex06/ft_str_is_printable.c
+STUB MD5: 6c9f1ab1aaf44eeef4752e66871c05cf
 Function: int ft_str_is_printable(char *str);
 Press Ctrl + C to interrupt and exit.
 ================================================================================

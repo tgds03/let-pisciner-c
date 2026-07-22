@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex00/ft_strcpy.c
+STUB MD5: 8e7854d41c3cfd4c086a63141a840b4e
 Function: char * ft_strcpy(char *dest, char *src);
 Press Ctrl + C to interrupt and exit.
 ================================================================================

@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex08/ft_sort_int_tab.c
+STUB MD5: c0e4a8e03d47a6fc827b0f36ad1f9e4b
 Function: void ft_sort_int_tab(int *tab, int size);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
