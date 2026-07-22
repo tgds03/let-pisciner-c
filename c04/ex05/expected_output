@@ -1,0 +1,106 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex05/ft_atoi_base.c
+STUB MD5: 5decda97e3af1e8d9936b52734744e67
+Target Function: int ft_atoi_base(char *str, char *base);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"1234", ""
+Program's output:
+0
+
+Type in input data...
+Received input:
+"1234", "0"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"", "0123456789"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"1", "0123456789"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"x", "0123456789"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"0", "0123456789"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"-1", "0123456789"
+Program's output:
+-1
+
+Type in input data...
+Received input:
+"2147483647", "0123456789"
+Program's output:
+2147483647
+
+Type in input data...
+Received input:
+"-2147483648", "0123456789"
+Program's output:
+-2147483648
+
+Type in input data...
+Received input:
+"21845", "0123456789abcdef"
+Program's output:
+137285
+
+Type in input data...
+Received input:
+"11000000111001", "01"
+Program's output:
+12345
+
+Type in input data...
+Received input:
+"499602D2", "0123456789ABCDEF"
+Program's output:
+1234567890
+
+Type in input data...
+Received input:
+" \f\n\r\t\v+--+499602D2", "0123456789ABCDEF"
+Program's output:
+1234567890
+
+Type in input data...
+Received input:
+"--+-.__._.___._..__", "._"
+Program's output:
+-13779
+
+Type in input data...
+Received input:
+"9x81P3", "0123456789JumblingVextFrowzyHacksPDQ"
+Program's output:
+578163639
+
+Type in input data...
+Received input:
+"--+\f\v +--+9x81P3", "0123456789JumblingVextFrowzyHacksPDQ"
+Program's output:
+0
+
+Type in input data...
+File closed.

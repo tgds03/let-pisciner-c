@@ -1,13 +1,20 @@
+/** genparam input
+ * print "abcdefg";
+ * print "ABCDEFG";
+ * print "0123456789";
+ * $\ = "";
+ * print '"';
+ * for $i (32 .. 126) {
+ * 	print char($i);
+ * }
+ * print "\"\n";
+ */
 #include <stdio.h>
+#include "common.h"
 
-int ft_str_is_alpha(char *str);
+FUNCTION(int, ft_str_is_alpha, char *str);
 
-int main() {
-	char c[2] = "\0\0";
-	printf("%d", ft_str_is_alpha(""));
-	for (char i = 32; i < 127; ++i) {
-		c[0] = i;
-		printf("%d", ft_str_is_alpha(c));
-	}
-	return 0;
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	printf("%d", ft_str_is_alpha(argv[1]));
 }

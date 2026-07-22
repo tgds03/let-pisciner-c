@@ -1,0 +1,41 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "build: genparam interpreter",
+            "command": "make",
+            "args": [
+                "-C",
+                "${workspaceFolder}/src/interpret",
+                "-B",
+                "debug"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "type": "cppbuild",
+            "label": "build: test with dummy",
+            "command": "make",
+            "args": [
+                "-C",
+                "${workspaceFolder}/src/test",
+                "-B",
+                "debug"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+    ],
+    "version": "2.0.0"
+}

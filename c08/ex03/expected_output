@@ -1,0 +1,16 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex03/stub.c
+STUB MD5: f0944e6847d5ec56af16e6cd23fde0d3
+Target Function: undefined
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+
+Program's output:
+42 21
+
+Type in input data...
+File closed.

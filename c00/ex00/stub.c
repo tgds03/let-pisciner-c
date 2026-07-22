@@ -1,7 +1,15 @@
-void ft_putchar(char c);
+/** genparam input
+ * print '" "';
+ * for $i (33 .. 126) {
+ * 	print char($i);
+ * }
+*/
+#include "common.h"
+#include <stdio.h>
 
-int main() {
-	for (char i = 32; i < 127; ++i)
-		ft_putchar(i);
-	return 0;
+FUNCTION(void, ft_putchar, char c);
+
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	ft_putchar(*argv[1]);
 }

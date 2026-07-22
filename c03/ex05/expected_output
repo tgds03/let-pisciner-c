@@ -1,40 +1,60 @@
-4 .
-0 .
-5 .
-1 .
-5 .
-1 .
-5 .1
-2 .1
-6 .11
-3 .11
-7 .111
-4 .111
-8 .1111
-5 .1111
-9 .11111
-6 .11111
-10 .111111
-7 .111111
-11 .1111111
-8 .1111111
-14 ..........
-10 ..........
-14 ..........
-10 ..........
-14 ..........
-10 ..........
-14 ..........
-10 ..........
-14 ..........
-10 ..........
-14 ..........
-10 ..........
-14 ..........
-10 ..........
-14 ..........
-10 ..........
-14 ..........
-10 ..........
-14 ..........
-10 ..........
+
+execute ./app:
+Let Pisciner C
+File path: ex05/ft_strlcat.c
+STUB MD5: 3fb6caf5c2f13be023125fd3863cd47d
+Target Function: unsigned int ft_strlcat(char *dest, char *src, unsigned int size);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"0123456789", "0", "01234\056789", "1", "", "2"
+Program's output:
+10 
+5 
+0 
+
+
+Type in input data...
+Received input:
+"0123456789", "11", "01234\056789", "12", "", "13"
+Program's output:
+10 0123456789
+15 01234567890
+11 01234567890
+
+
+Type in input data...
+Received input:
+"0123456789", "3", "01234\056789", "5", "", "1", "0123456789", "10", "01234\056789", "6", "", "0", "a", "1"
+Program's output:
+10 01
+7 0101
+1 0101
+14 010101234
+11 010101234
+0 010101234
+2 010101234
+
+
+Type in input data...
+Received input:
+"abcdefg", "7", "hijklmn", "7", "opqrstu", "7"
+Program's output:
+7 abcdef
+13 abcdef
+13 abcdef
+
+
+Type in input data...
+Received input:
+" ", "1", "	", "1", "", "1", " ", "1"
+Program's output:
+1 
+1 
+0 
+1 
+
+
+Type in input data...
+File closed.

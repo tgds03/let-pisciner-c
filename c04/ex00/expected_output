@@ -1,1 +1,28 @@
-0 10 10 
+
+execute ./app:
+Let Pisciner C
+File path: ex00/ft_strlen.c
+STUB MD5: 59a953e6ca15c3bc56f197e8bb7eaeb7
+Target Function: int ft_strlen(char *str);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+""
+Program's output:
+0
+
+Type in input data...
+Received input:
+"0123456789"
+Program's output:
+10
+
+Type in input data...
+Received input:
+"abcdefghij\0klmnopqrst"
+Program's output:
+10
+
+Type in input data...
+File closed.

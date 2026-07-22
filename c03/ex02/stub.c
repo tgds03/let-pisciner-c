@@ -1,23 +1,17 @@
+/** genparam input
+ * print "0123456789", '01234\056789', '""';
+ * print "0123456789", '01234\056789', '""', "0123456789", '01234\056789', '""', 'a';
+ * print "abcdefg", "hijklmn", "opqrstu";
+ * print '" "', '"\t"', '""', '"\t"';
+ */
 #include <stdio.h>
+#include "common.h"
 
-char *ft_strcat(char *dest, char *src);
+FUNCTION(char*, ft_strcat, char *dest, char *src);
 
-int main()
-{
-	char d[80];
-	char *s1 = "0123456789";
-	char *s2 = "01234\0" "6789";
-	char *s3 = "";
-
-	for (int i = 0; i < 80; ++i) {
-		d[i] = (i % 2) ? 0 : '.';
+void test(int argc, char *argv[]) {
+	char buffer[1024];
+	for (int i = 1; i < argc; ++i) {
+		printf("%s\n", ft_strcat(buffer, argv[i]));
 	}
-	printf("%s\n", d);
-	printf("%s\n", ft_strcat(d, s1));
-	printf("%s\n", ft_strcat(d, s2));
-	printf("%s\n", ft_strcat(d, s3));
-	printf("%s\n", ft_strcat(d, s1));
-	printf("%s\n", ft_strcat(d, s2));
-	printf("%s\n", ft_strcat(d, s3));
-	return 0;
 }

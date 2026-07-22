@@ -1,0 +1,93 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex05/ft_split.c
+STUB MD5: a101717cc6fbb6c69b0b3949ab4efb8a
+Target Function: char** ft_split(char *str, char *charset);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"", "a"
+Program's output:
+
+
+Type in input data...
+Received input:
+"aaaaaaaaaa", ""
+Program's output:
+P aaaaaaaaaa
+
+
+Type in input data...
+Received input:
+"aaaaaaaaaa", "a"
+Program's output:
+
+
+Type in input data...
+Received input:
+"aaa33", "a"
+Program's output:
+P 33
+
+
+Type in input data...
+Received input:
+"aaaa33aaa22", "a"
+Program's output:
+P 33
+P 22
+
+
+Type in input data...
+Received input:
+"44aaaaa", "a"
+Program's output:
+P 44
+
+
+Type in input data...
+Received input:
+"55a6666aa", "a"
+Program's output:
+P 55
+P 6666
+
+
+Type in input data...
+Received input:
+"aabbbaacccaaadda", "a"
+Program's output:
+P bbb
+P ccc
+P dd
+
+
+Type in input data...
+Received input:
+"Loremipsum^dolor*sitame!tconsecte#turadipiscinge1t", "!@#0^&*()"
+Program's output:
+P Loremipsum
+P dolor
+P sitame
+P tconsecte
+P turadipiscinge%lit
+
+
+Type in input data...
+Received input:
+"LoremPipsumXdolorQsitBamet,RconsecteturIadipiscingKelit", "PXQBRIK"
+Program's output:
+P Lorem
+P ipsum
+P dolor
+P sit
+P amet,
+P consectetur
+P adipiscing
+P elit
+
+
+Type in input data...
+File closed.

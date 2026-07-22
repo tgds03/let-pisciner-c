@@ -1,16 +1,22 @@
+/** genparam input
+ * for $i (0 .. 10) {
+ * 	$nominator = int(rand(256)) - 128;
+ * 	if ($nominator == 0) {
+ * 		$nominator += 1;
+ * 	}
+ * 	print int(rand(256)) - 128, $nominator;
+ * }
+ */
 #include <stdio.h>
 #include "common.h"
 
-void ft_ultimate_div_mod(int *a, int *b);
+FUNCTION(void, ft_ultimate_div_mod, int *a, int *b);
 
-int main() {
-	int a, b, i;
-	init_rand(__FILE__);
-	for (i = 0; i < 10000; ++i) {
-		a = rand();
-		b = rand();
-		ft_ultimate_div_mod(&a, &b);
-		printf("%d %d\n", a, b);
-	}
-	return 0;
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	int a, b;
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	ft_ultimate_div_mod(&a, &b);
+	printf("%d %d", a, b);
 }

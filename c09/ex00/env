@@ -1,0 +1,3 @@
+COMPILE_CMD="sh libft_creator.sh && ${COMPILE_CMD}"
+CC_LIBPATH+=('.')
+CC_LIBRARY+=('ft')

@@ -1,13 +1,20 @@
+/** genparam input
+ * print "abcdefg";
+ * print "ABCDEFG";
+ * print "0123456789";
+ * $\ = "";
+ * print '"';
+ * for $i (32 .. 126) {
+ * 	print char($i);
+ * }
+ * print "\"\n";
+ */
 #include <stdio.h>
+#include "common.h"
 
-int ft_str_is_printable(char *str);
+FUNCTION(int, ft_str_is_printable, char *str);
 
-int main() {
-	char c[2] = "\0";
-	printf("%d", ft_str_is_printable(""));
-	for (int i = 0; i < 128; ++i) {
-		c[0] = (char)i;
-		printf("%d", ft_str_is_printable(c));
-	}
-	return 0;
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	printf("%d", ft_str_is_printable(argv[1]));
 }

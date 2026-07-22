@@ -1,18 +1,112 @@
-2147483647
-100
-10
+
+execute ./app:
+Let Pisciner C
+File path: ex07/ft_putnbr.c
+STUB MD5: e8c39bf50a0701f108afe1916940a37b
+Target Function: void ft_putnbr(int nb);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"1"
+Program's output:
 1
+
+Type in input data...
+Received input:
+"0"
+Program's output:
 0
+
+Type in input data...
+Received input:
+"-1"
+Program's output:
 -1
+
+Type in input data...
+Received input:
+"10"
+Program's output:
+10
+
+Type in input data...
+Received input:
+"-10"
+Program's output:
 -10
--2147483648
-607955304
-230630085
-1806548462
-345078109
-1045613338
-2102799423
-1794054580
-710340499
-31863875
-1093023175
+
+Type in input data...
+Received input:
+"214783647"
+Program's output:
+214783647
+
+Type in input data...
+Received input:
+"-214783648"
+Program's output:
+-214783648
+
+Type in input data...
+Received input:
+"88"
+Program's output:
+88
+
+Type in input data...
+Received input:
+"-71"
+Program's output:
+-71
+
+Type in input data...
+Received input:
+"72"
+Program's output:
+72
+
+Type in input data...
+Received input:
+"-87"
+Program's output:
+-87
+
+Type in input data...
+Received input:
+"-84"
+Program's output:
+-84
+
+Type in input data...
+Received input:
+"44"
+Program's output:
+44
+
+Type in input data...
+Received input:
+"35"
+Program's output:
+35
+
+Type in input data...
+Received input:
+"-67"
+Program's output:
+-67
+
+Type in input data...
+Received input:
+"-61"
+Program's output:
+-61
+
+Type in input data...
+Received input:
+"28"
+Program's output:
+28
+
+Type in input data...
+File closed.

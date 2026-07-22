@@ -1,0 +1,346 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex02/ft_iterative_power.c
+STUB MD5: ab6d589c7168c3c6c84b7d7aa53c404e
+Target Function: int ft_iterative_power(int nb, int power);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"-1", "-1"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"0", "-1"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"-1", "0"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"0", "0"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"0", "1"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"0", "2"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"0", "5"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"-1", "-1"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"-1", "0"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"-1", "1"
+Program's output:
+-1
+
+
+Type in input data...
+Received input:
+"-1", "2"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"-1", "3"
+Program's output:
+-1
+
+
+Type in input data...
+Received input:
+"-1", "4"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"-1", "5"
+Program's output:
+-1
+
+
+Type in input data...
+Received input:
+"2", "-1"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"2", "0"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"2", "1"
+Program's output:
+2
+
+
+Type in input data...
+Received input:
+"2", "2"
+Program's output:
+4
+
+
+Type in input data...
+Received input:
+"2", "3"
+Program's output:
+8
+
+
+Type in input data...
+Received input:
+"2", "4"
+Program's output:
+16
+
+
+Type in input data...
+Received input:
+"2", "5"
+Program's output:
+32
+
+
+Type in input data...
+Received input:
+"-3", "-1"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"-3", "0"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"-3", "1"
+Program's output:
+-3
+
+
+Type in input data...
+Received input:
+"-3", "2"
+Program's output:
+9
+
+
+Type in input data...
+Received input:
+"-3", "3"
+Program's output:
+-27
+
+
+Type in input data...
+Received input:
+"-3", "4"
+Program's output:
+81
+
+
+Type in input data...
+Received input:
+"-3", "5"
+Program's output:
+-243
+
+
+Type in input data...
+Received input:
+"4", "-1"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"4", "0"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"4", "1"
+Program's output:
+4
+
+
+Type in input data...
+Received input:
+"4", "2"
+Program's output:
+16
+
+
+Type in input data...
+Received input:
+"4", "3"
+Program's output:
+64
+
+
+Type in input data...
+Received input:
+"4", "4"
+Program's output:
+256
+
+
+Type in input data...
+Received input:
+"4", "5"
+Program's output:
+1024
+
+
+Type in input data...
+Received input:
+"-5", "-1"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"-5", "0"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"-5", "1"
+Program's output:
+-5
+
+
+Type in input data...
+Received input:
+"-5", "2"
+Program's output:
+25
+
+
+Type in input data...
+Received input:
+"-5", "3"
+Program's output:
+-125
+
+
+Type in input data...
+Received input:
+"-5", "4"
+Program's output:
+625
+
+
+Type in input data...
+Received input:
+"-5", "5"
+Program's output:
+-3125
+
+
+Type in input data...
+Received input:
+"-12", "3"
+Program's output:
+-1728
+
+
+Type in input data...
+Received input:
+"42", "21"
+Program's output:
+681574400
+
+
+Type in input data...
+Received input:
+"10", "9"
+Program's output:
+1000000000
+
+
+Type in input data...
+Received input:
+"10", "10"
+Program's output:
+1410065408
+
+
+Type in input data...
+Received input:
+"-10", "9"
+Program's output:
+-1000000000
+
+
+Type in input data...
+Received input:
+"-10", "11"
+Program's output:
+-1215752192
+
+
+Type in input data...
+File closed.

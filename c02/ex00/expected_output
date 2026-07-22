@@ -1,3 +1,101 @@
-1234567890
 
-abcd
+execute ./app:
+Let Pisciner C
+File path: ex00/ft_strcpy.c
+STUB MD5: 8e7854d41c3cfd4c086a63141a840b4e
+Target Function: char * ft_strcpy(char *dest, char *src);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"Hello_world!"
+Program's output:
+Hello_world!
+
+
+Type in input data...
+Received input:
+"abcde"
+Program's output:
+abcde
+
+
+Type in input data...
+Received input:
+"o}J\"%3->V0(()S"
+Program's output:
+o}J"%3->V0(()S
+
+
+Type in input data...
+Received input:
+"v;% 3Ag"
+Program's output:
+v;%% 3Ag
+
+
+Type in input data...
+Received input:
+"Tq7c8%M+ieC"
+Program's output:
+Tq7c8%M+ieC
+
+
+Type in input data...
+Received input:
+"}"
+Program's output:
+}
+
+
+Type in input data...
+Received input:
+"~gs"
+Program's output:
+~gs
+
+
+Type in input data...
+Received input:
+"_/)PV:lW>#vgOS"
+Program's output:
+_/)PV:lW>#vgOS
+
+
+Type in input data...
+Received input:
+"hL:mDU"
+Program's output:
+hL:mDU
+
+
+Type in input data...
+Received input:
+"I9K\\"
+Program's output:
+I9K\
+
+
+Type in input data...
+Received input:
+"m_d=s<rQ<F0jx|H"
+Program's output:
+m_d=s<rQ<F0jx|H
+
+
+Type in input data...
+Received input:
+"*<.&3M%=`AHYX"
+Program's output:
+*<.&3M%=`AHYX
+
+
+Type in input data...
+Received input:
+"$#/O9e3bT1;"
+Program's output:
+$#/O9e3bT1;
+
+
+Type in input data...
+File closed.

@@ -1,22 +1,20 @@
+/** genparam input
+ * for $i (0 .. 4) {
+ * 	print '55 ""', $i;
+ * 	print '55 55', $i;
+ * 	print '55 56', $i;
+ * 	print '55 54', $i;
+ * 	print '55 5', $i;
+ * 	print '55 555', $i;
+ * }
+ */
+#include <stdlib.h>
 #include <stdio.h>
+#include "common.h"
 
-int ft_strncmp(char *s1, char *s2, unsigned int n);
+FUNCTION(int, ft_strncmp, char *s1, char *s2, unsigned int n);
 
-int main() {
-	char *s0 = "";
-	char *s1 = "55";
-	char *s2 = "56";
-	char *s3 = "54";
-	char *s4 = "5";
-	char *s5 = "555";
-
-	for (int n = 0; n <= 3; ++n) {
-		printf("%d ", ft_strncmp(s1, s0, n));
-		printf("%d ", ft_strncmp(s1, s1, n));
-		printf("%d ", ft_strncmp(s1, s2, n));
-		printf("%d ", ft_strncmp(s1, s3, n));
-		printf("%d ", ft_strncmp(s1, s4, n));
-		printf("%d ", ft_strncmp(s1, s5, n));
-	}
-	return 0;
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	printf("%d", ft_strncmp(argv[1], argv[2], (unsigned int)atoi(argv[3])));
 }

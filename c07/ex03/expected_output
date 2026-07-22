@@ -1,0 +1,98 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex03/ft_strjoin.c
+STUB MD5: 53fd7577506c08cb3063aac053f8254f
+Target Function: char* ft_strjoin(int size, char **strs, char *sep);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"0"
+Program's output:
+arguments: 0 
+result: 
+free: done.
+
+Type in input data...
+Received input:
+"1234", "5678", "9012", "3456", ":"
+Program's output:
+arguments: 1234 5678 9012 3456 : 
+result: 1234:5678:9012:3456
+free: done.
+
+Type in input data...
+Received input:
+"abcd", "1234", "efgh", "5678", "-"
+Program's output:
+arguments: abcd 1234 efgh 5678 - 
+result: abcd-1234-efgh-5678
+free: done.
+
+Type in input data...
+Received input:
+"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f", ","
+Program's output:
+arguments: 0 1 2 3 4 5 6 7 8 9 a b c d e f , 
+result: 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+free: done.
+
+Type in input data...
+Received input:
+"AAA", "B", "CCCCC", "DD", "abcde"
+Program's output:
+arguments: AAA B CCCCC DD abcde 
+result: AAAabcdeBabcdeCCCCCabcdeDD
+free: done.
+
+Type in input data...
+Received input:
+"9A^xC", "-Q)X [KKRi", "]V[M", "\\C|Y"
+Program's output:
+arguments: 9A^xC -Q)X [KKRi ]V[M \C|Y 
+result: 9A^xC\C|Y-Q)X [KKRi\C|Y]V[M
+free: done.
+
+Type in input data...
+Received input:
+"Q#1;T-[T}NTC{*S\'", "zX8", "\\]t", "~4o.|TI", "&e!W", "jsoKUMD)k", "j*UGIws?.3bu", "Ws`=w", "<kQW9p", "3C$E", "(l$3", "p", "}N|*5", "|Pw`t)<K", "z,vD(;k2b#k^", "%,*;}\'Ky)%\"", "OM@j`C", "N9.o {qy", "vG+", "{^Q", "X2\"\'^*+IoR3", "rT>{hdftW:|A"
+Program's output:
+arguments: Q#1;T-[T}NTC{*S' zX8 \]t ~4o.|TI &e!W jsoKUMD)k j*UGIws?.3bu Ws`=w <kQW9p 3C$E (l$3 p }N|*5 |Pw`t)<K z,vD(;k2b#k^ %,*;}'Ky)%" OM@j`C N9.o {qy vG+ {^Q X2"'^*+IoR3 rT>{hdftW:|A 
+result: Q#1;T-[T}NTC{*S'rT>{hdftW:|AzX8rT>{hdftW:|A\]trT>{hdftW:|A~4o.|TIrT>{hdftW:|A&e!WrT>{hdftW:|AjsoKUMD)krT>{hdftW:|Aj*UGIws?.3burT>{hdftW:|AWs`=wrT>{hdftW:|A<kQW9prT>{hdftW:|A3C$ErT>{hdftW:|A(l$3rT>{hdftW:|AprT>{hdftW:|A}N|*5rT>{hdftW:|A|Pw`t)<KrT>{hdftW:|Az,vD(;k2b#k^rT>{hdftW:|A%,*;}'Ky)%"rT>{hdftW:|AOM@j`CrT>{hdftW:|AN9.o {qyrT>{hdftW:|AvG+rT>{hdftW:|A{^QrT>{hdftW:|AX2"'^*+IoR3
+free: done.
+
+Type in input data...
+Received input:
+"#=R{c]ub", ":q92X9", "H8ZO1H", "N&h", "(4 :!fO63", ")kH1O{Q!5P+Z6j", "/", "G(+PE;sKP", "fNKb\',uDlpp[@yo;", "w=vD`c~L\'**M", "=Z,h&}2x-o2", "N9", "FbEto$H", "PZX[KE59}", "S6r!~h}oKj>)", "mi@yJdf:", "%@Ze&.HQJ0X", "-"
+Program's output:
+arguments: #=R{c]ub :q92X9 H8ZO1H N&h (4 :!fO63 )kH1O{Q!5P+Z6j / G(+PE;sKP fNKb',uDlpp[@yo; w=vD`c~L'**M =Z,h&}2x-o2 N9 FbEto$H PZX[KE59} S6r!~h}oKj>) mi@yJdf: %@Ze&.HQJ0X - 
+result: #=R{c]ub-:q92X9-H8ZO1H-N&h-(4 :!fO63-)kH1O{Q!5P+Z6j-/-G(+PE;sKP-fNKb',uDlpp[@yo;-w=vD`c~L'**M-=Z,h&}2x-o2-N9-FbEto$H-PZX[KE59}-S6r!~h}oKj>)-mi@yJdf:-%@Ze&.HQJ0X
+free: done.
+
+Type in input data...
+Received input:
+"KEK2d&C^)Fp*<1", "G!>zWwz8HFry^]L", "g", "doExfG9?)/s", "cy. R%[bA", "~XT=", "!R", "[Ot", "PQ", "jcEZSw(5o", "pfc>)\'", "7IWr", "/}1", "S,(.93udh}hz NYj", "nvj;", "D\""
+Program's output:
+arguments: KEK2d&C^)Fp*<1 G!>zWwz8HFry^]L g doExfG9?)/s cy. R%[bA ~XT= !R [Ot PQ jcEZSw(5o pfc>)' 7IWr /}%d S,(.93udh}hz NYj nvj; D" 
+result: KEK2d&C^)Fp*<1D"G!>zWwz8HFry^]LD"gD"doExfG9?)/sD"cy. R%[bAD"~XT=D"!RD"[OtD"PQD"jcEZSw(5oD"pfc>)'D"7IWrD"/}%dD"S,(.93udh}hz NYjD"nvj;
+free: done.
+
+Type in input data...
+Received input:
+"?c,xyTUPG_?EG", "b-p8", "Lzv!`", "q\'cD\\&tv", "Q~?+}6?[", "U", " r(s~y72FS~VjI5", ",>u5^", "=+ ", "sk", "7&; ", "cy", "<+^M00kq\"", "KopG)YHXvHp", "W K]2]", "t~rYE+_m", "gt@I75B&8wpFPD\\6", "!\'r,F!5.X]DZ", "`I$E^Jr1CCa\'IOxQ", "r!mG3", "-Re=XJ\\a.r5^|JeT", "5", "Vbk\\x];dLh@6%[4", "TVa{G#617:Ler+`", "A#\'Ef9CRa:.Nld)", "p*>cyw$Gz\'ELN7;O", "8GSH^", "%&CzLif", "1j mmuuG\'", ") vV9<)v@H@{R9/-", ";/"
+Program's output:
+arguments: ?c,xyTUPG_?EG b-p8 Lzv!` q'cD\&tv Q~?+}6?[ U  r(s~y72FS~VjI5 ,>u5^ =+  sk 7&;  cy <+^M00kq" KopG)YHXvHp W K]2] t~rYE+_m gt@I75B&8wpFPD\6 !'r,F!5.X]DZ `I$E^Jr1CCa'IOxQ r!mG3 -Re=XJ\a.r5^|JeT 5 Vbk\x];dLh@6%[4 TVa{G#617:Ler+` A#'Ef9CRa:.Nld) p*>cyw$Gz'ELN7;O 8GSH^ %&CzLif %bj mmuuG' ) vV9<)v@H@{R9/- ;/ 
+result: ?c,xyTUPG_?EG;/b-p8;/Lzv!`;/q'cD\&tv;/Q~?+}6?[;/U;/ r(s~y72FS~VjI5;/,>u5^;/=+ ;/sk;/7&; ;/cy;/<+^M00kq";/KopG)YHXvHp;/W K]2];/t~rYE+_m;/gt@I75B&8wpFPD\6;/!'r,F!5.X]DZ;/`I$E^Jr1CCa'IOxQ;/r!mG3;/-Re=XJ\a.r5^|JeT;/5;/Vbk\x];dLh@6%[4;/TVa{G#617:Ler+`;/A#'Ef9CRa:.Nld);/p*>cyw$Gz'ELN7;O;/8GSH^;/%&CzLif;/%bj mmuuG';/) vV9<)v@H@{R9/-
+free: done.
+
+Type in input data...
+Received input:
+
+Program's output:
+arguments: 
+result: 
+free: done.
+
+Type in input data...
+File closed.

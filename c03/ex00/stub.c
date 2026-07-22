@@ -1,20 +1,18 @@
+/** genparam input
+ * print "11111", "11111";
+ * print "11111", "11112";
+ * print "11111", "11110";
+ * print "11111", "1111";
+ * print "11111", "111111";
+ * print "11111", '""';
+ * print '"" ""';
+ */
+#include "common.h"
 #include <stdio.h>
 
-int ft_strcmp(char *s1, char *s2);
+FUNCTION(int, ft_strcmp, char *s1, char *s2);
 
-int main() {
-	char *s1 = "55555";
-	char *s2 = "55556";
-	char *s3 = "55554";
-	char *s4 = "5555";
-	char *s5 = "555555";
-	char *s6 = "";
-	printf("%d ", ft_strcmp(s1, s1));
-	printf("%d ", ft_strcmp(s1, s2));
-	printf("%d ", ft_strcmp(s1, s3));
-	printf("%d ", ft_strcmp(s1, s4));
-	printf("%d ", ft_strcmp(s1, s5));
-	printf("%d ", ft_strcmp(s1, s6));
-	printf("%d ", ft_strcmp(s6, s6));
-	return 0;
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	printf("%d", ft_strcmp(argv[1], argv[2]));
 }

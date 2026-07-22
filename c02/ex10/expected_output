@@ -1,6 +1,40 @@
-0 ....................
-5 ....................abcde
-20 ....................abcdefghijklmnopqrs
-21 ....................abcdefghijklmnopqrs
-26 ....................abcdefghijklmnopqrs
-26 ...............................................................................
+
+execute ./app:
+Let Pisciner C
+File path: ex10/ft_strlcpy.c
+STUB MD5: cb871a752cf43a26bbca0886bc1799e7
+Target Function: unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"0", ""
+Program's output:
+0 .
+
+Type in input data...
+Received input:
+"0", "abcde"
+Program's output:
+5 ......
+
+Type in input data...
+Received input:
+"5", "abcde"
+Program's output:
+5 abcd
+
+Type in input data...
+Received input:
+"10", "abcde"
+Program's output:
+5 abcde
+
+Type in input data...
+Received input:
+"20", "012345678901234567890123456789"
+Program's output:
+30 0123456789012345678
+
+Type in input data...
+File closed.

@@ -1,33 +1,28 @@
+/** genparam input
+ * print "0123456789", '0', '01234\056789', '1', '""', '2';
+ * print "0123456789", '11', '01234\056789', '12', '""', '13';
+ * print "0123456789", '3', '01234\056789', '5', '""', '1', "0123456789", '10', '01234\056789', '6', '""', '0', 'a', '1';
+ * print "abcdefg", '7', "hijklmn", '7', "opqrstu", '7';
+ * print '" "', '1', '"	"', '1', '""', '1', '" "', '1';
+ */
 #include <string.h>
 #include <stdio.h>
+#include "common.h"
 
-unsigned int ft_strlcat(char *dest, char *src, unsigned int size);
+FUNCTION(unsigned int, ft_strlcat, char *dest, char *src, unsigned int size);
 
-int main() {
-	char b1[11], b2[11];
-	char *str1 = "1234";
-	char *str2 = "";
-	char line[11] = {0, };
-	int temp;
+void test(int argc, char *argv[]) {
+	char buffer[81];
+	char *cur;
+	int num;
 
-	for (int i = 0; i < 11; ++i) {
-		b1[i] = (i % 2) ? 0 : '.';
-		b2[i] = '.';
+	for (int i = 0; i < 81; ++i) {
+		buffer[i] = 0;
 	}
 
-	for (int i = 0; i < 10; ++i) {
-		printf("%d %s\n", ft_strlcat(b1, str1, i), b1);
-		printf("%d %s\n", ft_strlcat(b1, str2, i), b1);
+	for (int i = 1; i < argc;) {
+		cur = argv[i++];
+		num = atoi(argv[i++]);
+		printf("%d %s\n", ft_strlcat(buffer, cur, (unsigned int)num), buffer);
 	}
-
-	for (int i = 0; i < 10; ++i) {
-		temp = ft_strlcat(b2, str1, 10);
-		memcpy(line, b2, 10);
-		printf("%d %s\n", temp, line);
-
-		temp = ft_strlcat(b2, str2, 10);
-		memcpy(line, b2, 10);
-		printf("%d %s\n", temp, line);
-	}
-	return 0;
 }

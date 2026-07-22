@@ -1,11 +1,18 @@
-void ft_putstr_non_printable(char *str);
+/** genparam input
+ * $, = "";
+ * $\ = "";
+ * print '"';
+ * for $i (1 .. 128) {
+ * 	print char($i);
+ * }
+ * print char(0);
+ * print '"';
+ */
+#include "common.h"
 
-int main() {
-	char str[128];
-	for (int i = 0; i < 127; ++i) {
-		str[i] = i + 1;
-	}
-	str[127] = 0;
-	ft_putstr_non_printable(str);
-	return 0;
+FUNCTION(void, ft_putstr_non_printable, char *str);
+
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	ft_putstr_non_printable(argv[1]);
 }

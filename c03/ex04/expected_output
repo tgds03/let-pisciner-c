@@ -1,7 +1,64 @@
-0123456789
-789
-3456789
+
+execute ./app:
+Let Pisciner C
+File path: ex04/ft_strstr.c
+STUB MD5: 2b6a4efa75ee7fca1d08df73c1507051
+Target Function: char* ft_strstr(char *str, char *to_find);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"0123456789", "0123"
+Program's output:
 0123456789
 
-(nil)
-(nil)
+Type in input data...
+Received input:
+"0123456789", "789"
+Program's output:
+789
+
+Type in input data...
+Received input:
+"0123456789", "3456"
+Program's output:
+3456789
+
+Type in input data...
+Received input:
+"0123456789", ""
+Program's output:
+0123456789
+
+Type in input data...
+Received input:
+"", ""
+Program's output:
+
+
+Type in input data...
+Received input:
+"", "0123456789"
+Program's output:
+(null)
+
+Type in input data...
+Received input:
+"0123", "789"
+Program's output:
+(null)
+
+Type in input data...
+Received input:
+"01201234", "01234"
+Program's output:
+01234
+
+Type in input data...
+Received input:
+"11121231234", "123"
+Program's output:
+1231234
+
+Type in input data...
+File closed.

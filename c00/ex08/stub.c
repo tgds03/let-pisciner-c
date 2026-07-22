@@ -1,10 +1,13 @@
-unsigned int write(int files, const void *buf, unsigned int nbyute);
-void ft_print_combn(int n);
+/** genparam input
+ * for ($i = 1; $i < 10; $i++) {
+ * 	print $i;
+ * }
+ */
+#include "common.h"
+#include <stdlib.h>
 
-int main() {
-	for (int i = 1; i < 9; ++i) {
-		ft_print_combn(i);
-		write(1, "\n", 1);
-	}
-	return 0;
+FUNCTION(void, ft_print_combn, int n);
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	ft_print_combn(atoi(argv[1]));
 }

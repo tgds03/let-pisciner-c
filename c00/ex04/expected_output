@@ -1,1 +1,106 @@
-PPPNNPPPPPPPPPP
+
+execute ./app:
+Let Pisciner C
+File path: ex04/ft_is_negative.c
+STUB MD5: 698b69fd3b3cac53013c5b8c13813d51
+Target Function: void ft_is_negative(int n);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"25"
+Program's output:
+P
+
+Type in input data...
+Received input:
+"-58"
+Program's output:
+N
+
+Type in input data...
+Received input:
+"74"
+Program's output:
+P
+
+Type in input data...
+Received input:
+"-112"
+Program's output:
+N
+
+Type in input data...
+Received input:
+"-15"
+Program's output:
+N
+
+Type in input data...
+Received input:
+"94"
+Program's output:
+P
+
+Type in input data...
+Received input:
+"112"
+Program's output:
+P
+
+Type in input data...
+Received input:
+"11"
+Program's output:
+P
+
+Type in input data...
+Received input:
+"97"
+Program's output:
+P
+
+Type in input data...
+Received input:
+"-50"
+Program's output:
+N
+
+Type in input data...
+Received input:
+"-57"
+Program's output:
+N
+
+Type in input data...
+Received input:
+"34"
+Program's output:
+P
+
+Type in input data...
+Received input:
+"-27"
+Program's output:
+N
+
+Type in input data...
+Received input:
+"-68"
+Program's output:
+N
+
+Type in input data...
+Received input:
+"119"
+Program's output:
+P
+
+Type in input data...
+Received input:
+"47"
+Program's output:
+P
+
+Type in input data...
+File closed.

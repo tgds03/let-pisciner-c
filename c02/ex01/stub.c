@@ -1,17 +1,34 @@
+/** genparam input
+ * print '0 "Hello world!"';
+ * print '3 "Hello world!"';
+ * print '7 "Hello world!"';
+ * print '12 "Hello world!"';
+ * print '7 "abcde\0abcde"';
+ * $\ = "";
+ * $, = "";
+ * for $_ (0 .. 10) {
+ * 	$len = int(rand(16));
+ * 	$n = int(rand($len));
+ * 	print $n, " ", '"';
+ * 	for $i (0 .. $len) {
+ * 		print char(int(rand(95)) + 32);
+ * 	}
+ * 	print '"', "\n";
+ * }
+ */
 #include <stdio.h>
+#include "common.h"
 
-char *ft_strncpy(char *dest, char *src, unsigned int n);
+FUNCTION(char *, ft_strncpy, char *dest, char *src, unsigned int n);
 
-int main() {
-	char *str1 = "1234567890";
-	char *str2 = "";
-	char *str3 = "abcd\0abcd";
-	char buffer[20];
-	ft_strncpy(buffer, str1, 10);
-	printf("%s\n", buffer);
-	ft_strncpy(buffer, str2, 10);
-	printf("%s\n", buffer);
-	ft_strncpy(buffer, str3, 10);
-	printf("%s\n", buffer);
-	return 0;
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	char *buf;
+	int n, len = 0;
+	n = atoi(argv[1]);
+	while (argv[2][len++]);
+	buf = (char*)calloc(len + 1, sizeof(char));
+	ft_strncpy(buf, argv[2], n);
+	printf("%s\n", buf);
+	free(buf);
 }

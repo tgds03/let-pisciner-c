@@ -1,20 +1,29 @@
+/** genparam input
+ * for $i (0 .. 10) {
+ * 	print $i;
+ * }
+ */
+#include "common.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-void ft_ultimate_ft(int *********nbr);
+#define RANDOMIZE_INPUT 1
+FUNCTION(void, ft_ultimate_ft, int *********nbr);
 
-void test(void *ptr) {
+void nest_pointer(void *ptr) {
 	static int level = 9;
 	if (level == 1) {
 		ft_ultimate_ft(ptr);
 	} else {
 		level -= 1;
-		test(&ptr);
+		nest_pointer(&ptr);
+		level += 1;
 	}
 }
 
-int main() {
-	int n = -12345;
-	test(&n);
+void test(int argc, char* argv[]) {
+	UNUSED(argc);
+	int n = atoi(argv[1]);
+	nest_pointer(&n);
 	printf("%d", n);
-	return 0;
 }

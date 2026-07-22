@@ -1,0 +1,115 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex00/ft_iterative_factorial.c
+STUB MD5: 4aadfcc47d219eaa080f7bd5283333d3
+Target Function: int ft_iterative_factorial(int nb);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"-1"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"0"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"1"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"2"
+Program's output:
+2
+
+
+Type in input data...
+Received input:
+"3"
+Program's output:
+6
+
+
+Type in input data...
+Received input:
+"4"
+Program's output:
+24
+
+
+Type in input data...
+Received input:
+"5"
+Program's output:
+120
+
+
+Type in input data...
+Received input:
+"6"
+Program's output:
+720
+
+
+Type in input data...
+Received input:
+"7"
+Program's output:
+5040
+
+
+Type in input data...
+Received input:
+"8"
+Program's output:
+40320
+
+
+Type in input data...
+Received input:
+"9"
+Program's output:
+362880
+
+
+Type in input data...
+Received input:
+"10"
+Program's output:
+3628800
+
+
+Type in input data...
+Received input:
+"11"
+Program's output:
+39916800
+
+
+Type in input data...
+Received input:
+"12"
+Program's output:
+479001600
+
+
+Type in input data...
+Received input:
+"13"
+Program's output:
+1932053504
+
+
+Type in input data...
+File closed.

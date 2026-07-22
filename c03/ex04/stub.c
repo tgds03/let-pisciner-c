@@ -1,20 +1,20 @@
+/** genparam input
+ * print "0123456789", "0123";
+ * print "0123456789", "789";
+ * print "0123456789", "3456";
+ * print "0123456789", '""';
+ * print '""', '""';
+ * print '""', "0123456789";
+ * print "0123", "789";
+ * print "01201234", "01234";
+ * print "11121231234", "123";
+ */
 #include <stdio.h>
+#include "common.h"
 
-char *ft_strstr(char *str, char *to_find);
+FUNCTION(char*, ft_strstr, char *str, char *to_find);
 
-int main()
-{
-	char *s1 = "0123456789";
-	char *s2 = "0123";
-	char *s3 = "789";
-	char *s4 = "3456";
-	char *s5 = "";
-	printf("%s\n", ft_strstr(s1, s2));
-	printf("%s\n", ft_strstr(s1, s3));
-	printf("%s\n", ft_strstr(s1, s4));
-	printf("%s\n", ft_strstr(s1, s5));
-	printf("%s\n", ft_strstr(s5, s5));
-	printf("%p\n", ft_strstr(s2, s4));
-	printf("%p\n", ft_strstr(s5, s1));
-	return 0;
+void test(int argc, char *argv[]) {
+	UNUSED(argc);
+	printf("%s", ft_strstr(argv[1], argv[2]));
 }

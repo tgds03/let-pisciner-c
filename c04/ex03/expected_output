@@ -1,0 +1,94 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex03/ft_atoi.c
+STUB MD5: e7c90e4552fb484309abf578b851ae38
+Target Function: int ft_atoi(char *str);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+""
+Program's output:
+0
+
+Type in input data...
+Received input:
+"1"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"0"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"-1"
+Program's output:
+-1
+
+Type in input data...
+Received input:
+"2147483647"
+Program's output:
+2147483647
+
+Type in input data...
+Received input:
+"-2147483648"
+Program's output:
+-2147483648
+
+Type in input data...
+Received input:
+"   123"
+Program's output:
+123
+
+Type in input data...
+Received input:
+"\t\n\f-321"
+Program's output:
+-321
+
+Type in input data...
+Received input:
+"--+-+512"
+Program's output:
+-512
+
+Type in input data...
+Received input:
+"+--+--1024"
+Program's output:
+1024
+
+Type in input data...
+Received input:
+" \f\n\r\t\v-3 1"
+Program's output:
+-3
+
+Type in input data...
+Received input:
+"\t\v +---+--23"
+Program's output:
+-23
+
+Type in input data...
+Received input:
+"\r +- -+32"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"    +-++\t352"
+Program's output:
+0
+
+Type in input data...
+File closed.

@@ -1,0 +1,110 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex01/ft_range.c
+STUB MD5: c30ecc6d311877ec34279a90feb446e2
+Target Function: int* ft_range(int min, int max);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"0", "0"
+Program's output:
+null
+
+Type in input data...
+Received input:
+"0", "1"
+Program's output:
+0 
+count: 1
+free: done
+
+Type in input data...
+Received input:
+"1", "0"
+Program's output:
+null
+
+Type in input data...
+Received input:
+"-10", "10"
+Program's output:
+-10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 9 
+count: 20
+free: done
+
+Type in input data...
+Received input:
+"10", "-10"
+Program's output:
+null
+
+Type in input data...
+Received input:
+"-888", "-891"
+Program's output:
+null
+
+Type in input data...
+Received input:
+"-911", "-907"
+Program's output:
+-911 -910 -909 -908 
+count: 4
+free: done
+
+Type in input data...
+Received input:
+"129", "113"
+Program's output:
+null
+
+Type in input data...
+Received input:
+"326", "341"
+Program's output:
+326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 
+count: 15
+free: done
+
+Type in input data...
+Received input:
+"465", "456"
+Program's output:
+null
+
+Type in input data...
+Received input:
+"689", "681"
+Program's output:
+null
+
+Type in input data...
+Received input:
+"-929", "-940"
+Program's output:
+null
+
+Type in input data...
+Received input:
+"661", "659"
+Program's output:
+null
+
+Type in input data...
+Received input:
+"-157", "-165"
+Program's output:
+null
+
+Type in input data...
+Received input:
+"243", "253"
+Program's output:
+243 244 245 246 247 248 249 250 251 252 
+count: 10
+free: done
+
+Type in input data...
+File closed.

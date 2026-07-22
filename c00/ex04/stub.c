@@ -1,17 +1,17 @@
+/** genparam input
+ * for ($i = 0; $i < 16; $i++) {
+ * 	print int(rand(256)) - 128;
+ * }
+ */
 #include "common.h"
+#include <stdlib.h>
 
-void ft_is_negative(int n);
+FUNCTION(void, ft_is_negative, int n);
 
-int main() {
-	ft_is_negative(~(1<<31));
-	ft_is_negative(1);
-	ft_is_negative(0);
-	ft_is_negative(-1);
-	ft_is_negative(1<<31);
-
-	init_rand(__FILE__);
-	for (int i = 0; i < 10; ++i) {
-		ft_is_negative(rand());
+void test(int argc, char *argv[]) {
+	if (argc != 2) {
+		printf("you must to give 1 argument");
+		return;
 	}
-	return 0;
+	ft_is_negative(atoi(argv[1]));
 }

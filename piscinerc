@@ -16,7 +16,8 @@ if [ ! -d "$REPO_PATH" ]; then
 	exit
 fi
 
-export SHELL_PATH=$(dirname $(readlink "$0"))
+export TIMEOUT=5
+export SHELL_PATH=$(dirname $(realpath "$0"))
 export LIB_PATH="$SHELL_PATH/lib"
 export INCLUDE_PATH="$SHELL_PATH/include"
 export STUB_PATH="$SHELL_PATH/${2,,}"
@@ -27,25 +28,53 @@ if [ ! -d "$STUB_PATH" ]; then
 	exit
 fi
 
+if [ ! -f "$SHELL_PATH/.env" ]; then
+	echo "$SHELL_PATH/.env"
+	cat <<- EOF > "$SHELL_PATH/.env"
+	SHELL_PATH=$SHELL_PATH
+	INCLUDE_PATH=$INCLUDE_PATH
+	LIB_PATH=$LIB_PATH
+	STUB_PATH=$STUB_PATH
+	EOF
+
+fi
+
 clean() {
 	echo ""
 	echo -n "Clean: "
-	$(cd "$REPO_PATH" && git clean -qf) && echo "done" 
+	$(cd "$REPO_PATH" && git clean -qfd) && echo "done" 
 }
 trap clean EXIT SIGINT SIGTERM
 
+NORM_OPT=()
+if [ -f "$STUB_PATH/env" ]; then
+	source "$STUB_PATH/env"
+fi
 echo ""
 echo "Norminette: "
-norminette "$REPO_PATH" || exit
+norminette $NORM_OPT "$REPO_PATH" || exit
 
 OUTPUT_DIR="./$(basename "$REPO_PATH")-outputs"
 mkdir $OUTPUT_DIR
 for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
-	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/compile_exam.sh" || continue
-	EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/test_exam.sh"
+	echo ""
+	echo -n "[$EXAM_NAME] compile: "
+	(EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/compile_exam.sh" && echo "done") || continue
+	echo -n "[$EXAM_NAME] run: "
+	(EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/execute_exam.sh" && echo "done") || continue
+	echo -n "[$EXAM_NAME] test: "
+	(EXAM_DIR="$EXAM_NAME" "$SHELL_PATH/cmd/test_exam.sh" && echo "done") || continue
+
+	echo "Success"
+done
+
+for EXAM_NAME in $(cd "$STUB_PATH" && ls -d */); do
 	cp "$REPO_PATH/$EXAM_NAME/output" "$OUTPUT_DIR/$(basename $EXAM_NAME).output"
+	cp "$REPO_PATH/$EXAM_NAME/app" "$OUTPUT_DIR/$(basename $EXAM_NAME).app"
 	if [ -s "$REPO_PATH/$EXAM_NAME/errlog" ]; then
 		cp "$REPO_PATH/$EXAM_NAME/errlog" "$OUTPUT_DIR/$(basename $EXAM_NAME).errlog"
 	fi
-	cp "$REPO_PATH/$EXAM_NAME/output" "$OUTPUT_DIR/$(basename $EXAM_NAME).output"
+	if [ -s "$REPO_PATH/$EXAM_NAME/log" ]; then
+		cp "$REPO_PATH/$EXAM_NAME/log" "$OUTPUT_DIR/$(basename $EXAM_NAME).log"
+	fi
 done

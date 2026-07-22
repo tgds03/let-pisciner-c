@@ -1,1 +1,94 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex09/ft_strcapitalize.c
+STUB MD5: cc851cae310b909077fc1c61169ea4f4
+Target Function: char * ft_strcapitalize(char *str);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"hi, hOw ArE yOu? 42words forty-two;fifty_and+one\0siX-SeVen"
+Program's output:
 Hi, How Are You? 42words Forty-Two;Fifty_And+One
+
+Type in input data...
+Received input:
+"aaa Aaa aAa aaA AAa AaA aAA AAA"
+Program's output:
+Aaa Aaa Aaa Aaa Aaa Aaa Aaa Aaa
+
+Type in input data...
+Received input:
+"0Aa 0aA a0A A0a Aa0 aA0"
+Program's output:
+0aa 0aa A0a A0a Aa0 Aa0
+
+Type in input data...
+Received input:
+"gM"
+Program's output:
+Gm
+
+Type in input data...
+Received input:
+"2XJInQDirXNt7IYgMr5"
+Program's output:
+2xjinqdirxnt7iygmr5
+
+Type in input data...
+Received input:
+"9OiXxJBtCyMlqQnDbcFeek41LB9dLd"
+Program's output:
+9oixxjbtcymlqqndbcfeek41lb9dld
+
+Type in input data...
+Received input:
+"9RJUag9dEQnm0ojMlqS0BzKvkTOsFb50"
+Program's output:
+9rjuag9deqnm0ojmlqs0bzkvktosfb50
+
+Type in input data...
+Received input:
+"BlZgHWpz5EA6mfv8T"
+Program's output:
+Blzghwpz5ea6mfv8t
+
+Type in input data...
+Received input:
+"Aw2H15f2GC6Z0pGVPtFYX72v"
+Program's output:
+Aw2h15f2gc6z0pgvptfyx72v
+
+Type in input data...
+Received input:
+"y89o"
+Program's output:
+Y89o
+
+Type in input data...
+Received input:
+"ZfILJv q84fyAOxKj"
+Program's output:
+Zfiljv Q84fyaoxkj
+
+Type in input data...
+Received input:
+"DlfQJCPnLUZk0W85hfZezxPbX1exC2y"
+Program's output:
+Dlfqjcpnluzk0w85hfzezxpbx1exc2y
+
+Type in input data...
+Received input:
+"gPHl"
+Program's output:
+Gphl
+
+Type in input data...
+Received input:
+"IL73BXlPGKOx5"
+Program's output:
+Il73bxlpgkox5
+
+Type in input data...
+File closed.

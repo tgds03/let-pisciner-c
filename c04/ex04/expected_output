@@ -1,0 +1,358 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex04/ft_putnbr_base.c
+STUB MD5: 7e61da87cf16896e24946f9af674a355
+Target Function: void ft_putnbr_base(int nbr, char *base);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"1234", ""
+Program's output:
+
+
+Type in input data...
+Received input:
+"1234", "0"
+Program's output:
+
+
+Type in input data...
+Received input:
+"2147483647", "01"
+Program's output:
+1111111111111111111111111111111
+
+Type in input data...
+Received input:
+"2147483647", "0123456"
+Program's output:
+104134211161
+
+Type in input data...
+Received input:
+"2147483647", "0123456789"
+Program's output:
+2147483647
+
+Type in input data...
+Received input:
+"2147483647", "0123456789abc"
+Program's output:
+282ba4aaa
+
+Type in input data...
+Received input:
+"2147483647", "0123456789abcdef"
+Program's output:
+7fffffff
+
+Type in input data...
+Received input:
+"2147483647", "quite"
+Program's output:
+utteeiiteteqei
+
+Type in input data...
+Received input:
+"2147483647", "ecol4210"
+Program's output:
+c0000000000
+
+Type in input data...
+Received input:
+"100", "01"
+Program's output:
+1100100
+
+Type in input data...
+Received input:
+"100", "0123456"
+Program's output:
+202
+
+Type in input data...
+Received input:
+"100", "0123456789"
+Program's output:
+100
+
+Type in input data...
+Received input:
+"100", "0123456789abc"
+Program's output:
+79
+
+Type in input data...
+Received input:
+"100", "0123456789abcdef"
+Program's output:
+64
+
+Type in input data...
+Received input:
+"100", "quite"
+Program's output:
+eqq
+
+Type in input data...
+Received input:
+"100", "ecol4210"
+Program's output:
+c44
+
+Type in input data...
+Received input:
+"10", "01"
+Program's output:
+1010
+
+Type in input data...
+Received input:
+"10", "0123456"
+Program's output:
+13
+
+Type in input data...
+Received input:
+"10", "0123456789"
+Program's output:
+10
+
+Type in input data...
+Received input:
+"10", "0123456789abc"
+Program's output:
+a
+
+Type in input data...
+Received input:
+"10", "0123456789abcdef"
+Program's output:
+a
+
+Type in input data...
+Received input:
+"10", "quite"
+Program's output:
+iq
+
+Type in input data...
+Received input:
+"10", "ecol4210"
+Program's output:
+co
+
+Type in input data...
+Received input:
+"1", "01"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"1", "0123456"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"1", "0123456789"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"1", "0123456789abc"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"1", "0123456789abcdef"
+Program's output:
+1
+
+Type in input data...
+Received input:
+"1", "quite"
+Program's output:
+u
+
+Type in input data...
+Received input:
+"1", "ecol4210"
+Program's output:
+c
+
+Type in input data...
+Received input:
+"0", "01"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"0", "0123456"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"0", "0123456789"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"0", "0123456789abc"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"0", "0123456789abcdef"
+Program's output:
+0
+
+Type in input data...
+Received input:
+"0", "quite"
+Program's output:
+q
+
+Type in input data...
+Received input:
+"0", "ecol4210"
+Program's output:
+e
+
+Type in input data...
+Received input:
+"-1", "01"
+Program's output:
+-1
+
+Type in input data...
+Received input:
+"-1", "0123456"
+Program's output:
+-1
+
+Type in input data...
+Received input:
+"-1", "0123456789"
+Program's output:
+-1
+
+Type in input data...
+Received input:
+"-1", "0123456789abc"
+Program's output:
+-1
+
+Type in input data...
+Received input:
+"-1", "0123456789abcdef"
+Program's output:
+-1
+
+Type in input data...
+Received input:
+"-1", "quite"
+Program's output:
+-u
+
+Type in input data...
+Received input:
+"-1", "ecol4210"
+Program's output:
+-c
+
+Type in input data...
+Received input:
+"-10", "01"
+Program's output:
+-1010
+
+Type in input data...
+Received input:
+"-10", "0123456"
+Program's output:
+-13
+
+Type in input data...
+Received input:
+"-10", "0123456789"
+Program's output:
+-10
+
+Type in input data...
+Received input:
+"-10", "0123456789abc"
+Program's output:
+-a
+
+Type in input data...
+Received input:
+"-10", "0123456789abcdef"
+Program's output:
+-a
+
+Type in input data...
+Received input:
+"-10", "quite"
+Program's output:
+-iq
+
+Type in input data...
+Received input:
+"-10", "ecol4210"
+Program's output:
+-co
+
+Type in input data...
+Received input:
+"-2147483648", "01"
+Program's output:
+-10000000000000000000000000000000
+
+Type in input data...
+Received input:
+"-2147483648", "0123456"
+Program's output:
+-104134211162
+
+Type in input data...
+Received input:
+"-2147483648", "0123456789"
+Program's output:
+-2147483648
+
+Type in input data...
+Received input:
+"-2147483648", "0123456789abc"
+Program's output:
+-282ba4aab
+
+Type in input data...
+Received input:
+"-2147483648", "0123456789abcdef"
+Program's output:
+-80000000
+
+Type in input data...
+Received input:
+"-2147483648", "quite"
+Program's output:
+-utteeiiteteqet
+
+Type in input data...
+Received input:
+"-2147483648", "ecol4210"
+Program's output:
+-oeeeeeeeeee
+
+Type in input data...
+File closed.

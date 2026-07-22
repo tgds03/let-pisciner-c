@@ -1,0 +1,56 @@
+
+execute ./app a b c d:
+a
+b
+c
+d
+
+execute ./app 1 2 3 4:
+1
+2
+3
+4
+
+execute ./app test1 test2 test3 test4:
+test1
+test2
+test3
+test4
+
+execute ./app a a a a a a a a a a a a a a a a a a a a :
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+
+execute ./app abcde abcdd abcd abcdee abcdef abcdc:
+abcd
+abcdc
+abcdd
+abcde
+abcdee
+abcdef
+
+execute ./app 312 321 123 231 132 213:
+123
+132
+213
+231
+312
+321

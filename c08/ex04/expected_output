@@ -1,0 +1,544 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex04/ft_strs_to_tab.c
+STUB MD5: f508e98bc58bb2a9cdd6def448d87035
+Target Function: struct s_stock_str* ft_strs_to_tab(int ac, char **av);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+
+Program's output:
+
+
+Type in input data...
+Received input:
+""
+Program's output:
+element 0
+size: 0
+ str: 
+copy: 
+pointer of str and copy are not same.
+
+
+
+Type in input data...
+Received input:
+"a"
+Program's output:
+element 0
+size: 1
+ str: a
+copy: a
+pointer of str and copy are not same.
+
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4"
+Program's output:
+element 0
+size: 1
+ str: 1
+copy: 1
+pointer of str and copy are not same.
+
+element 1
+size: 1
+ str: 2
+copy: 2
+pointer of str and copy are not same.
+
+element 2
+size: 1
+ str: 3
+copy: 3
+pointer of str and copy are not same.
+
+element 3
+size: 1
+ str: 4
+copy: 4
+pointer of str and copy are not same.
+
+
+
+Type in input data...
+Received input:
+"a", "b", "c", "d"
+Program's output:
+element 0
+size: 1
+ str: a
+copy: a
+pointer of str and copy are not same.
+
+element 1
+size: 1
+ str: b
+copy: b
+pointer of str and copy are not same.
+
+element 2
+size: 1
+ str: c
+copy: c
+pointer of str and copy are not same.
+
+element 3
+size: 1
+ str: d
+copy: d
+pointer of str and copy are not same.
+
+
+
+Type in input data...
+Received input:
+"D/PrMaYB3?", "xA{l#92pgX*;@", "_d", "BO$=", ",2%>JDRlnCIhdWhY", "mT%!\"vuL1-$", "nz:,yVLz", "\\oeBsrOU 9", "~;WQx-", "*xsC[6q+4=\'=iW", "LsirUx*U-B\\r", "TM}", " 9Wwu4~n E5-m", "6r^>=$->f", "", "~])P;$mY|\"e/o", "OX*", ">1Pq", "~ :RMmzON", "&uv>", "}}e0.000000_!3p", "3muKd", "At;h(><7T@-,.wL"
+Program's output:
+element 0
+size: 10
+ str: D/PrMaYB3?
+copy: D/PrMaYB3?
+pointer of str and copy are not same.
+
+element 1
+size: 13
+ str: xA{l#92pgX*;@
+copy: xA{l#92pgX*;@
+pointer of str and copy are not same.
+
+element 2
+size: 2
+ str: _d
+copy: _d
+pointer of str and copy are not same.
+
+element 3
+size: 4
+ str: BO$=
+copy: BO$=
+pointer of str and copy are not same.
+
+element 4
+size: 16
+ str: ,2%>JDRlnCIhdWhY
+copy: ,2%>JDRlnCIhdWhY
+pointer of str and copy are not same.
+
+element 5
+size: 11
+ str: mT%!"vuL1-$
+copy: mT%!"vuL1-$
+pointer of str and copy are not same.
+
+element 6
+size: 8
+ str: nz:,yVLz
+copy: nz:,yVLz
+pointer of str and copy are not same.
+
+element 7
+size: 10
+ str: \oeBsrOU 9
+copy: \oeBsrOU 9
+pointer of str and copy are not same.
+
+element 8
+size: 6
+ str: ~;WQx-
+copy: ~;WQx-
+pointer of str and copy are not same.
+
+element 9
+size: 14
+ str: *xsC[6q+4='=iW
+copy: *xsC[6q+4='=iW
+pointer of str and copy are not same.
+
+element 10
+size: 12
+ str: LsirUx*U-B\r
+copy: LsirUx*U-B\r
+pointer of str and copy are not same.
+
+element 11
+size: 3
+ str: TM}
+copy: TM}
+pointer of str and copy are not same.
+
+element 12
+size: 13
+ str:  9Wwu4~n E5-m
+copy:  9Wwu4~n E5-m
+pointer of str and copy are not same.
+
+element 13
+size: 9
+ str: 6r^>=$->f
+copy: 6r^>=$->f
+pointer of str and copy are not same.
+
+element 14
+size: 8
+ str: D9WJd7<%
+copy: D9WJd7<%
+pointer of str and copy are not same.
+
+element 15
+size: 13
+ str: ~])P;$mY|"e/o
+copy: ~])P;$mY|"e/o
+pointer of str and copy are not same.
+
+element 16
+size: 3
+ str: OX*
+copy: OX*
+pointer of str and copy are not same.
+
+element 17
+size: 4
+ str: >1Pq
+copy: >1Pq
+pointer of str and copy are not same.
+
+element 18
+size: 9
+ str: ~ :RMmzON
+copy: ~ :RMmzON
+pointer of str and copy are not same.
+
+element 19
+size: 4
+ str: &uv>
+copy: &uv>
+pointer of str and copy are not same.
+
+element 20
+size: 9
+ str: }}e%F_!3p
+copy: }}e%F_!3p
+pointer of str and copy are not same.
+
+element 21
+size: 5
+ str: 3muKd
+copy: 3muKd
+pointer of str and copy are not same.
+
+element 22
+size: 15
+ str: At;h(><7T@-,.wL
+copy: At;h(><7T@-,.wL
+pointer of str and copy are not same.
+
+
+
+Type in input data...
+Received input:
+" }5DzX", "\'38r4Xjm|%=~", "^$ wn", "sjIv", "`oUD", "06+&.wJ<=Dt", "Pu=Ad{\"h@NxQ", "q{!(6Is8s8", "4Iz6f\\p8", "1LW(!4) !,\\<CIL9"
+Program's output:
+element 0
+size: 6
+ str:  }5DzX
+copy:  }5DzX
+pointer of str and copy are not same.
+
+element 1
+size: 12
+ str: '38r4Xjm|%=~
+copy: '38r4Xjm|%=~
+pointer of str and copy are not same.
+
+element 2
+size: 5
+ str: ^$ wn
+copy: ^$ wn
+pointer of str and copy are not same.
+
+element 3
+size: 4
+ str: sjIv
+copy: sjIv
+pointer of str and copy are not same.
+
+element 4
+size: 4
+ str: `oUD
+copy: `oUD
+pointer of str and copy are not same.
+
+element 5
+size: 11
+ str: 06+&.wJ<=Dt
+copy: 06+&.wJ<=Dt
+pointer of str and copy are not same.
+
+element 6
+size: 12
+ str: Pu=Ad{"h@NxQ
+copy: Pu=Ad{"h@NxQ
+pointer of str and copy are not same.
+
+element 7
+size: 10
+ str: q{!(6Is8s8
+copy: q{!(6Is8s8
+pointer of str and copy are not same.
+
+element 8
+size: 8
+ str: 4Iz6f\p8
+copy: 4Iz6f\p8
+pointer of str and copy are not same.
+
+element 9
+size: 16
+ str: 1LW(!4) !,\<CIL9
+copy: 1LW(!4) !,\<CIL9
+pointer of str and copy are not same.
+
+
+
+Type in input data...
+Received input:
+".q/Z O", "Hhf_{2\'Uo1@>|u,[", "/S@=\"~B_", "et~!V!:a`h", "oxU8R3GC<u{g$kD", "8P2pjzf9$Gn", "P.O", "X`|,/~1UT]", "st$q.7~", "2\'N|Y]3]Dj5Gy"
+Program's output:
+element 0
+size: 6
+ str: .q/Z O
+copy: .q/Z O
+pointer of str and copy are not same.
+
+element 1
+size: 16
+ str: Hhf_{2'Uo1@>|u,[
+copy: Hhf_{2'Uo1@>|u,[
+pointer of str and copy are not same.
+
+element 2
+size: 8
+ str: /S@="~B_
+copy: /S@="~B_
+pointer of str and copy are not same.
+
+element 3
+size: 10
+ str: et~!V!:a`h
+copy: et~!V!:a`h
+pointer of str and copy are not same.
+
+element 4
+size: 15
+ str: oxU8R3GC<u{g$kD
+copy: oxU8R3GC<u{g$kD
+pointer of str and copy are not same.
+
+element 5
+size: 11
+ str: 8P2pjzf9$Gn
+copy: 8P2pjzf9$Gn
+pointer of str and copy are not same.
+
+element 6
+size: 3
+ str: P.O
+copy: P.O
+pointer of str and copy are not same.
+
+element 7
+size: 10
+ str: X`|,/~1UT]
+copy: X`|,/~1UT]
+pointer of str and copy are not same.
+
+element 8
+size: 7
+ str: st$q.7~
+copy: st$q.7~
+pointer of str and copy are not same.
+
+element 9
+size: 13
+ str: 2'N|Y]3]Dj5Gy
+copy: 2'N|Y]3]Dj5Gy
+pointer of str and copy are not same.
+
+
+
+Type in input data...
+Received input:
+"t/;Ew{*A\\", "VMh*I.T^l", "K^KXvHf[^", "*\'|A", "X "
+Program's output:
+element 0
+size: 9
+ str: t/;Ew{*A\
+copy: t/;Ew{*A\
+pointer of str and copy are not same.
+
+element 1
+size: 9
+ str: VMh*I.T^l
+copy: VMh*I.T^l
+pointer of str and copy are not same.
+
+element 2
+size: 9
+ str: K^KXvHf[^
+copy: K^KXvHf[^
+pointer of str and copy are not same.
+
+element 3
+size: 4
+ str: *'|A
+copy: *'|A
+pointer of str and copy are not same.
+
+element 4
+size: 2
+ str: X 
+copy: X 
+pointer of str and copy are not same.
+
+
+
+Type in input data...
+Received input:
+"c}UK<rx", "Sh}DE`D<kYwY", "5^\\v_YF", "fLsKAhQ?WI08x ", "v\'", "[0=r4^-k6G^X", "&u_", "@\'K|m/S", "E!0\"S:kvd", "5=G6QLr", ":AI:", "A/0Sw}Wp}dP0Q*f", "Pr0f\'", "s:5#k[pP$ZrVX|Jj", "UC2;xr{?0.000000Ad2", ">7zV_[!F", "", "BdCQkBORv1~D@", "qn", "]icbIsb]5Z*>", "\"clF\\L"
+Program's output:
+element 0
+size: 7
+ str: c}UK<rx
+copy: c}UK<rx
+pointer of str and copy are not same.
+
+element 1
+size: 12
+ str: Sh}DE`D<kYwY
+copy: Sh}DE`D<kYwY
+pointer of str and copy are not same.
+
+element 2
+size: 7
+ str: 5^\v_YF
+copy: 5^\v_YF
+pointer of str and copy are not same.
+
+element 3
+size: 14
+ str: fLsKAhQ?WI08x 
+copy: fLsKAhQ?WI08x 
+pointer of str and copy are not same.
+
+element 4
+size: 2
+ str: v'
+copy: v'
+pointer of str and copy are not same.
+
+element 5
+size: 12
+ str: [0=r4^-k6G^X
+copy: [0=r4^-k6G^X
+pointer of str and copy are not same.
+
+element 6
+size: 3
+ str: &u_
+copy: &u_
+pointer of str and copy are not same.
+
+element 7
+size: 7
+ str: @'K|m/S
+copy: @'K|m/S
+pointer of str and copy are not same.
+
+element 8
+size: 9
+ str: E!0"S:kvd
+copy: E!0"S:kvd
+pointer of str and copy are not same.
+
+element 9
+size: 7
+ str: 5=G6QLr
+copy: 5=G6QLr
+pointer of str and copy are not same.
+
+element 10
+size: 4
+ str: :AI:
+copy: :AI:
+pointer of str and copy are not same.
+
+element 11
+size: 15
+ str: A/0Sw}Wp}dP0Q*f
+copy: A/0Sw}Wp}dP0Q*f
+pointer of str and copy are not same.
+
+element 12
+size: 5
+ str: Pr0f'
+copy: Pr0f'
+pointer of str and copy are not same.
+
+element 13
+size: 16
+ str: s:5#k[pP$ZrVX|Jj
+copy: s:5#k[pP$ZrVX|Jj
+pointer of str and copy are not same.
+
+element 14
+size: 13
+ str: UC2;xr{?%FAd2
+copy: UC2;xr{?%FAd2
+pointer of str and copy are not same.
+
+element 15
+size: 8
+ str: >7zV_[!F
+copy: >7zV_[!F
+pointer of str and copy are not same.
+
+element 16
+size: 6
+ str: *MZ"~%
+copy: *MZ"~%
+pointer of str and copy are not same.
+
+element 17
+size: 13
+ str: BdCQkBORv1~D@
+copy: BdCQkBORv1~D@
+pointer of str and copy are not same.
+
+element 18
+size: 2
+ str: qn
+copy: qn
+pointer of str and copy are not same.
+
+element 19
+size: 12
+ str: ]icbIsb]5Z*>
+copy: ]icbIsb]5Z*>
+pointer of str and copy are not same.
+
+element 20
+size: 6
+ str: "clF\L
+copy: "clF\L
+pointer of str and copy are not same.
+
+
+
+Type in input data...
+File closed.

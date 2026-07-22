@@ -1,10 +1,17 @@
+/** genparam input
+ * for $i (0 .. 10) {
+ * 	print $i;
+ * }
+ */
+#include "common.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-void ft_ft(int *nbr);
+FUNCTION(void, ft_ft, int *nbr);
 
-int main() {
-	int n = -12345;
+void test(int argc, char* argv[]) {
+	UNUSED(argc);
+	int n = atoi(argv[1]);
 	ft_ft(&n);
 	printf("%d", n);
-	return 0;
 }

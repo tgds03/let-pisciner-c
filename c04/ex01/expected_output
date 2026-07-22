@@ -1,4 +1,23 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex01/ft_putstr.c
+STUB MD5: aaa1a37a75f1fe1ebfebbcbce8b813f9
+Target Function: void ft_putstr(char *str);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"abcdefg\nhijklmn"
+Program's output:
 abcdefg
 hijklmn
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~abcdefg
-hijklmn
+
+Type in input data...
+Received input:
+" !\"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+Program's output:
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+
+Type in input data...
+File closed.

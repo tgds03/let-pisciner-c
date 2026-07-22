@@ -1,1 +1,34 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex07/ft_strupcase.c
+STUB MD5: 2c44fbcf5bb25ab01a98e496f538cdd0
+Target Function: char * ft_strupcase(char *str);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"abcdefg"
+Program's output:
+ABCDEFG
+
+Type in input data...
+Received input:
+"ABCDEFG"
+Program's output:
+ABCDEFG
+
+Type in input data...
+Received input:
+"0123456789"
+Program's output:
+0123456789
+
+Type in input data...
+Received input:
+" !\"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+Program's output:
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+
+Type in input data...
+File closed.

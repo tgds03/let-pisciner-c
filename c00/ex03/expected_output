@@ -1,1 +1,16 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex03/ft_print_numbers.c
+STUB MD5: 2d9d7cdae780c08d92fc7e2a02e714b6
+Target Function: void ft_print_numbers();
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+
+Program's output:
 0123456789
+
+Type in input data...
+File closed.

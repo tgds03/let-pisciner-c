@@ -1,0 +1,346 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex04/ft_fibonacci.c
+STUB MD5: 01ef6e2026e15dc37e65c3a9d3f1139c
+Target Function: int ft_fibonacci(int index);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"-1"
+Program's output:
+-1
+
+
+Type in input data...
+Received input:
+"0"
+Program's output:
+0
+
+
+Type in input data...
+Received input:
+"1"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"2"
+Program's output:
+1
+
+
+Type in input data...
+Received input:
+"3"
+Program's output:
+2
+
+
+Type in input data...
+Received input:
+"4"
+Program's output:
+3
+
+
+Type in input data...
+Received input:
+"5"
+Program's output:
+5
+
+
+Type in input data...
+Received input:
+"6"
+Program's output:
+8
+
+
+Type in input data...
+Received input:
+"7"
+Program's output:
+13
+
+
+Type in input data...
+Received input:
+"8"
+Program's output:
+21
+
+
+Type in input data...
+Received input:
+"9"
+Program's output:
+34
+
+
+Type in input data...
+Received input:
+"10"
+Program's output:
+55
+
+
+Type in input data...
+Received input:
+"11"
+Program's output:
+89
+
+
+Type in input data...
+Received input:
+"12"
+Program's output:
+144
+
+
+Type in input data...
+Received input:
+"13"
+Program's output:
+233
+
+
+Type in input data...
+Received input:
+"14"
+Program's output:
+377
+
+
+Type in input data...
+Received input:
+"15"
+Program's output:
+610
+
+
+Type in input data...
+Received input:
+"16"
+Program's output:
+987
+
+
+Type in input data...
+Received input:
+"17"
+Program's output:
+1597
+
+
+Type in input data...
+Received input:
+"18"
+Program's output:
+2584
+
+
+Type in input data...
+Received input:
+"19"
+Program's output:
+4181
+
+
+Type in input data...
+Received input:
+"20"
+Program's output:
+6765
+
+
+Type in input data...
+Received input:
+"21"
+Program's output:
+10946
+
+
+Type in input data...
+Received input:
+"22"
+Program's output:
+17711
+
+
+Type in input data...
+Received input:
+"23"
+Program's output:
+28657
+
+
+Type in input data...
+Received input:
+"24"
+Program's output:
+46368
+
+
+Type in input data...
+Received input:
+"25"
+Program's output:
+75025
+
+
+Type in input data...
+Received input:
+"26"
+Program's output:
+121393
+
+
+Type in input data...
+Received input:
+"27"
+Program's output:
+196418
+
+
+Type in input data...
+Received input:
+"28"
+Program's output:
+317811
+
+
+Type in input data...
+Received input:
+"29"
+Program's output:
+514229
+
+
+Type in input data...
+Received input:
+"30"
+Program's output:
+832040
+
+
+Type in input data...
+Received input:
+"31"
+Program's output:
+1346269
+
+
+Type in input data...
+Received input:
+"32"
+Program's output:
+2178309
+
+
+Type in input data...
+Received input:
+"33"
+Program's output:
+3524578
+
+
+Type in input data...
+Received input:
+"34"
+Program's output:
+5702887
+
+
+Type in input data...
+Received input:
+"35"
+Program's output:
+9227465
+
+
+Type in input data...
+Received input:
+"36"
+Program's output:
+14930352
+
+
+Type in input data...
+Received input:
+"37"
+Program's output:
+24157817
+
+
+Type in input data...
+Received input:
+"38"
+Program's output:
+39088169
+
+
+Type in input data...
+Received input:
+"39"
+Program's output:
+63245986
+
+
+Type in input data...
+Received input:
+"40"
+Program's output:
+102334155
+
+
+Type in input data...
+Received input:
+"41"
+Program's output:
+165580141
+
+
+Type in input data...
+Received input:
+"42"
+Program's output:
+267914296
+
+
+Type in input data...
+Received input:
+"43"
+Program's output:
+433494437
+
+
+Type in input data...
+Received input:
+"44"
+Program's output:
+701408733
+
+
+Type in input data...
+Received input:
+"45"
+Program's output:
+1134903170
+
+
+Type in input data...
+Received input:
+"46"
+Program's output:
+1836311903
+
+
+Type in input data...
+File closed.

@@ -1,0 +1,4 @@
+COMPILE_CMD="EXITCODE=1; make > log && make >> log && ${COMPILE_CMD} && EXITCODE=0; cat log | grep \"Nothing to be done for 'all'\" > output.misc; exit \${EXITCODE};"
+CC_INCLUDE+=('./includes')
+CC_LIBPATH+=('.')
+CC_LIBRARY+=('ft')

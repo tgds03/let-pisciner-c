@@ -38,11 +38,11 @@ piscinerc my_exam_c00 c00
 `piscinerc`를 실행하면 아래 과정이 차례대로 수행됩니다.
 
 1. 레포지토리에서 norminette 검사
-2. 준비된 stub.c 파일을  ex00, ex01, ... 디렉토리로 이동
+2. 준비된 `stub.c` 파일을  ex00, ex01, ... 디렉토리로 이동
 3. 컴파일 및 실행
-4. expected\_output과 결과 비교
-5. 현재 위치에 [repo\_name]\_outputs 디렉토리를 생성하고 실행 결과를 이곳에 저장
-6. [repo\_name]에서 `git clean`으로 파일 정리
+4. `expected\_output`과 결과 비교
+5. 현재 위치에 [repo\_name]\_outputs 디렉토리를 생성하고 실행 파일 및 결과를 이곳에 저장
+6. [repo\_name]에서 `git clean -fd`으로 파일 정리
 
 ## 설치
 
@@ -51,6 +51,7 @@ shell에서 아래 스크립트를 실행해 주세요.
 ```bash
 git clone https://github.com/tgds03/let-pisciner-c.git let-pisciner-c
 cd let-pisciner-c
+pip install -r requirements.txt
 mkdir ~/bin
 ln -s "$(pwd)/piscinerc" ~/bin/piscinerc
 ```
@@ -61,20 +62,30 @@ ln -s "$(pwd)/piscinerc" ~/bin/piscinerc
 
 - `stub.c`: 제출 코드가 컴파일이 가능하도록 `main()` 등의 함수가 작성된 stub 코드입니다.
 - `expected_output`: 간이 테스트에 활용되는 기준 출력값입니다. 간이 테스트는 Pass를 보장하지 않습니다.
-- `env`: 코드가 추가 라이브러리나 컴파일 옵션을 요구하는 경우 사용됩니다. 필요한 exam에만 있습니다.
+- `env`: 문제가 라이브러리, 컴파일, norminette 등에 추가 옵션을 요구하는 경우 사용됩니다. 필요한 exam에만 있습니다.
 
 `include` 에는 stub에 필요한 공통 라이브러리 헤더 (`common.h`)와 일부 코드에 필요한 추가 라이브러리 헤더가 위치해 있습니다. 이에 대응되는 라이브러리는 `lib`에 위치하며, 외부 라이브러리가 아닌 경우 `src`에 해당 소스코드도 포함되어 있습니다.
 
-`cmd`에는 실행에 필요한 부가적인 shell 파일들이 있습니다.
+`cmd`에는 실행에 필요한 부가적인 shell 파일 및 테스트 케이스 생성에 사용되는 스크립트들이 있습니다.
 
 `piscinerc`는 실행되는 메인 shell 파일이며, 다음을 수행합니다. 각 과정은 콘솔에 출력됩니다.
 
 1. 레포지토리에서 norminette 검사
-2. 준비된 stub.c 파일을  ex00, ex01, ... 디렉토리로 이동
+2. 준비된 `stub.c` 파일을  ex00, ex01, ... 디렉토리로 이동
 3. 컴파일 및 실행
-4. expected\_output과 결과 비교
-5. 현재 위치에 [repo\_name]\_outputs 디렉토리를 생성하고 실행 결과를 이곳에 저장
-6. [repo\_name]에서 `git clean`으로 파일 정리
+4. `expected\_output`과 결과 비교
+5. 현재 위치에 [repo\_name]\_outputs 디렉토리를 생성하고 실행 파일 및 결과를 이곳에 저장
+6. [repo\_name]에서 `git clean -fd`으로 파일 정리
+
+# Dependency
+
+이 프로젝트는 아래와 같은 환경에서 개발되었습니다.
+
+- Ubuntu 22.04.1 
+- cc 11.4.0
+- python 3.13.1
+- pycparser 3.0
+- perl 5.34.0
 
 # Structure
 

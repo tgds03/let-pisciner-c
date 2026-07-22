@@ -1,3 +1,122 @@
-1234567890
 
-abcd
+execute ./app:
+Let Pisciner C
+File path: ex01/ft_strncpy.c
+STUB MD5: 3cdae6ede4fb3da4535e8d1a890cfdef
+Target Function: char * ft_strncpy(char *dest, char *src, unsigned int n);
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"0", "Hello world!"
+Program's output:
+
+
+
+Type in input data...
+Received input:
+"3", "Hello world!"
+Program's output:
+Hel
+
+
+Type in input data...
+Received input:
+"7", "Hello world!"
+Program's output:
+Hello w
+
+
+Type in input data...
+Received input:
+"12", "Hello world!"
+Program's output:
+Hello world!
+
+
+Type in input data...
+Received input:
+"7", "abcde\0abcde"
+Program's output:
+abcde
+
+
+Type in input data...
+Received input:
+"3", "NogVz"
+Program's output:
+Nog
+
+
+Type in input data...
+Received input:
+"7", "[7bygvx^2iVt/rg8"
+Program's output:
+[7bygvx
+
+
+Type in input data...
+Received input:
+"0", "9"
+Program's output:
+
+
+
+Type in input data...
+Received input:
+"10", "z%WTq4WR<FI2Enf"
+Program's output:
+z%WTq4WR<F
+
+
+Type in input data...
+Received input:
+"8", "@?FMQ9`;iL"
+Program's output:
+@?FMQ9`;
+
+
+Type in input data...
+Received input:
+"2", "GgXeQD!47@]Y/*"
+Program's output:
+Gg
+
+
+Type in input data...
+Received input:
+"0", "P"
+Program's output:
+
+
+
+Type in input data...
+Received input:
+"0", "q`n"
+Program's output:
+
+
+
+Type in input data...
+Received input:
+"0", ">["
+Program's output:
+
+
+
+Type in input data...
+Received input:
+"0", "z{f-7Ge-Dj7|`E5"
+Program's output:
+
+
+
+Type in input data...
+Received input:
+"0", "lM"
+Program's output:
+
+
+
+Type in input data...
+File closed.

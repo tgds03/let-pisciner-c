@@ -1,27 +1,21 @@
+/** genparam input
+ * print "0123456789", '0', '01234\056789', '1', '""', '2';
+ * print "0123456789", '11', '01234\056789', '12', '""', '13';
+ * print "0123456789", '3', '01234\056789', '5', '""', '1', "0123456789", '10', '01234\056789', '6', '""', '0', 'a', '1';
+ * print "abcdefg", '7', "hijklmn", '7', "opqrstu", '7';
+ * print '" "', '1', '"\t"', '1', '""', '1', '"\t"', '1';
+ */
 #include <stdio.h>
+#include "common.h"
 
-char *ft_strncat(char *dest, char *src, unsigned int nb);
-
-int main()
-{
-	char d[80];
-	char *s1 = "0123456789";
-	char *s2 = "01234\0" "6789";
-	char *s3 = "";
-
-	for (int i = 0; i < 80; ++i) {
-		d[i] = (i % 2) ? 0 : '.';
+FUNCTION(char *, ft_strncat, char *dest, char *src, unsigned int nb);
+void test(int argc, char *argv[]) {
+	char buffer[1024];
+	char *cur;
+	int num;
+	for (int i = 1; i < argc;) {
+		cur = argv[i++];
+		num = atoi(argv[i++]);
+		printf("%s\n", ft_strncat(buffer, cur, num));
 	}
-
-	printf("%s\n", d);
-	printf("%s\n", ft_strncat(d, s1, 0));
-	printf("%s\n", ft_strncat(d, s3, 1));
-	printf("%s\n", ft_strncat(d, s1, 2));
-	printf("%s\n", ft_strncat(d, s3, 3));
-	printf("%s\n", ft_strncat(d, s1, 5));
-	printf("%s\n", ft_strncat(d, s1, 10));
-	printf("%s\n", ft_strncat(d, s1, 20));
-	printf("%s\n", ft_strncat(d, s2, 20));
-	printf("%s\n", ft_strncat(d, s2, 20));
-	return 0;
 }

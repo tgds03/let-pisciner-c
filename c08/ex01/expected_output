@@ -1,0 +1,122 @@
+
+execute ./app:
+Let Pisciner C
+File path: ex01/stub.c
+STUB MD5: c0e43278477f013b370844e92c72479a
+Target Function: undefined
+Press Ctrl + C to interrupt and exit.
+================================================================================
+Type in input data...
+Received input:
+"1"
+Program's output:
+I have an odd number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2"
+Program's output:
+I have an even number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3"
+Program's output:
+I have an odd number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4"
+Program's output:
+I have an even number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4", "5"
+Program's output:
+I have an odd number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4", "5", "6"
+Program's output:
+I have an even number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4", "5", "6", "7"
+Program's output:
+I have an odd number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4", "5", "6", "7", "8"
+Program's output:
+I have an even number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4", "5", "6", "7", "8", "9"
+Program's output:
+I have an odd number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"
+Program's output:
+I have an even number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"
+Program's output:
+I have an odd number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
+Program's output:
+I have an even number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"
+Program's output:
+I have an odd number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"
+Program's output:
+I have an even number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"
+Program's output:
+I have an odd number of arguments.
+
+
+Type in input data...
+Received input:
+"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"
+Program's output:
+I have an even number of arguments.
+
+
+Type in input data...
+File closed.
