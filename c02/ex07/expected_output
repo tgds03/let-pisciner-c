@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex07/ft_strupcase.c
 STUB MD5: 2c44fbcf5bb25ab01a98e496f538cdd0
-Function: char * ft_strupcase(char *str);
+Target Function: char * ft_strupcase(char *str);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

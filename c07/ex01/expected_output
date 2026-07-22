@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex01/ft_range.c
 STUB MD5: c30ecc6d311877ec34279a90feb446e2
-Function: int* ft_range(int min, int max);
+Target Function: int* ft_range(int min, int max);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

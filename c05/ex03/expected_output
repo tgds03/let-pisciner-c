@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex03/ft_recursive_power.c
 STUB MD5: 0a365f6a88d99da522c9686b9d8ebfe3
-Function: int ft_recursive_power(int nb, int power);
+Target Function: int ft_recursive_power(int nb, int power);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

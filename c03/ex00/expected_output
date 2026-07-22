@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex00/ft_strcmp.c
 STUB MD5: 7cbb3eb8e30a38d6fafbb22caaa5a603
-Function: int ft_strcmp(char *s1, char *s2);
+Target Function: int ft_strcmp(char *s1, char *s2);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

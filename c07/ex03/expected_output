@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex03/ft_strjoin.c
 STUB MD5: 53fd7577506c08cb3063aac053f8254f
-Function: char* ft_strjoin(int size, char **strs, char *sep);
+Target Function: char* ft_strjoin(int size, char **strs, char *sep);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

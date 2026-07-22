@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex07/ft_find_next_prime.c
 STUB MD5: a89d69a39d445b12b1efd2bb776a4719
-Function: int ft_find_next_prime(int nb);
+Target Function: int ft_find_next_prime(int nb);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

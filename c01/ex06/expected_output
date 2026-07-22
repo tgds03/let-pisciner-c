@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex06/ft_strlen.c
 STUB MD5: ae7c327a6d7be41b8c3eb3f9510fb65a
-Function: int ft_strlen(char *str);
+Target Function: int ft_strlen(char *str);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

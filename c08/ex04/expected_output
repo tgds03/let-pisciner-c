@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex04/ft_strs_to_tab.c
 STUB MD5: f508e98bc58bb2a9cdd6def448d87035
-Function: struct s_stock_str* ft_strs_to_tab(int ac, char **av);
+Target Function: struct s_stock_str* ft_strs_to_tab(int ac, char **av);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex04/ft_ultimate_div_mod.c
 STUB MD5: aeefaa87855013d4076974f3fa342ab8
-Function: void ft_ultimate_div_mod(int *a, int *b);
+Target Function: void ft_ultimate_div_mod(int *a, int *b);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex05/ft_atoi_base.c
 STUB MD5: 5decda97e3af1e8d9936b52734744e67
-Function: int ft_atoi_base(char *str, char *base);
+Target Function: int ft_atoi_base(char *str, char *base);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

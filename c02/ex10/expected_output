@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex10/ft_strlcpy.c
 STUB MD5: cb871a752cf43a26bbca0886bc1799e7
-Function: unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
+Target Function: unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

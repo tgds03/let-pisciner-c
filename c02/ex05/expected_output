@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex05/ft_str_is_uppercase.c
 STUB MD5: 5531a84ef003f417d3a6e92a8b34809b
-Function: int ft_str_is_uppercase(char *str);
+Target Function: int ft_str_is_uppercase(char *str);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

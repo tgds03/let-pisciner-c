@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex00/ft_ft.c
 STUB MD5: 6c13920fd3dc3e74e72e3f3af006c744
-Function: void ft_ft(int *nbr);
+Target Function: void ft_ft(int *nbr);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

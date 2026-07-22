@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex04/ft_str_is_lowercase.c
 STUB MD5: e112688bba15572ffb3a4f3fd1b8fc3a
-Function: int ft_str_is_lowercase(char *str);
+Target Function: int ft_str_is_lowercase(char *str);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

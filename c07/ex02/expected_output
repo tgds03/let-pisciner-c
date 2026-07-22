@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex02/ft_ultimate_range.c
 STUB MD5: 2c58201924a79e07d3195a9571502456
-Function: int ft_ultimate_range(int **range, int min, int max);
+Target Function: int ft_ultimate_range(int **range, int min, int max);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

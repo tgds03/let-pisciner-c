@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex05/ft_print_comb.c
 STUB MD5: 1fe555f860c55d0b3cc72e037ecb3e91
-Function: void ft_print_comb();
+Target Function: void ft_print_comb();
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

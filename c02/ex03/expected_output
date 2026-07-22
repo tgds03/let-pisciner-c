@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex03/ft_str_is_numeric.c
 STUB MD5: bd82ddee7140496a231f39aa684a78c0
-Function: int ft_str_is_numeric(char *str);
+Target Function: int ft_str_is_numeric(char *str);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

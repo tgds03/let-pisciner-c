@@ -3,7 +3,7 @@ execute ./app:
 Let Pisciner C
 File path: ex06/ft_is_prime.c
 STUB MD5: 1aa36216e6c37e007f2bdaa740d271a8
-Function: int ft_is_prime(int nb);
+Target Function: int ft_is_prime(int nb);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
 Type in input data...

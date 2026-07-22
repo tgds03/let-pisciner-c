@@ -117,7 +117,7 @@ void init_test() {
 	wprint("Let Pisciner C\n");
 	wprint("File path: %s\n", (shortpath) ? shortpath : "");
 	wprint("STUB MD5: %s\n", function_env.stubmd5);
-	wprint("Function: %s\n", func_header);
+	wprint("Target Function: %s\n", func_header);
 	wprint("Press Ctrl + C to interrupt and exit.\n");
 	putline('=');
 
