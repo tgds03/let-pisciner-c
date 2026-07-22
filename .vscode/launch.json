@@ -5,6 +5,36 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "(gdb) test dummy",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build: test with dummy",
+            "program": "${workspaceFolder}/src/test/test.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/src/test",
+            "environment": [
+                {
+                    "name": "LSAN_OPTIONS",
+                    "value": "verbosity=1:log_threads=1"
+                }
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
             "name": "(gdb) genparam interpreter",
             "type": "cppdbg",
             "request": "launch",

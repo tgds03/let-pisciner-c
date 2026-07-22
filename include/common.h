@@ -29,11 +29,16 @@ void loop_test(void (*callback)(int argc, char *argv[]));
 void test(int argc, char *argv[]);
 
 #ifndef TARGET_PATH
-#define TARGET_PATH ""
+#define TARGET_PATH
 #endif
 
 #ifndef STUB_C_MD5
-#define STUB_C_MD5 ""
+#define STUB_C_MD5
+#endif
+
+#ifndef STRINGFY
+#define _STRINGFY_HELPER(x) #x
+#define STRINGFY(x) _STRINGFY_HELPER(x)
 #endif
 
 #define FUNCTION(func_type, func_name, ...) \
@@ -43,7 +48,9 @@ void test(int argc, char *argv[]);
 		function_env.type = #func_type; \
 		function_env.param = #__VA_ARGS__; \
 		function_env.ptr = &#func_name; \
+		function_env.path = STRINGFY(TARGET_PATH); \
+		function_env.stubmd5 = STRINGFY(STUB_C_MD5); \
 	} func_type func_name (__VA_ARGS__)
 
-#define UNUSED(x) (void)(x)
+#define UNUSED(x) (void)!(x)
 #endif

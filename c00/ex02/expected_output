@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex02/ft_print_reverse_alphabet.c
+STUB MD5: 4a2a0c5cab668fdb97dccf2a32c9a57d
 Function: void ft_print_reverse_alphabet();
 Press Ctrl + C to interrupt and exit.
 ================================================================================

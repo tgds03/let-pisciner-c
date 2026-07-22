@@ -1,11 +1,31 @@
 include ../../.env
 export $(shell sed 's/=.*//' ../../.env)
 
-common:	common.o
-	ar rcs libcommon.a common.o
+DEBUG_CFLAGS = -g3 -Og -fsanitize=address -DDEBUG
+RELEASE_CFLAGS = -O2
+CFLAGS = -Wall -Wextra -Wno-unused-result -I$$INCLUDE_PATH
+LDFLAGS = 
+DEBUG_LDFLAGS = r
+RELEASE_LDFLAGS = rcs
+OUTDIR = ../../lib
+TARGET = $(OUTDIR)/libcommon.a
+SRCS = common.c
+OBJS = ${SRCS:.c=.o}
 
-common.o: common.c
-	cc -c -o common.o -Wall -Wextra -Werror common.c -I$$INCLUDE_PATH
+all: CFLAGS += $(RELEASE_CFLAGS)
+all: $(TARGET) 
+
+debug: CFLAGS += $(DEBUG_CFLAGS)
+debug: $(TARGET) 
+
+$(TARGET): $(OBJS)
+	ar rcs $(LDFLAGS) $(TARGET) $(OBJS)
+
+%.o: %.c
+	cc -c $(CFLAGS) $^
 
 clean:
-	rm *.o *.a
+	rm -f $(OBJS)
+	rm -f $(TARGET)
+
+re: clean all

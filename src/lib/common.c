@@ -8,18 +8,14 @@
 #include <signal.h>
 #include "common.h"
 
-FunctionEnv function_env;
+FunctionEnv function_env = {"", "", "", "", "", 0};
 
 void init_rand(const char *str) {
 	unsigned int seed = 0;
-	char *buffer = strdup(str);
-	char *bname = basename(buffer);
-	while (*bname != 0) {
-		seed += *bname;
-		++bname;
-	}
+	int len = strlen(str);
+	int offset = (len > 8) ? len - 8 : 0;
+	seed = strtol(str + offset, 0, 16);
 	srand(seed);
-	free(buffer);
 }
 
 void randstr(char *str, unsigned int size, const char *charset) {
@@ -29,34 +25,6 @@ void randstr(char *str, unsigned int size, const char *charset) {
 	}
 	*str = 0;
 }
-
-/**
-#define MAX_ARGNUM 16
-Param* convert(const char* argstr) {
-	char *token[MAX_ARGNUM] = {0, };
-	int token_len[MAX_ARGNUM] = {0, };
-	char *token_start = argstr;
-	int depth = 0, count = 0;
-	char *cur = argstr;
-	
-	while (*cur) {
-		if (*cur == '(' || *cur == '[')
-			++depth;
-		else if (*cur == ')' || *cur == ']')
-			--depth;
-		else if (*cur == ',' && depth == 0) {
-			if (count >= MAX_ARGNUM - 1) {
-				break;
-			}
-			token_len[count] = (int)(cur - token_start);
-			token[count] = token_start;
-			token_start = cur + 1;
-			++count;
-		}
-		++cur;
-	}
-}
-**/
 
 #define LINE_BUFFER_SIZE 1024
 #define MAX_ARGC 256
@@ -104,10 +72,27 @@ void putline(char c) {
 	wprint("%s\n", line);
 }
 
-void init_test() {
-	function_env.path = TARGET_PATH;
-	function_env.stubmd5 = STUB_C_MD5;
+char *getshortpath(const char *orgpath) {
+	char *dir, *base, *res;
+	char *tempa, *tempb, *tempc;
+	tempa = strdup(orgpath);
+	tempb = strdup(orgpath);
+	dir = dirname(tempa);
+	base = basename(tempb);
+	tempc = strdup(dir);
+	dir = basename(tempc);
+	res = (char*)calloc(strlen(dir) + strlen(base) + 2, sizeof(char));
+	strcat(res, dir);
+	strcat(res, "/");
+	strcat(res, base);
+	free(tempa);
+	free(tempb);
+	free(tempc);
+	return res;
+}
 
+void init_test() {
+	char *shortpath = 0;
 	init_rand(function_env.stubmd5);
 	signal(2, handle_signal); // interrupt
 	signal(3, handle_signal); // quit
@@ -126,10 +111,18 @@ void init_test() {
 		snprintf(func_header, LINE_BUFFER_SIZE, "undefined");
 	}
 
+	if (*function_env.path) {
+		shortpath = getshortpath(function_env.path);
+	}
 	wprint("Let Pisciner C\n");
+	wprint("File path: %s\n", (shortpath) ? shortpath : "");
+	wprint("STUB MD5: %s\n", function_env.stubmd5);
 	wprint("Function: %s\n", func_header);
 	wprint("Press Ctrl + C to interrupt and exit.\n");
 	putline('=');
+
+	if (shortpath)
+		free(shortpath);
 }
 
 void loop_test(void (*callback)(int, char*[])) {

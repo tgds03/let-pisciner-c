@@ -1,6 +1,8 @@
 
 execute ./app:
 Let Pisciner C
+File path: ex08/ft_print_combn.c
+STUB MD5: 3ff2df5124d2a5dc370f7dd9519ea729
 Function: void ft_print_combn(int n);
 Press Ctrl + C to interrupt and exit.
 ================================================================================
