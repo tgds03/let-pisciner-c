@@ -16,7 +16,7 @@ if [ ! -d "$REPO_PATH" ]; then
 fi
 
 export TIMEOUT=5
-export SHELL_PATH="$(cd "$(dirname "$0")" && pwd -P)/../"
+export SHELL_PATH="$(cd "$(dirname "$0")" && pwd -P)/.."
 export LIB_PATH="$SHELL_PATH/lib"
 export INCLUDE_PATH="$SHELL_PATH/include"
 export STUB_PATH="$SHELL_PATH/${2,,}"

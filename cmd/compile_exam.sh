@@ -6,9 +6,9 @@ fi
 
 getentrypoint() {
 	local filelist=*.c
-	local entryfile="${SHELL_PATH}entrypoint.c"
+	local entryfile="${SHELL_PATH}/entrypoint.c"
 	for file in "$REPO_PATH/$EXAM_DIR/"*.c; do
-		content=$(cc -E -I"$INCLUDE_PATH" -I"$INCLUDE_PATH/fake_libc" $file | "$SHELL_PATH/cmd/getentry.py") || return 1
+		content=$(cc -E -I"$INCLUDE_PATH" -I"$INCLUDE_PATH/fake_libc" $file | "${SHELL_PATH}/cmd/getentry.py") || return 1
 		if [ -n "$content" ]; then
 			if [ -z "$entryfile" ]; then
 				echo "Found multiple main function in $EXAM_DIR."
